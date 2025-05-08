@@ -6,50 +6,46 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def generate_with_openai(prompt, model="gpt-3.5-turbo"):
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.5,
-        max_tokens=512
-    )
-    return response.choices[0].message.content.strip()
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.5,
+            max_tokens=512
+        )
+        return response.choices[0].message.content.strip()
+    except Exception as e:
+        with open("logs/openai_errors.txt", "a", encoding="utf-8") as f:
+            f.write(f"\n--- ERROR ---\n{str(e)}\n")
+        return ""
+
 
 def clarify_requirement(requirement, ambiguous_terms):
     terms = ", ".join(ambiguous_terms)
     prompt = f"""
-You are a strict formatting bot trained to clarify ambiguous software requirements.
+    You are a clarification engine. Do NOT explain anything.
 
-INSTRUCTIONS:
-- You will output in **EXACTLY** the following format — no changes, no explanations.
-- If the input is unclear or vague, do your best.
+    Your task is to:
+    1. Ask two clarification questions about the vague requirement.
+    2. Rewrite the requirement with greater clarity.
 
-FORMAT:
-Questions:
-1. [question 1]
-2. [question 2]
+    Use **exactly this format**:
 
-Clarified requirement: [your clarified requirement on this line]
+    Questions:
+    1. ...
+    2. ...
 
-EXAMPLE INPUT:
-Requirement: "The UI must be clean and user-friendly."
-Ambiguous terms: clean, user-friendly
+    Clarified requirement: ...
 
-EXAMPLE OUTPUT:
-Questions:
-1. What does "clean" mean in terms of UI layout or elements?
-2. What specific actions should be considered user-friendly?
+    DO NOT include any extra text, explanations, or introductions.
+    DO NOT skip any of the sections.
+    DO NOT number the final requirement or add labels.
 
-Clarified requirement: The UI must display a minimal layout with no more than 3 colors, and each element must include tooltips and accessible labels.
+    INPUT:
+    Requirement: "{requirement}"
+    Ambiguous terms: {terms}
+    """
 
-----
-
-Now process this:
-
-Requirement: "{requirement}"
-Ambiguous terms: {terms}
-
-Respond ONLY using the format shown above.
-"""
     return generate_with_openai(prompt)
 
 def detect_ambiguity_with_llm(requirement: str):
@@ -69,6 +65,6 @@ If no ambiguous terms are found, respond with:
 ["None"]
 
 Requirement:
-""{requirement}""
+"{requirement}"
 """
     return generate_with_openai(prompt)

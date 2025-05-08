@@ -15,7 +15,7 @@ def run_collection_pipeline(max_pages=2):
     scraped = get_requirements(max_pages=max_pages)
     save_scraped(scraped, RAW_OUTPUT)
 
-    print("Detecting ambiguous terms using Ollama...")
+    print("Detecting ambiguous terms using openai-")
     requirements = [{"text": item["body"]} for item in scraped if item.get("body")]
     ambiguity_results = []
     for req in tqdm(requirements, desc="Detecting Ambiguity"):

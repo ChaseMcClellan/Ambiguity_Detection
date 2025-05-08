@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1273,
+    "title": "suggestion - change \"add connection\" button on left nav",
+    "body": "I find the left navigation button for \"add connection\" confusing.   It seems to be the gateway to two different features:  creating a new connection definition, and opening a new connection.\r\n\r\nIf it were me I would\r\n\r\n1. Rename the button to \"connect\"\r\n2. Remove the \"New Connection\" value from the slide-off\r\n3. Make the slide-off from the button be the existing connection values (e.g. the ones that you get currently by doing to \"new connection\" -> \"connection\".\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1273"
+  },
+  {
+    "id": 1271,
+    "title": "right-click copy in SQL pane ignores selection",
+    "body": "in the SQL pane, create a new sql statement:  \r\n\r\n    select * from foo where id = 1234\r\n\r\nhighlight \"1234\" and right click.  Choose \"copy\"\r\n\r\nInstead of copying the highlighted text, it seems to copy the entire contents of the SQL pane, not just the highlighted text.  It also brings up a modal dialog box containing the copied SQL which must be dismissed.\r\n\r\nFWIW, ctrl-c and ctrl-v work as expected.\r\n\r\nBONUS ISSUE:   the right-click does not offer you a \"paste\" option.\r\n\r\nI'm running Firefox in Ubuntu Mate, if that makes any difference.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1271"
+  },
+  {
+    "id": 1270,
+    "title": "UI request -- change behavior of settings widget",
+    "body": "The settings widget (\"gears\" icon in upper right corner) expands on hover.  There is just enough of a delay when I mouse over that that I click on the link. But by the time I click, the widget has expanded, and I end up clicking on the \"logout\" link.\r\n\r\nSome alternative solutions\r\n\r\n1. At a minimum, don't have a clickable link replace the hover zone\r\n2. Leave that settings widget expanded at all times.  There is plenty of space.\r\n3. Move the contents of the settings widget to the left-side menu bar.  That already includes some of the features from the widget anyway.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1270"
+  },
+  {
+    "id": 1266,
+    "title": "No ways to copy column name from Data table",
+    "body": "Very often we need to copy column name (table field name) to clipboard, but interface don't allow this. Can we make it possible, maybe via right-click menu \"Copy column title\"?",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1266"
+  },
+  {
+    "id": 1263,
+    "title": "Accept empty server and port in Create connection dialog with filling default values",
+    "body": "In most cases databases are launched locally on default ports. For simplify creating new connection will be good in \"Create connection\" form make \"Server\" and \"Port\" fields as not required, and test the database defaults (localhost and default port), if those fields are not filled. \r\nWhat do you think about this idea?",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1263"
+  },
+  {
+    "id": 1257,
+    "title": "New feature: allows editing of SQL code while a query is running",
+    "body": "I would like to suggest a new feature that deals with the possibility of continuing to edit the SQL code in the editor while a specific query is running.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1257"
+  },
+  {
+    "id": 1256,
+    "title": "Beta 3 versions have generic bundle identifier on macOS",
+    "body": "On macOS, every app is supposed to have a unique bundle identifier (`CFBundleIdentifier` key in `Info.plist`). A proper one for this app would be `org.omnidb.omnidb` or just `org.omnidb`.\r\n\r\nVersion 2 of this app had `com.electron.omnidb` which isn’t the best but it was good enough. However, the new betas use `io.nw.nwjs` which is incredibly generic. It means that other apps (and macOS in general) will have a harder time identifying and interacting with your app.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1256"
+  },
+  {
+    "id": 1242,
+    "title": "Remember window size from previous session",
+    "body": "When opening OmniDB, the application window always opens maximized to the screen, regardless of the application window size when last opened. Clicking the maximize icon in the upper right shrinks the window down, but not to the same size as when the application was previously open. This means I have to manually resize the application window every time I open the application.\r\n\r\nThanks for the good work! I really enjoy using OmniDB.\r\n\r\nOmniDB 3.0.3b\r\nmacOS 10.15.7",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1242"
+  },
+  {
+    "id": 1241,
+    "title": "OmniDB 3b scrolling bug",
+    "body": "Upon scrolling down in the query tab and resizing it to make it smaller, i.e. the query result bigger, it becomes impossible to scroll down completely, i.e. the lower part of the query can't be reached without increasing the query size again.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1241"
+  },
+  {
+    "id": 1240,
+    "title": "Filter large database list in Postgresql",
+    "body": "I'm running a heroku instance with a Postgres add-on.  The server has ~2000 databases.  I can't find a way to filter to only show my database, is there a feature in OmniDB for that?",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1240"
+  },
+  {
+    "id": 1238,
+    "title": "Allows SQL indentation for the selected query only.",
+    "body": "Suggestion: It allows to perform the SQL indentation from the Indent SQL button for a specific selected query.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1238"
+  },
+  {
+    "id": 1236,
+    "title": "OmniDB 3b autocompletion",
+    "body": "OmniDB 3 b slows down significantly during typing of the search actually turns up objects matching the completion. Even a keystroke isn't necessarily helping. It seems the list is newly generated for every prefix after every keystroke, even though I finished typing the complete relname already. That is particular annoying when OmniDB starts to do lookups of relations within the where or the group by clause.\r\n\r\nThere is even a case when the js is very slow, where the cursor looses focus. I can reproduce that behavior by typing a frequent regclass prefix, but I don't know what causes this.\r\n\r\nAll the best\r\npgaro",
+    "labels": [
+      "enhancement",
+      "bug"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1236"
+  },
+  {
+    "id": 1235,
+    "title": "OmniDB 3b edit data tab",
+    "body": "Not specifying a value leads to '' for strings and a syntax error for int etc.\r\n\r\nWhile the later is awful, I think the former is not really desirable either. null sounds like the sane default to me, in particular since that does avoid postgres internal defaults for triggering. Which has the advantage of being independent from the type.",
+    "labels": [
+      "enhancement",
+      "bug"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1235"
+  },
+  {
+    "id": 1233,
+    "title": "console \\ef and quicknavigation through the tree",
+    "body": "This is the main functionalities I'm missing all the time. The idea would be to simply open the function/table with the corresponding regclass/regproc without the need to tediously navigate through the entire tree.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1233"
+  },
+  {
+    "id": 1229,
+    "title": "login via ssh with jump proxy and ssh agent",
+    "body": "use ssh agent is much easier to use. we can just ssh-add then omnidb should be ready to connect.\r\n\r\nIt will also be much useful, if the omnidb allow custom ssh command or just use the same .ssh/config as ssh command.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1229"
+  },
+  {
+    "id": 1226,
+    "title": "Feature request",
+    "body": "Hi, \r\nAre there any plans to support other databases besides the standard SQL? Example ElasticSearch, Mongo, Cassandra?",
+    "labels": [
+      "question",
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1226"
+  },
+  {
+    "id": 1225,
+    "title": "Save the state of the autocomplete button",
+    "body": "Suggestion: I don't particularly use the autocomplete and whenever I open OmniDB, I need to disable the button for all databases that are opened.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1225"
+  },
+  {
+    "id": 1205,
+    "title": "Version Control of Snippets",
+    "body": "Wouldn't be great to have version control (git) for pulling and pushing the snippets from/to a snippets repo. \r\nI know there are open source components for doing that, such as https://github.com/alberthier/git-webui, which can be added into OmniDB roadmap.\r\n\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1205"
+  },
+  {
+    "id": 1199,
+    "title": "Remember tree view state",
+    "body": "Every time I open OmniDB or reload the page, I must click and scroll through five levels of tree navigation to get to the (only) schema I use. \r\n\r\n- It would be nice if OmniDB remembered the tree state for each connection tab - ! \r\n- Alternatively/additionally, connections could have a 'default' tree state that they open in. \r\n- Or, one could save the tree state as a bookmark, to open it in a single click. \r\n\r\nMy tree levels are Postgres 11.6 -> Databases -> myDB -> Schemas -> mySchema.\r\nI never need/use anything in the tree except mySchema. \r\n\r\nThanks! I love OmniDB!",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1199"
+  },
+  {
+    "id": 1198,
+    "title": "OmniDB 3.0.2b : Currently Working Server IP Address/Connection-Name Display Issue",
+    "body": "I am finding difficult to view which server I am working on. \r\nI always work with minimum 3 server and always need to switch to other server\r\n\r\n1. In Sidebar current server shows as Icon when you move mouse then only it is showing detail of connection\r\n2. In tree view also no IP address or connection-name showing.\r\n\r\nif you can add ip address/connection-name in tree view that will help.",
+    "labels": [
+      "enhancement",
+      "duplicate"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1198"
+  },
+  {
+    "id": 1196,
+    "title": "List of desired shortcuts",
+    "body": "Hello folks, \r\n\r\nAfter some comments and tests, we decided to open this issue so the community could propose and decide on which shortcuts should be maintained in OmniDB. This may be constantly updated according to comments and considerations.\r\n\r\n**Now available**:\r\n- `Autocomplete`\r\n- `Cancel Query`\r\n- `Indent`\r\n- `New Inner Tab`\r\n- `Remove Current Inner Tab`\r\n- `Run Explain`\r\n- `Run Explain Analyze`\r\n- `Run Query`\r\n- `Select Left Inner Tab`\r\n- `Select Right Inner Tab`\r\n\r\n**Returning** (being re-included):\r\n- `Next Command (Console Tab)`\r\n- `Previous Command (Console Tab)`\r\n- `Select Left Outer Tab`\r\n- `Select Right Outer Tab`\r\n\r\n**Removed**:\r\n- `New Connection Tab`\r\n- `Remove Current Connection Tab`\r\n\r\n**NEW**:\r\n- empty\r\n\r\nThanks",
+    "labels": [
+      "enhancement",
+      "announcements"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1196"
+  },
+  {
+    "id": 1191,
+    "title": "OmniDB 3.0.2b : Editor and Interface Font Size",
+    "body": "How can I change the font size of editor and interface separately. \r\n\r\nIn old version there is option to do the same.\r\n\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1191"
+  },
+  {
+    "id": 1189,
+    "title": "SSH tab doesn´t expand all window",
+    "body": "In 3.0.2b the ssh tab only uses a little box in the tab in the up-left corner\r\n![image](https://user-images.githubusercontent.com/36895220/98289374-15f65800-1f76-11eb-94c0-a69dce2ce3cb.png)\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1189"
+  },
+  {
+    "id": 1187,
+    "title": "Save user layout on OmniDB metadata",
+    "body": "Follow-up of #403 \r\n\r\nImplement a way for the user to override OmniDB default layout, specifying custom dimensions of each panel",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1187"
+  },
+  {
+    "id": 1183,
+    "title": "oracle/objects in other schemas ",
+    "body": "Hi guys, can you please add the ability to view objects of other schemas in oracle connections ? ",
+    "labels": [
+      "enhancement",
+      "oracle"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1183"
+  },
+  {
+    "id": 1181,
+    "title": "OmniDB icon overlay on the scroll",
+    "body": "The OmniDB icon in the lower right corner, is overlapping the list scroll, this prevents the scroll from being pulled via click.\r\n\r\n![image](https://user-images.githubusercontent.com/11354911/97636206-856cc480-1a17-11eb-9466-4be410be2720.png)\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1181"
+  },
+  {
+    "id": 1180,
+    "title": "Improve outer menu",
+    "body": "Outer Menu is not very practical yet.\r\n\r\nAs of now, the outer menu is collapsed by default when working on a clientWindow that is smaller than 1981px.\r\nWhile extended, it is floating above the content.\r\n\r\nThis is not ideal, forcing the user to navigate the menu or expand it manually to better locate connections.\r\n\r\nSuggestion is to apply the large screen layout when extended and apply it as the default status.\r\n\r\n![menu_change](https://user-images.githubusercontent.com/11302800/97593840-d57c6480-19e0-11eb-9c42-07d2120195fd.png)\r\n",
+    "labels": [
+      "enhancement",
+      "fixed"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1180"
+  },
+  {
+    "id": 1179,
+    "title": "Notarize software for Apple",
+    "body": "For reference: https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1179"
+  },
+  {
+    "id": 1171,
+    "title": "explain",
+    "body": "One thing I wondered about is if there is a good way to make stuff like buffers or verbose configurable. Not having them is usually worse than having a bit of noise, but making it optional would be nice in some places.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1171"
+  },
+  {
+    "id": 1164,
+    "title": " SSO authentication by OpenID?",
+    "body": "Greetings, is there a way to authenticate users by Open-Id Client? We have a Keycloak SSO server. Could it be through some plugin or community code to perform this authentication?",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1164"
+  },
+  {
+    "id": 1156,
+    "title": "add signout-on-close option",
+    "body": "When running omnidb in server mode, I would like to be logged out when I close my browser.  (For double bonus points, I would like to be able to configure my session to expire after X minutes of non-use, but that might be a bridge too far.)",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1156"
+  },
+  {
+    "id": 1138,
+    "title": "Debugger Plugin for PostgreSQL on Windows",
+    "body": "Hi how do i get omnidb_plugin for PostgreSQL 11 or 12 on windows?\r\nDLL seems to be missing from omnidb-plugin_2.17.0-windows-amd64.zip.\r\n\r\nThanks,",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1138"
+  },
+  {
+    "id": 1137,
+    "title": "How to change sqlite to mysql ?",
+    "body": "hi，How to change sqlite to mysql ? \r\nbecause our project USES mysql to manage user rights and so on",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1137"
+  },
+  {
+    "id": 1089,
+    "title": "Data Table copy Column Headers and Tree View memory",
+    "body": "Hi,\r\nNew user here, looking to replace client-side pgAdmin with a server-side solution. OmniDB looks perfect for the job - lightweight / pretty / intuitive :-)\r\n\r\nHaving had a play, there are two features I miss from pgAdmin3:\r\n\r\n1. The option to include field headers when copying from the Data Table output (via both clipboard or csv export methods)\r\n2. The expanded tree view being remembered from session to session.  This saves quite a few clicks upon startup.\r\n\r\nApologies if these features already exist and I have missed them.  I look forward to using the software in anger :-)\r\n\r\n(using omnidb-server on CentOS7,  omnidb-app_2.17.0-centos-amd64.rpm)\r\n\r\nCheers,\r\n\r\nRob",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1089"
+  },
+  {
+    "id": 1084,
+    "title": "Support for CentOS 8 / RedHat 8",
+    "body": "Build containers and UAT machines.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1084"
+  },
+  {
+    "id": 1062,
+    "title": "Error In SQL Syntax With Variable In Query Tab",
+    "body": "Hi,\r\n\r\nI'm running OmniDB 2.16.0 with 10.4.8-MariaDB-1:10.4.8+maria~bionic-log. I'm getting a 1064 error when using variables.\r\n\r\n## To reproduce:\r\n\r\n1. Open a new Query Tab\r\n1. Enter the following query:\r\n\r\n        SET @avalue=\"my value\";\r\n        SELECT @avalue;\r\n\r\n1. Run the query\r\n\r\n**Expected result:**\r\n```\r\n+----------+\r\n| @avalue  |\r\n+----------+\r\n| my value |\r\n+----------+\r\n```\r\n\r\n**Actual result:**\r\n\r\n`(1064, \"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT @avalue' at line 2\")`\r\n\r\n_If I copy-paste the query into a **>\\_ Console** tab and run it, the query produces the expected result._",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1062"
+  },
+  {
+    "id": 1050,
+    "title": "quick search",
+    "body": "please add quick searck in menu tree\r\n\r\nPor favor agregar una busqueda rapida en el arbol de menu\r\n![2ndquadrant2](https://user-images.githubusercontent.com/2963281/65079490-eac13b80-d964-11e9-906f-00defc33b38e.png)\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1050"
+  },
+  {
+    "id": 1049,
+    "title": "Clone row",
+    "body": "Data Actions -> Edit Data\r\n\r\nIt would be really nifty to be able to right click a row and do 'Clone Row' and have the new row go into the bottom of the grid into the normal spot of a new row so that you can edit it prior to doing a save.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1049"
+  },
+  {
+    "id": 1045,
+    "title": "Individual element color control",
+    "body": "Something that would be great would be to be able to control the colors of individual elements (ie, build our own themes).\r\n\r\nI'm a huge fan of dark mode, easier on the eyes, especially at night.\r\n\r\nAll the dark mode themes I've tried so far have an off-white color for the text, which is hard to read.  I would like to be able to set the query editor font color to be plain white, and adjust the other colors like keywords/comments and such.\r\n\r\nThanks!",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1045"
+  },
+  {
+    "id": 1044,
+    "title": "Table columns DDL",
+    "body": "Another thing I miss from pgadmin3.\r\n\r\nClick on a column and show the DDL to create that column\r\nALTER TABLE foo ADD COLUMN bar text DEFAULT 'abc123' NOT NULL;\r\n\r\nAlso, split the DDL into individual actions\r\nALTER TABLE foo ADD COLUMN bar text;\r\nALTER TABLE foo ALTER COLUMN bar SET DEFAULT 'abc123';\r\nALTER TABLE foo ALTER COLUMN bar SET NOT NULL;",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/1044"
+  },
+  {
+    "id": 996,
+    "title": "User interface for omnidb.conf",
+    "body": "",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/996"
+  },
+  {
+    "id": 992,
+    "title": "Upgrade Django to 2.2",
+    "body": "",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/992"
+  },
+  {
+    "id": 983,
+    "title": "Upgrade Cytoscape to 3.0 and Cytoscape Spread to latest version",
+    "body": "",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/983"
+  },
+  {
+    "id": 969,
+    "title": "Advanced Object Search in context menu of inner tab creation",
+    "body": "",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/969"
+  },
+  {
+    "id": 968,
+    "title": "Outer and inner tabs enhancements",
+    "body": "- Do not merge inner tabs of similar outer tabs into a unique outer tab while reloading a previous session\r\n\r\n- Callback for saving inner tab name on the fly instead of waiting for inner tab query execution\r\n\r\n- Callback for saving new inner tab  at creation time instead of query execution",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/968"
+  },
+  {
+    "id": 962,
+    "title": "Auto-refresh of the Tree View",
+    "body": "",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/962"
+  },
+  {
+    "id": 961,
+    "title": "Support to PostgreSQL 12",
+    "body": "",
+    "labels": [
+      "postgresql",
+      "enhancement",
+      "bug"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/961"
+  },
+  {
+    "id": 956,
+    "title": "Function parameters values on debug lost if you refresh the function code",
+    "body": "Hi, I'm using 2.15 and I like a lot the debugging option, but there is a little improvement could be done: If you repeatedly modify and debug a function, and this function have parameters you must to set those parameters on each debug. This is because every time you refresh the thebug window to update the code, the parameters values are gone.\r\n\r\nI checked that this could be avoided if you set the function parameter to a default, but this only work if the function has a single parameter.\r\n\r\nThe solution could be to save the parameters to debug when you refresh the code to update it.\r\nLet me know if this is clear enough and a lot of thanks to all people contributing to this great tool.\r\n\r\nOscar\r\n",
+    "labels": [
+      "postgresql",
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/956"
+  },
+  {
+    "id": 945,
+    "title": "FR: export graph",
+    "body": "It would be useful to have the possibiity to export the graph as image and as well as graph with possibility to modify the placement of nodes.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/945"
+  },
+  {
+    "id": 930,
+    "title": "Create DB connections from .pgpass",
+    "body": "Hi,\r\n\r\nin my point of view, it could be a great enhancement to be able to import/create OmniDB connections from the .pgpass file. I think this could be done for other DB too.\r\n\r\n",
+    "labels": [
+      "postgresql",
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/930"
+  },
+  {
+    "id": 915,
+    "title": "add \"execute current query\" command",
+    "body": "I often end up working with a whole bunch of queries in a tab, so my tab looks like this:\r\n\r\n```\r\nselect * from foo;\r\n\r\nselect * from bar;\r\n```\r\n\r\nWhat would be really convenient is a command (with associated key combination) that would allow me to execute the query that my text cursor is currently in.\r\n\r\nSo if my cursor is anywhere in `select * from bar` and I hit the right key combo, Omnidb figures out where the statement blocks are, and only executes `select * from bar`, and ignores `select * from foo`\r\n\r\nthis is a feature that I've seen in other products, and I thought I would hate it, but it turns out to be super-convenient",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/915"
+  },
+  {
+    "id": 905,
+    "title": "Storing MySQL server password",
+    "body": "Hello, we're currently testing and gettting ready for production with the software which we find it amazing so far.\r\nThe main problem is storing the passwords. \r\nWe're running SQL servers (Mysql and postgresql).\r\nFor postgresql we're using .pgpass which is working good, but we must have the same thing for mysql aswell. I tried creating a .my.cnf file with the following info \r\n\r\n```\r\n[client]\r\nuser = user\r\npassword = password\r\nhost = serveraddress\r\n```\r\nBut it's not working as expected... Any other option for this? Thank you",
+    "labels": [
+      "mysql",
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/905"
+  },
+  {
+    "id": 884,
+    "title": "Add shortcut for \"Save changes\"",
+    "body": "I use Edit Data pages a lot.\r\nIt would be very handy to be able to apply the changes without reaching for a mouse.\r\n\r\nThanks a lot in advance, and thanks for your work - OmniDB is just great!",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/884"
+  },
+  {
+    "id": 883,
+    "title": "Copy selections as sql statements",
+    "body": "Feature request:\r\n\r\nSelect multiple rows, right click and copy selections as sql statement like insert/delete.\r\n\r\nOnce copied, the clipborad should have someting like\r\n\r\n```sql\r\nINSERT INTO MyTable(ID,Col1,Col2,Col3) VALUES (10,'hello world','some value','2010-10-20');\r\nINSERT INTO MyTable(ID,Col1,Col2,Col3) VALUES (11,'hello world','some value','2010-10-20');\r\nINSERT INTO MyTable(ID,Col1,Col2,Col3) VALUES (12,'hello world','some value','2010-10-20');\r\n```\r\n\r\nSequel Pro can do this but it is a macOS only software.\r\n\r\n![](https://www.endpoint.com/blog/2014/01/10/copy-data-between-mysql-databases-with/image-1.png)\r\n\r\nLet me know if it is on the roadmap, Thanks :)",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/883"
+  },
+  {
+    "id": 881,
+    "title": "Table has no primary key, existing rows will be read only.",
+    "body": "Table has no primary key, existing rows will be read only.\r\n![image](https://user-images.githubusercontent.com/25076827/54358737-07ba4080-469c-11e9-8c39-e93a14cab116.png)\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/881"
+  },
+  {
+    "id": 865,
+    "title": "Feature: Display Row Security Policies in tree view",
+    "body": "Hi OmniDB team,\r\n\r\nin our web api, we're using Row Security Policies for different purposes. Right now, the console tab do the job (obviously :) ) but it would be cool if OmniDB could display these (on a per table basis) ion the tree view.\r\n\r\nDon't know if it's a very asked feature (don't know any GUI PG tools displaying RLS) but I try asking :)",
+    "labels": [
+      "postgresql",
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/865"
+  },
+  {
+    "id": 864,
+    "title": "Feature: Show DDL for individual columns",
+    "body": "Omni\r\n![image](https://user-images.githubusercontent.com/1695852/53117769-a5957200-3519-11e9-89ef-30cc2436c067.png)\r\n\r\nPgadmin3 has a nice feature where you see the DDL for creating an individual column\r\n![image](https://user-images.githubusercontent.com/1695852/53117907-f5743900-3519-11e9-90a0-7387f98a02b6.png)\r\n\r\n\r\nAlthough pgadmin3 doesn't have a straight DDL for creating with defaults... this would also be nice.\r\n\r\nIF you have a not null constraint on the column, you of course cannot create the column and then set it to not null, but it is convenient if you want to do a quick alter set not null if it's pertinent to the situation.\r\n\r\n\r\nThe ideal DDL to show would be a single create statement along with the individual features\r\n\r\nALTER TABLE live_dialer.campaigns ADD COLUMN numbers_remaining integer NOT NULL DEFAULT 0;\r\n\r\n-- OR\r\nALTER TABLE live_dialer.campaigns ADD COLUMN numbers_remaining integer;\r\nALTER TABLE live_dialer.campaigns ALTER COLUMN numbers_remaining SET NOT NULL;\r\nALTER TABLE live_dialer.campaigns ALTER COLUMN numbers_remaining SET DEFAULT 0;\r\n\r\n\r\n\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/864"
+  },
+  {
+    "id": 862,
+    "title": "Navigate through tree view using arrow keys",
+    "body": "Initial idea from @pasquall in issue #567 . For example if the selected node is a table `table2`:\r\n\r\n- **Up**: Goes to the node above in the same level. For example, will select `table1`;\r\n- **Down**: Goes to the node below in the same level. For example, will select `table3`;\r\n- **Left**: Ascend a level in the treeview. In this case, will select node `Tables`;\r\n- **Right**: Descend a level in the treeview. In this case, will expand the `table2` node and select `Columns`.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/862"
+  },
+  {
+    "id": 843,
+    "title": "Dashboard for ORACLE db",
+    "body": "Please confirm when we can expect Oracle Dashboard for Oracle DB.\r\n\r\nThanks\r\nSSubhan",
+    "labels": [
+      "enhancement",
+      "oracle"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/843"
+  },
+  {
+    "id": 837,
+    "title": "Debug - Step Into",
+    "body": "Hello,\r\n\r\nCan you help me, please, with the following information:\r\nFor PostrgreSQL Debugger - when you will introduce functionality \"Step Into\"?\r\n\r\nThank you,\r\n\r\nDaniel",
+    "labels": [
+      "postgresql",
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/837"
+  },
+  {
+    "id": 834,
+    "title": "Make user database configurable",
+    "body": "I'm trying to deploy this on a Heroku-like platform, but the fact that OmniDB is using sqlite databases under the hood makes for a less-than-ideal experience. In order to run in certain environments like Heroku, the app needs to be [stateless](https://12factor.net/processes) and store stateful information in a backing service. \r\n\r\nIt looks like this shouldn't be too difficult to achieve since the interface for a different database could be swapped in for the default sqlite one being used currently. The place I know sqlite is being used is for the user database, but it looks like it could be used in a few other places as well. ",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/834"
+  },
+  {
+    "id": 826,
+    "title": "Word wrap in the query editor",
+    "body": "It would be great to have a checkbox whether or not to automatically word-wrap the query editor",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/826"
+  },
+  {
+    "id": 825,
+    "title": "Detach tab into separate window",
+    "body": "Sometimes it's just really convenient to be able to see multiple things on the screen at once without flipping tabs.  Especially with multiple monitors or multiple virtual workspaces and all that.\r\n\r\nI would love to see the ability to detach a tab into its own window.  (And then also be able to bring that tab back into the main window)  Or join that window with another detached window to make a two-tab window.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/825"
+  },
+  {
+    "id": 822,
+    "title": "Group management - Should only show servers that are included in the selected group",
+    "body": "Feature Request\r\n\r\nThe new group feature is a great start, but it seems that when we select a group, it just moves the checkboxes.  But I would figure for a full-featured group manager, it would filter and only show the servers in the group.\r\n\r\nI like the fact that servers can be in multiple groups, so this interface design is nice.  What we need I believe is an 'Group Edit Mode', where you can check or uncheck from the entire list of servers.  And then once you're out of 'Group Edit Mode', then it'll only show the grouped-servers in that group!\r\n\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/822"
+  },
+  {
+    "id": 802,
+    "title": "List Aggregate for postgresql",
+    "body": "Add in the navigator inside the schema, an item to list all the aggregate created in this schema.",
+    "labels": [
+      "postgresql",
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/802"
+  },
+  {
+    "id": 790,
+    "title": "Add autocomplete support for snippets",
+    "body": "Unless I'm missing something, snippets are difficult for me to use because I must go find the desired snippet from the snippet tab, then copy it to the clipboard, and then go back to the query window and paste it.   It would be much better if I could use the autocomplete feature to match based on the snippet name and it would expand to the contents of that snippet in the query window.\r\n\r\nIs there a currently better way to do this other than copy/paste? If not, I'd like to request this feature.\r\n\r\nThanks.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/790"
+  },
+  {
+    "id": 789,
+    "title": "Show More Than 50 Query Results",
+    "body": "Hi there, loving OmniDB so far!\r\n\r\nThe default behaviour when submitting a SELECT query (in a Query Tab) seems to be to return at most 50 rows, at which point \"Fetch more\" and \"Fetch all\" buttons pop up (and work as advertised).\r\n\r\nI think the limit of 50 should be both configurable and removable. In my workflow I am rarely interested in a subset of query results.\r\n\r\nThanks!",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/789"
+  },
+  {
+    "id": 780,
+    "title": "Data analysis and visualization extensions",
+    "body": "I am interested in finding/contributing to efforts to create an open source data analysis platform, similar to what Tableau offers. I have found a couple of solid contenders, such as [Apache Superset](https://superset.incubator.apache.org/). OmniDB also seems compelling, being built with Python/Django. I notice there is already some OmniDB code related to data mining (in dataMining.js). \r\n\r\nWhat are your thoughts on OmniDB serving as a basis for some data analysis extensions, such as visualizing the output of queries in a simple and intuitive manner?",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/780"
+  },
+  {
+    "id": 775,
+    "title": "Feature: automatically register new databases and implement user groups allowing management of several databases for members",
+    "body": "Hi,\r\nSome feature requests here, as we are in the process of comparing temboard, pgadmin4 and omnidb.\r\n\r\nWhat we really appreciate with temboard is its ability to automatically register new installed databases. For example, we have to deploy tons of new PostgreSQL servers/instances/databases. This is automated with ansible. One step in the automated process is to install the temboard agent in a newly installed PostgreSQL server. Then this agent automatically contact the temboard server to register all PostgreSQL instances and databases found on the newly installed PostgreSQL server.\r\n\r\nWhat we also really like with temboard is that temboard users don't have to recreate connections to the PostgreSQL servers they have to manage: it's done once for all users.\r\nSo to reproduce this in omnidb seem currently not possible.\r\nOne suggestion could be to implement groups in omnidb. Then associate users and PostgreSQL connections to groups: by the way, all users in a group could automatically get access to all PostgreSQL connections assigned to that group.\r\nThis last feature request would be particularly important and urgent to continue considering omnidb for an enterprise usage, when you have teams of several tens of DBAs.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/775"
+  },
+  {
+    "id": 773,
+    "title": "UI improvements",
+    "body": "I love OmniDB and think the user experience could be improved with some UI changes. With an application like this that I easily spend several hours a day using, even the most minor changes can significantly improve how pleasant it is to work with the application and make it the most usable solution of any DB GUI.\r\n\r\n- Auto fit the width of columns in the `Data` view of query output. Only if the column is very wide (for example a huge JSON column) should it be cut off.\r\n  - For the columns that are cut off, double clicking the column width expander should auto fit that column\r\n- Auto fit the width of the navigator window on the left and always keep it auto fit. So if you collapse some nodes causing it to need less width then it shrinks, and same when expanding some nodes it should expand to the width it needs\r\n- The table details window on the bottom left of the screen should be able to be closed in settings. For the kind of information I need when I'm in the GUI it isn't something I ever look at so it takes up useful screen real estate from the navigator window\r\n- Closing a tab shouldn't require a confirmation, at least this should be configurable in settings. We are used to closing tabs without confirmation in browsers, text editors, IDEs, and this should be no different. The only case is if you have unsaved changes then it should prompt if we'd like to save changes\r\n- A less intrusive close icon should be used, for example the way browsers do it where the close icon appears only when you mouse over the tab. Because right now I have many distracting bright red \"X\" icons all over the screen\r\n- Be able to customize the font used in the application. I have some nice system fonts that I use in my IDE and other applications and it would be good to be able to use the same one in this application, which is also nice when all applications I use have a consistent font\r\n- Don't make all text in the navigator on the left in a bold font, because when everything is bold then nothing stands out in the navigator window and it's harder on the eyes",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/773"
+  },
+  {
+    "id": 772,
+    "title": "OmniDB doesn't serach functions by typing",
+    "body": "Pgadmin3 has this nice feature so you can easily find for example a function name just by type the first char of it but in OmniDB if i have a lot of functions inside my database schema i have to scroll down by myself to get to the one that i am searching for!",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/772"
+  },
+  {
+    "id": 733,
+    "title": "Feature: Font Colors",
+    "body": "Selecting a theme is a great feature, but some of the default theme colors are not ideal.  For example in the dark themes, error messages are red on gray and are very difficult to read, especially at the default (small) font size.\r\n\r\nIt would be great to be able to customize individual component font colors that are part of a theme.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/733"
+  },
+  {
+    "id": 723,
+    "title": "[Feature Request] Navigate via Foreign Key Columns",
+    "body": "It would be great if OmniDB could support the following use case:\r\nWhen viewing some rows in a query result, I would like to navigate to connected tables by (right)-clicking on a data-entry in foreign-key columns. The matched row is then opened in a new query-tab.\r\n\r\nI have seen the behavior in Adminer and think it would be very helpful in OmniDB as well.",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/723"
+  },
+  {
+    "id": 722,
+    "title": "Feature: Show Drop DDL",
+    "body": "Pgadmin3 has this nice feature so you can easily alter things like triggers, sequences (just about everything), by copy/paste and some quick edits by prefixing all the DDL with the associated DROP.\r\n\r\n![image](https://user-images.githubusercontent.com/1695852/46637243-423a1300-cb29-11e8-9feb-fd3a04a3704e.png)\r\n",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/722"
+  },
+  {
+    "id": 714,
+    "title": "csv import to table",
+    "body": "Hi\r\nOur users would like to have the possibility to do mass imports from a csv file. There is a closed issue #31 , but for some reason I can't find this functionality in latest OmniDB Server or anywhere in documentation. Does this functionality exist, is it planned or for now we would need to write our own plugin, if we want to get imports from csv?\r\n\r\nRegards,",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/714"
+  },
+  {
+    "id": 705,
+    "title": "Named querys",
+    "body": "If one names query tabs the names are lost on relogin, while the to the content of the tab is kept. Would it be possible to make the query tab names persistent in a similar manner?\r\n\r\nRegards\r\npgaro",
+    "labels": [
+      "enhancement"
+    ],
+    "url": "https://github.com/OmniDB/OmniDB/issues/705"
+  }
+]

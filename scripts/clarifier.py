@@ -54,36 +54,33 @@ def load_ambiguity_report(filepath):
    raise ValueError(f"Cannot parse json: {e}")
 
 def parse_llm_response(text):
+    import re
+
     questions = []
     rewritten = ""
 
     lines = text.strip().split("\n")
-    for line in lines:
-        line_lower = line.lower().strip()
 
-        if "rewritten requirement" in line_lower:
-            # Try to extract after the colon, or fallback to next non-empty line
-            parts = line.split(":", 1)
-            if len(parts) > 1 and parts[1].strip():
-                rewritten = parts[1].strip()
-            else:
-                # fallback: look ahead
-                for next_line in lines[lines.index(line)+1:]:
-                    if next_line.strip():
-                        rewritten = next_line.strip()
-                        break
+    for i, line in enumerate(lines):
+        line_clean = line.strip()
+        lower = line_clean.lower()
 
-        elif (
-            line_lower.startswith("- q") or
-            line_lower.startswith("q") or
-            line_lower.startswith("1.") or
-            line_lower.startswith("2.")
-        ):
-            questions.append(line.strip("- ").strip())
+        if lower.startswith("clarified requirement:") or lower.startswith("clarified:"):
+            # Try to extract directly
+            rewritten = line_clean.split(":", 1)[-1].strip()
+        elif re.match(r"^(q[1-2]|[1-2]\.|- q[1-2])", lower):
+            questions.append(line_clean)
+
+    # Fallback to last non-question line if rewritten still empty
+    if not rewritten:
+        non_q_lines = [
+            l.strip() for l in lines
+            if l.strip() and not re.match(r"^(q[1-2]|[1-2]\.|questions|clarified requirement|clarified)", l.strip().lower())
+        ]
+        if non_q_lines:
+            rewritten = non_q_lines[-1]
 
     if not questions or not rewritten:
-        # Log malformed output for review
-        os.makedirs("logs", exist_ok=True)
         with open("logs/clarifier_debug.txt", "a", encoding="utf-8") as f:
             f.write(f"\n--- MALFORMED LLM RESPONSE ---\n{text.strip()}\n")
         raise ValueError("Malformed LLM response")
@@ -103,7 +100,12 @@ def process_requirements(data):
             continue
 
         try:
+
             llm_output = clarify_requirement(original, terms)
+            print("🧠 LLM OUTPUT:", llm_output)
+            with open("logs/clarifier_raw_output.txt", "a", encoding="utf-8") as f:
+                f.write(f"\n---\nORIGINAL:\n{llm_output.strip()}\n---\n")
+
             questions, rewritten = parse_llm_response(llm_output)
 
             refined.append({

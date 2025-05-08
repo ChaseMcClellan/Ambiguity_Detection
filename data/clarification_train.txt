@@ -1,0 +1,869 @@
+Clarify this requirement: I find the left navigation button for "add connection" confusing.   It seems to be the gateway to two different features:  creating a new connection definition, and opening a new connection.
+
+If it were me I would
+
+1. Rename the button to "connect"
+2. Remove the "New Connection" value from the slide-off
+3. Make the slide-off from the button be the existing connection values (e.g. the ones that you get currently by doing to "new connection" -> "connection".
+Ambiguous terms: confusing, new, existing
+Questions:
+1. What specifically makes the left navigation button for "add connection" confusing?
+2. Can you clarify what you mean by "existing connection values"?
+Clarified requirement: Modify the left navigation button labeled "add connection" by renaming it to "connect," removing the "New Connection" option from the slide-off menu, and displaying the current connection values in the slide-off menu instead.
+
+
+Clarify this requirement: in the SQL pane, create a new sql statement:  
+
+    select * from foo where id = 1234
+
+highlight "1234" and right click.  Choose "copy"
+
+Instead of copying the highlighted text, it seems to copy the entire contents of the SQL pane, not just the highlighted text.  It also brings up a modal dialog box containing the copied SQL which must be dismissed.
+
+FWIW, ctrl-c and ctrl-v work as expected.
+
+BONUS ISSUE:   the right-click does not offer you a "paste" option.
+
+I'm running Firefox in Ubuntu Mate, if that makes any difference.
+Ambiguous terms: highlighted, entire contents, modal dialog box, expected, right-click, paste, difference
+Questions:
+1. What is meant by "highlighted text" in this context?
+2. Can you clarify what is considered the "entire contents" of the SQL pane?
+Clarified requirement: In the SQL pane, create a new SQL statement, select * from foo where id = 1234. Then, highlight the specific text "1234" and right click to choose the "copy" option. The copied text should only be the highlighted "1234" text, not the entire contents of the SQL pane.
+
+
+Clarify this requirement: The settings widget ("gears" icon in upper right corner) expands on hover.  There is just enough of a delay when I mouse over that that I click on the link. But by the time I click, the widget has expanded, and I end up clicking on the "logout" link.
+
+Some alternative solutions
+
+1. At a minimum, don't have a clickable link replace the hover zone
+2. Leave that settings widget expanded at all times.  There is plenty of space.
+3. Move the contents of the settings widget to the left-side menu bar.  That already includes some of the features from the widget anyway.
+Ambiguous terms: enough, plenty, some
+Questions:
+1. What is considered "enough" delay when hovering over the settings widget?
+2. How much space is considered "plenty" for the settings widget to be expanded at all times?
+Clarified requirement: 3. Transfer the contents of the settings widget to the left-side menu bar, as it already contains some features from the widget.
+
+
+Clarify this requirement: Very often we need to copy column name (table field name) to clipboard, but interface don't allow this. Can we make it possible, maybe via right-click menu "Copy column title"?
+Ambiguous terms: very often, need, copy, column name, table field name, interface, make it possible, maybe, right-click menu
+Questions:
+1. What specific interface are you referring to that currently doesn't allow copying column names to the clipboard?
+2. Are there any limitations or restrictions that need to be considered when implementing the "Copy column title" feature via the right-click menu?
+Clarified requirement: Allow users to copy column names (table field names) to the clipboard by implementing a "Copy column title" feature accessible via the right-click menu in the specified interface.
+
+
+Clarify this requirement: In most cases databases are launched locally on default ports. For simplify creating new connection will be good in "Create connection" form make "Server" and "Port" fields as not required, and test the database defaults (localhost and default port), if those fields are not filled. 
+What do you think about this idea?
+Ambiguous terms: good, simplify, required, defaults, filled
+Questions:
+1. What is meant by "good" in this context?
+2. Can you clarify what is meant by "filled" in relation to the fields?
+Clarified requirement: In most cases, databases are launched locally on default ports. To simplify creating a new connection, it would be beneficial to have the "Server" and "Port" fields in the "Create connection" form marked as optional. The database should default to localhost and the default port if these fields are left empty. What is your opinion on this approach?
+
+
+Clarify this requirement: I would like to suggest a new feature that deals with the possibility of continuing to edit the SQL code in the editor while a specific query is running.
+Ambiguous terms: possibility, specific
+Questions:
+1. What is meant by "possibility" in this context?
+2. Can you clarify what is meant by "specific query"?
+Clarified requirement: "I would like to suggest a new feature that allows users to continue editing the SQL code in the editor while a particular query is running."
+
+
+Clarify this requirement: On macOS, every app is supposed to have a unique bundle identifier (`CFBundleIdentifier` key in `Info.plist`). A proper one for this app would be `org.omnidb.omnidb` or just `org.omnidb`.
+
+Version 2 of this app had `com.electron.omnidb` which isn’t the best but it was good enough. However, the new betas use `io.nw.nwjs` which is incredibly generic. It means that other apps (and macOS in general) will have a harder time identifying and interacting with your app.
+Ambiguous terms: unique, proper, best, good enough, incredibly generic, harder time
+Questions:
+1. What criteria determine a bundle identifier to be considered "proper"?
+2. Can you provide examples of how a generic bundle identifier like `io.nw.nwjs` could cause issues with app identification and interaction on macOS?
+Clarified requirement: On macOS, each app must have a unique bundle identifier (`CFBundleIdentifier` key in `Info.plist`). A bundle identifier like `org.omnidb.omnidb` or `org.omnidb` is considered proper. The previous version of the app used `com.electron.omnidb`, which was acceptable. However, the new betas use `io.nw.nwjs`, which is too generic and can lead to difficulties in app identification and interaction on macOS.
+
+
+Clarify this requirement: When opening OmniDB, the application window always opens maximized to the screen, regardless of the application window size when last opened. Clicking the maximize icon in the upper right shrinks the window down, but not to the same size as when the application was previously open. This means I have to manually resize the application window every time I open the application.
+
+Thanks for the good work! I really enjoy using OmniDB.
+
+OmniDB 3.0.3b
+macOS 10.15.7
+Ambiguous terms: maximized, shrink, manually resize
+Questions:
+1. What do you mean by "maximized" in the context of the application window?
+2. Can you clarify what you mean by "shrink" and "manually resize" in relation to the application window?
+Clarified requirement: When opening OmniDB, the application window should always open to fill the entire screen. Clicking the maximize icon in the upper right should reduce the window size, but it should return to the same size as when the application was last opened. This should eliminate the need for manual resizing of the application window each time it is opened.
+
+
+Clarify this requirement: Upon scrolling down in the query tab and resizing it to make it smaller, i.e. the query result bigger, it becomes impossible to scroll down completely, i.e. the lower part of the query can't be reached without increasing the query size again.
+Ambiguous terms: smaller, bigger, impossible, completely, lower part, increasing
+Questions:
+1. What does "smaller" and "bigger" refer to in this context?
+2. Can you clarify what is meant by "lower part" and "increasing"?
+Clarified requirement: Upon scrolling down in the query tab and resizing it to decrease its size, i.e. making the query result larger, it becomes impossible to scroll down completely, i.e. the bottom part of the query can't be reached without increasing the query size again.
+
+
+Clarify this requirement: I'm running a heroku instance with a Postgres add-on.  The server has ~2000 databases.  I can't find a way to filter to only show my database, is there a feature in OmniDB for that?
+Ambiguous terms: filter, feature
+Questions:
+1. What specific criteria are you looking to use for filtering the databases?
+2. Can you clarify what you mean by a "feature in OmniDB"?
+Clarified requirement: Running a Heroku instance with a Postgres add-on containing approximately 2000 databases, the user is seeking a way to filter and display only their database within OmniDB.
+
+
+Clarify this requirement: Suggestion: It allows to perform the SQL indentation from the Indent SQL button for a specific selected query.
+Ambiguous terms: specific
+Questions:
+1. What does "specific selected query" refer to in this context?
+2. Can you clarify what is meant by "performing the SQL indentation"?
+Clarified requirement: "Suggestion: The feature allows users to perform SQL indentation by clicking the Indent SQL button for a selected query."
+
+
+Clarify this requirement: OmniDB 3 b slows down significantly during typing of the search actually turns up objects matching the completion. Even a keystroke isn't necessarily helping. It seems the list is newly generated for every prefix after every keystroke, even though I finished typing the complete relname already. That is particular annoying when OmniDB starts to do lookups of relations within the where or the group by clause.
+
+There is even a case when the js is very slow, where the cursor looses focus. I can reproduce that behavior by typing a frequent regclass prefix, but I don't know what causes this.
+
+All the best
+pgaro
+Ambiguous terms: significantly, slow, particular, annoying, very slow
+Questions:
+1. What specific actions are considered slow in OmniDB 3 b?
+2. Can you provide more details about the behavior when the cursor loses focus?
+Clarified requirement: OmniDB 3 b experiences significant slowdowns during the typing of searches that match completion. The list appears to be regenerated for every prefix even after completing the full relname. This behavior is particularly annoying when OmniDB performs lookups of relations in the where or group by clause. Additionally, there are instances where the JavaScript is slow, causing the cursor to lose focus, particularly when typing a frequent regclass prefix. The exact cause of this behavior is unknown.
+
+
+Clarify this requirement: Not specifying a value leads to '' for strings and a syntax error for int etc.
+
+While the later is awful, I think the former is not really desirable either. null sounds like the sane default to me, in particular since that does avoid postgres internal defaults for triggering. Which has the advantage of being independent from the type.
+Ambiguous terms: null, sane, desirable, avoid, independent
+Questions:
+1. What is meant by "null" in this context?
+2. Can you clarify what is meant by "sane default"?
+Clarified requirement: Not specifying a value should result in 'null' for strings and a syntax error for integers. However, using 'null' as the default value is preferred to avoid triggering internal defaults in Postgres, as it is independent from the data type.
+
+
+Clarify this requirement: This is the main functionalities I'm missing all the time. The idea would be to simply open the function/table with the corresponding regclass/regproc without the need to tediously navigate through the entire tree.
+Ambiguous terms: main, simply, tediously, entire
+Questions:
+1. What specific functionalities are missing?
+2. Can you clarify what you mean by "navigating through the entire tree"?
+Clarified requirement: The missing functionalities refer to the ability to open the function/table with the corresponding regclass/regproc without the need for extensive navigation through the tree.
+
+
+Clarify this requirement: use ssh agent is much easier to use. we can just ssh-add then omnidb should be ready to connect.
+
+It will also be much useful, if the omnidb allow custom ssh command or just use the same .ssh/config as ssh command.
+Ambiguous terms: easier, useful, custom, same
+Questions:
+1. What specifically makes using the ssh agent easier?
+2. Can you clarify what you mean by "custom ssh command" and using the "same .ssh/config as ssh command"?
+Clarified requirement: Utilize the ssh agent for easier connection to Omnidb by running ssh-add, and enable the option for Omnidb to either accept custom ssh commands or use the .ssh/config file for configuration.
+
+
+Clarify this requirement: Hi, 
+Are there any plans to support other databases besides the standard SQL? Example ElasticSearch, Mongo, Cassandra?
+Ambiguous terms: plans, support, other databases, standard SQL, Example, ElasticSearch, Mongo, Cassandra
+Questions:
+1. What is meant by "plans" in this context?
+2. Can you clarify what is meant by "support" for other databases?
+Clarified requirement: Determine if there are intentions to add compatibility for databases such as ElasticSearch, Mongo, and Cassandra in addition to standard SQL.
+
+
+Clarify this requirement: Suggestion: I don't particularly use the autocomplete and whenever I open OmniDB, I need to disable the button for all databases that are opened.
+Ambiguous terms: particularly, user-friendly
+Questions:
+1. What is meant by "disable the button" in this context?
+2. What is the specific action that needs to be taken regarding the autocomplete feature?
+Clarified requirement: "Suggestion: When opening OmniDB, I do not use the autocomplete feature. I need to disable the autocomplete button for all opened databases."
+
+
+Clarify this requirement: Wouldn't be great to have version control (git) for pulling and pushing the snippets from/to a snippets repo. 
+I know there are open source components for doing that, such as https://github.com/alberthier/git-webui, which can be added into OmniDB roadmap.
+Ambiguous terms: great, user-friendly, open source, roadmap
+Questions:
+1. What specific features or functionalities are desired in the version control system for snippets?
+2. What is meant by adding the open source component into the OmniDB roadmap?
+Clarified requirement: Implement version control (git) functionality for pulling and pushing code snippets to a snippets repository. Consider integrating open source components like https://github.com/alberthier/git-webui into the development plan for OmniDB.
+
+
+Clarify this requirement: Every time I open OmniDB or reload the page, I must click and scroll through five levels of tree navigation to get to the (only) schema I use. 
+
+- It would be nice if OmniDB remembered the tree state for each connection tab - ! 
+- Alternatively/additionally, connections could have a 'default' tree state that they open in. 
+- Or, one could save the tree state as a bookmark, to open it in a single click. 
+
+My tree levels are Postgres 11.6 -> Databases -> myDB -> Schemas -> mySchema.
+I never need/use anything in the tree except mySchema. 
+
+Thanks! I love OmniDB!
+Ambiguous terms: nice, remembered, default, single click, love
+Questions:
+1. What does it mean for OmniDB to "remember the tree state" for each connection tab?
+2. How would saving the tree state as a bookmark work in this context?
+Clarified requirement: Every time the user opens OmniDB or reloads the page, they must click and scroll through five levels of tree navigation to get to the schema they use. The user would like OmniDB to store the tree state for each connection tab or have connections open in a default tree state. Additionally, they suggest being able to save the tree state as a bookmark for one-click access. The user's tree levels are Postgres 11.6 -> Databases -> myDB -> Schemas -> mySchema, and they only need to access mySchema.
+
+
+Clarify this requirement: I am finding difficult to view which server I am working on. 
+I always work with minimum 3 server and always need to switch to other server
+
+1. In Sidebar current server shows as Icon when you move mouse then only it is showing detail of connection
+2. In tree view also no IP address or connection-name showing.
+
+if you can add ip address/connection-name in tree view that will help.
+Ambiguous terms: difficult, minimum, switch, detail, help
+Questions:
+1. What specific information about the server connection is missing in the current view?
+2. Can you clarify what you mean by "switching to other server"?
+Clarified requirement: It is challenging to identify the server being worked on due to lack of detailed information in the current view. The sidebar only displays the server as an icon, revealing connection details when the mouse hovers over it. Additionally, the tree view does not show the IP address or connection name. Adding the IP address/connection name in the tree view would facilitate server identification.
+
+
+Clarify this requirement: Hello folks, 
+
+After some comments and tests, we decided to open this issue so the community could propose and decide on which shortcuts should be maintained in OmniDB. This may be constantly updated according to comments and considerations.
+
+**Now available**:
+- `Autocomplete`
+- `Cancel Query`
+- `Indent`
+- `New Inner Tab`
+- `Remove Current Inner Tab`
+- `Run Explain`
+- `Run Explain Analyze`
+- `Run Query`
+- `Select Left Inner Tab`
+- `Select Right Inner Tab`
+
+**Returning** (being re-included):
+- `Next Command (Console Tab)`
+- `Previous Command (Console Tab)`
+- `Select Left Outer Tab`
+- `Select Right Outer Tab`
+
+**Removed**:
+- `New Connection Tab`
+- `Remove Current Connection Tab`
+
+**NEW**:
+- empty
+
+Thanks
+Ambiguous terms: constantly, maintained, community, considerations, available, Returning, Removed, NEW
+Questions:
+1. What does "constantly updated" mean in this context?
+2. Can you clarify what is meant by "community" proposing and deciding on shortcuts?
+Clarified requirement: Thanks.
+
+
+Clarify this requirement: How can I change the font size of editor and interface separately. 
+
+In old version there is option to do the same.
+Ambiguous terms: separately, option
+Questions:
+1. What specifically do you mean by changing the font size of the editor and interface separately?
+2. Can you clarify what you mean by "option" in the context of the old version?
+Clarified requirement: Change the font size of the editor and interface independently. In the old version, there was a specific feature that allowed this customization.
+
+
+Clarify this requirement: In 3.0.2b the ssh tab only uses a little box in the tab in the up-left corner
+![image](https://user-images.githubusercontent.com/36895220/98289374-15f65800-1f76-11eb-94c0-a69dce2ce3cb.png)
+Ambiguous terms: little, up-left
+Questions:
+1. What does "little box" refer to in the ssh tab?
+2. Can you clarify the specific location of the "up-left corner" within the ssh tab?
+Clarified requirement: In version 3.0.2b, the ssh tab contains a small box located in the upper-left corner.
+
+
+Clarify this requirement: Follow-up of #403 
+
+Implement a way for the user to override OmniDB default layout, specifying custom dimensions of each panel
+Ambiguous terms: way, custom, dimensions
+Questions:
+1. What specific aspects of the default layout can the user override?
+2. Can you provide more details on what is meant by "custom dimensions"?
+Clarified requirement: Follow-up of #403: Implement functionality for the user to modify the default layout of OmniDB by specifying unique dimensions for each panel.
+
+
+Clarify this requirement: Hi guys, can you please add the ability to view objects of other schemas in oracle connections ?
+Ambiguous terms: ability, view, objects, other, schemas, oracle connections
+Questions:
+1. What specifically do you mean by "view objects"?
+2. Can you clarify what you mean by "other schemas" in this context?
+Clarified requirement: Add the capability to access and display objects from different schemas within Oracle connections.
+
+
+Clarify this requirement: The OmniDB icon in the lower right corner, is overlapping the list scroll, this prevents the scroll from being pulled via click.
+
+![image](https://user-images.githubusercontent.com/11354911/97636206-856cc480-1a17-11eb-9466-4be410be2720.png)
+Ambiguous terms: overlapping, prevents, pulled
+Questions:
+1. What does it mean for the OmniDB icon to be "overlapping" the list scroll?
+2. Can you clarify what you mean by "prevents the scroll from being pulled via click"?
+Clarified requirement: The OmniDB icon in the lower right corner is covering a part of the list scroll, making it inaccessible for clicking and scrolling.
+
+
+Clarify this requirement: Outer Menu is not very practical yet.
+
+As of now, the outer menu is collapsed by default when working on a clientWindow that is smaller than 1981px.
+While extended, it is floating above the content.
+
+This is not ideal, forcing the user to navigate the menu or expand it manually to better locate connections.
+
+Suggestion is to apply the large screen layout when extended and apply it as the default status.
+
+![menu_change](https://user-images.githubusercontent.com/11302800/97593840-d57c6480-19e0-11eb-9c42-07d2120195fd.png)
+Ambiguous terms: very practical, ideal, better
+Questions:
+1. What specific aspects of the current outer menu make it impractical?
+2. Can you clarify what you mean by "large screen layout" in this context?
+Clarified requirement: The current outer menu is collapsed by default on clientWindows smaller than 1981px, making it difficult for users to locate connections. The suggestion is to change the default status of the menu to the extended large screen layout shown in the image provided.
+
+
+Clarify this requirement: One thing I wondered about is if there is a good way to make stuff like buffers or verbose configurable. Not having them is usually worse than having a bit of noise, but making it optional would be nice in some places.
+Ambiguous terms: good, stuff, configurable, worse, bit of noise, nice
+Questions:
+1. What specifically is meant by "stuff" in this context?
+2. Can you clarify what is meant by "verbose configurable"?
+Clarified requirement: I am looking for a way to make buffers or verbose options configurable. It is preferable to have them available with some noise, but having the option to make them optional would be beneficial in certain situations.
+
+
+Clarify this requirement: Greetings, is there a way to authenticate users by Open-Id Client? We have a Keycloak SSO server. Could it be through some plugin or community code to perform this authentication?
+Ambiguous terms: way, authenticate, user, plugin, community code, perform
+Questions:
+1. What specific actions or processes are involved in authenticating users by Open-Id Client?
+2. What is meant by "perform this authentication" in the context of using a plugin or community code?
+Clarified requirement: Implement a method to authenticate users using Open-Id Client with a Keycloak SSO server, potentially through a plugin or community-developed code for the authentication process.
+
+
+Clarify this requirement: When running omnidb in server mode, I would like to be logged out when I close my browser.  (For double bonus points, I would like to be able to configure my session to expire after X minutes of non-use, but that might be a bridge too far.)
+Ambiguous terms: like, close, configure, expire, X minutes, non-use, bridge too far
+Questions:
+1. What does "close my browser" specifically mean in this context?
+2. Can you clarify what "X minutes of non-use" refers to?
+Clarified requirement: When running omnidb in server mode, the user should be automatically logged out when the browser is closed. Additionally, there should be an option to set a session timeout for a specified number of minutes of inactivity.
+
+
+Clarify this requirement: Hi how do i get omnidb_plugin for PostgreSQL 11 or 12 on windows?
+DLL seems to be missing from omnidb-plugin_2.17.0-windows-amd64.zip.
+
+Thanks,
+Ambiguous terms: missing
+Questions:
+1. What specific functionality or purpose does the omnidb_plugin serve for PostgreSQL 11 or 12 on Windows?
+2. Are you looking for assistance in locating the missing DLL file within the omnidb-plugin_2.17.0-windows-amd64.zip?
+Clarified requirement: "Seeking guidance on how to obtain the omnidb_plugin for PostgreSQL 11 or 12 on Windows, as the DLL appears to be absent from the omnidb-plugin_2.17.0-windows-amd64.zip file."
+
+
+Clarify this requirement: hi，How to change sqlite to mysql ? 
+because our project USES mysql to manage user rights and so on
+Ambiguous terms: change, manage
+Questions:
+1. What specific aspect of the project involves changing from sqlite to mysql?
+2. How are user rights currently being managed in the project?
+Clarified requirement: The project needs to transition from using sqlite to mysql for managing user rights and other functionalities.
+
+
+Clarify this requirement: Hi,
+New user here, looking to replace client-side pgAdmin with a server-side solution. OmniDB looks perfect for the job - lightweight / pretty / intuitive :-)
+
+Having had a play, there are two features I miss from pgAdmin3:
+
+1. The option to include field headers when copying from the Data Table output (via both clipboard or csv export methods)
+2. The expanded tree view being remembered from session to session.  This saves quite a few clicks upon startup.
+
+Apologies if these features already exist and I have missed them.  I look forward to using the software in anger :-)
+
+(using omnidb-server on CentOS7,  omnidb-app_2.17.0-centos-amd64.rpm)
+
+Cheers,
+
+Rob
+Ambiguous terms: pretty, intuitive, lightweight, miss, remembered, quite a few, anger
+Questions:
+1. What specific features in pgAdmin3 are considered field headers when copying from the Data Table output?
+2. Can you clarify what is meant by the expanded tree view being remembered from session to session?
+Clarified requirement: Rob
+
+
+Clarify this requirement: Build containers and UAT machines.
+Ambiguous terms: Build, containers, UAT, machines
+Questions:
+1. What specific type of containers are being referred to?
+2. What is the purpose of the UAT machines?
+Clarified requirement: Create physical or virtual containers for software deployment and set up User Acceptance Testing (UAT) machines for testing purposes.
+
+
+Clarify this requirement: Hi,
+
+I'm running OmniDB 2.16.0 with 10.4.8-MariaDB-1:10.4.8+maria~bionic-log. I'm getting a 1064 error when using variables.
+
+## To reproduce:
+
+1. Open a new Query Tab
+1. Enter the following query:
+
+        SET @avalue="my value";
+        SELECT @avalue;
+
+1. Run the query
+
+**Expected result:**
+```
++----------+
+| @avalue  |
++----------+
+| my value |
++----------+
+```
+
+**Actual result:**
+
+`(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT @avalue' at line 2")`
+
+_If I copy-paste the query into a **>\_ Console** tab and run it, the query produces the expected result._
+Ambiguous terms: error, variables, query, syntax, expected, actual, result
+Questions:
+1. What specific variables are causing the 1064 error?
+2. Can you provide more information on the syntax issue mentioned in the error message?
+Clarified requirement: If I copy-paste the query into a **>_ Console** tab and run it, the query produces the expected result.
+
+
+Clarify this requirement: please add quick searck in menu tree
+
+Por favor agregar una busqueda rapida en el arbol de menu
+![2ndquadrant2](https://user-images.githubusercontent.com/2963281/65079490-eac13b80-d964-11e9-906f-00defc33b38e.png)
+Ambiguous terms: quick, fast
+Questions:
+1. What specific functionality should the "quick search" in the menu tree perform?
+2. Should the quick search feature be available for all levels of the menu tree?
+Clarified requirement: Add a search feature in the menu tree that allows users to quickly search for specific items within the menu structure.
+
+
+Clarify this requirement: Data Actions -> Edit Data
+
+It would be really nifty to be able to right click a row and do 'Clone Row' and have the new row go into the bottom of the grid into the normal spot of a new row so that you can edit it prior to doing a save.
+Ambiguous terms: nifty, normal
+Questions:
+1. What is meant by "normal spot of a new row"?
+2. Can you clarify what is expected to happen after the new row is edited?
+Clarified requirement: It would be useful to have the ability to right-click a row, select 'Clone Row', and have the new row appear at the bottom of the grid as a new row for editing before saving.
+
+
+Clarify this requirement: Something that would be great would be to be able to control the colors of individual elements (ie, build our own themes).
+
+I'm a huge fan of dark mode, easier on the eyes, especially at night.
+
+All the dark mode themes I've tried so far have an off-white color for the text, which is hard to read.  I would like to be able to set the query editor font color to be plain white, and adjust the other colors like keywords/comments and such.
+
+Thanks!
+Ambiguous terms: great, control, colors, individual, build, own, themes, dark mode, easier, night, off-white, plain white, adjust, keywords, comments
+Questions:
+1. What specific elements are you referring to when you mention "individual elements"?
+2. Can you clarify what you mean by "adjust the other colors like keywords/comments and such"?
+Clarified requirement: Enable the ability to customize the colors of specific elements, such as setting the query editor font color to white and modifying colors for keywords and comments in order to create custom themes, particularly focusing on a dark mode for improved readability at night.
+
+
+Clarify this requirement: Another thing I miss from pgadmin3.
+
+Click on a column and show the DDL to create that column
+ALTER TABLE foo ADD COLUMN bar text DEFAULT 'abc123' NOT NULL;
+
+Also, split the DDL into individual actions
+ALTER TABLE foo ADD COLUMN bar text;
+ALTER TABLE foo ALTER COLUMN bar SET DEFAULT 'abc123';
+ALTER TABLE foo ALTER COLUMN bar SET NOT NULL;
+Ambiguous terms: miss, show, split, individual
+Questions:
+1. What specific feature from pgadmin3 do you miss in this context?
+2. Can you clarify what you mean by "splitting the DDL into individual actions"?
+Clarified requirement: Implement a feature similar to pgadmin3 where users can click on a column to view the DDL required to create that column. Additionally, separate the DDL statement provided into distinct actions for adding a column, setting a default value, and setting the column as not null.
+
+
+Clarify this requirement: - Do not merge inner tabs of similar outer tabs into a unique outer tab while reloading a previous session
+
+- Callback for saving inner tab name on the fly instead of waiting for inner tab query execution
+
+- Callback for saving new inner tab  at creation time instead of query execution
+Ambiguous terms: unique, saving on the fly, query execution
+Questions:
+1. What is meant by "saving on the fly"?
+2. Can you clarify what is meant by "query execution"?
+Clarified requirement: - Provide a callback to save a new inner tab at the time of creation instead of waiting for a query to be executed.
+
+
+Clarify this requirement: Hi, I'm using 2.15 and I like a lot the debugging option, but there is a little improvement could be done: If you repeatedly modify and debug a function, and this function have parameters you must to set those parameters on each debug. This is because every time you refresh the thebug window to update the code, the parameters values are gone.
+
+I checked that this could be avoided if you set the function parameter to a default, but this only work if the function has a single parameter.
+
+The solution could be to save the parameters to debug when you refresh the code to update it.
+Let me know if this is clear enough and a lot of thanks to all people contributing to this great tool.
+
+Oscar
+Ambiguous terms: little, improvement, repeatedly, a lot, could be, avoided, single, could be, save, clear enough, great
+Questions:
+1. What specific improvements could be made to the debugging option?
+2. Can you clarify how setting the function parameter to a default only works if the function has a single parameter?
+Clarified requirement: Oscar using version 2.15 likes the debugging option but finds it cumbersome to repeatedly set parameters when debugging functions. Setting parameters to a default only works for functions with a single parameter. Oscar suggests saving the parameters for debugging when refreshing the code.
+
+
+Clarify this requirement: It would be useful to have the possibiity to export the graph as image and as well as graph with possibility to modify the placement of nodes.
+Ambiguous terms: useful, possibility, modify
+Questions:
+1. What specific format should the image be exported as?
+2. Can you provide more details on how the placement of nodes can be modified?
+Clarified requirement: It is requested to have the ability to export the graph as an image in a specified format, and also to export the graph with the capability to adjust the placement of nodes.
+
+
+Clarify this requirement: Hi,
+
+in my point of view, it could be a great enhancement to be able to import/create OmniDB connections from the .pgpass file. I think this could be done for other DB too.
+Ambiguous terms: great, enhancement, could be, other
+Questions:
+1. What specific features or functionalities are considered enhancements in this context?
+2. Which other databases are being referred to for the potential import/create feature?
+Clarified requirement: "In my point of view, it would be beneficial to add the capability to import/create OmniDB connections from the .pgpass file. This feature should also be extended to support other types of databases."
+
+
+Clarify this requirement: I often end up working with a whole bunch of queries in a tab, so my tab looks like this:
+
+```
+select * from foo;
+
+select * from bar;
+```
+
+What would be really convenient is a command (with associated key combination) that would allow me to execute the query that my text cursor is currently in.
+
+So if my cursor is anywhere in `select * from bar` and I hit the right key combo, Omnidb figures out where the statement blocks are, and only executes `select * from bar`, and ignores `select * from foo`
+
+this is a feature that I've seen in other products, and I thought I would hate it, but it turns out to be super-convenient
+Ambiguous terms: convenient, convenient, super-convenient
+Questions:
+1. What specific key combination should trigger the execution of the query?
+2. How should Omnidb determine the boundaries of the statement blocks?
+Clarified requirement: I need a feature in Omnidb that allows me to execute the query where my text cursor is located using a specified key combination. Omnidb should determine the statement boundaries to execute only the query under the cursor, ignoring other queries in the tab.
+
+
+Clarify this requirement: Hello, we're currently testing and gettting ready for production with the software which we find it amazing so far.
+The main problem is storing the passwords. 
+We're running SQL servers (Mysql and postgresql).
+For postgresql we're using .pgpass which is working good, but we must have the same thing for mysql aswell. I tried creating a .my.cnf file with the following info 
+
+```
+[client]
+user = user
+password = password
+host = serveraddress
+```
+But it's not working as expected... Any other option for this? Thank you
+Ambiguous terms: amazing, good, expected
+Questions:
+1. What specifically is not working as expected with the .my.cnf file?
+2. What outcome are you hoping to achieve with storing passwords for MySQL?
+Clarified requirement: We are testing and preparing for production with software that we find impressive. The issue lies in storing passwords for MySQL. We currently use .pgpass for PostgreSQL successfully and need a similar solution for MySQL. Creating a .my.cnf file with specified information did not yield the expected results. Is there an alternative option for securely storing MySQL passwords? Thank you.
+
+
+Clarify this requirement: I use Edit Data pages a lot.
+It would be very handy to be able to apply the changes without reaching for a mouse.
+
+Thanks a lot in advance, and thanks for your work - OmniDB is just great!
+Ambiguous terms: a lot, handy, apply, great
+Questions:
+1. What specific changes are being made on the Edit Data pages?
+2. Can you clarify what you mean by "applying the changes without reaching for a mouse"?
+Clarified requirement: I frequently use Edit Data pages to make changes. It would be convenient to have the ability to save the changes without using a mouse. Thank you in advance for your assistance, and I appreciate the quality of OmniDB.
+
+
+Clarify this requirement: Feature request:
+
+Select multiple rows, right click and copy selections as sql statement like insert/delete.
+
+Once copied, the clipborad should have someting like
+
+```sql
+INSERT INTO MyTable(ID,Col1,Col2,Col3) VALUES (10,'hello world','some value','2010-10-20');
+INSERT INTO MyTable(ID,Col1,Col2,Col3) VALUES (11,'hello world','some value','2010-10-20');
+INSERT INTO MyTable(ID,Col1,Col2,Col3) VALUES (12,'hello world','some value','2010-10-20');
+```
+
+Sequel Pro can do this but it is a macOS only software.
+
+![](https://www.endpoint.com/blog/2014/01/10/copy-data-between-mysql-databases-with/image-1.png)
+
+Let me know if it is on the roadmap, Thanks :)
+Ambiguous terms: multiple, right click, like, should, like, roadmap
+Questions:
+1. What specific actions should be included when selecting multiple rows and right-clicking to copy selections as an SQL statement?
+2. Can you clarify what you mean by "like insert/delete" in the context of copying selections as an SQL statement?
+Clarified requirement: Please confirm if this feature is planned for implementation. Thank you!
+
+
+Clarify this requirement: Table has no primary key, existing rows will be read only.
+![image](https://user-images.githubusercontent.com/25076827/54358737-07ba4080-469c-11e9-8c39-e93a14cab116.png)
+Ambiguous terms: no, read only
+Questions:
+1. What is meant by "existing rows will be read only"?
+2. Are there any specific constraints or limitations related to the lack of a primary key in the table?
+Clarified requirement: The table does not have a primary key, and the existing rows can only be read but not modified.
+
+
+Clarify this requirement: Hi OmniDB team,
+
+in our web api, we're using Row Security Policies for different purposes. Right now, the console tab do the job (obviously :) ) but it would be cool if OmniDB could display these (on a per table basis) ion the tree view.
+
+Don't know if it's a very asked feature (don't know any GUI PG tools displaying RLS) but I try asking :)
+Ambiguous terms: cool, very asked
+Questions:
+1. What specific information should be displayed for Row Security Policies on a per table basis in the tree view?
+2. Can you clarify what you mean by "very asked feature"?
+Clarified requirement: In our web api, we're using Row Security Policies for different purposes. Right now, the console tab handles this job, but it would be beneficial if OmniDB could display specific information related to Row Security Policies on a per table basis in the tree view. I am unsure if this feature is commonly requested in GUI PG tools that display RLS, but I am inquiring about its implementation.
+
+
+Clarify this requirement: Omni
+![image](https://user-images.githubusercontent.com/1695852/53117769-a5957200-3519-11e9-89ef-30cc2436c067.png)
+
+Pgadmin3 has a nice feature where you see the DDL for creating an individual column
+![image](https://user-images.githubusercontent.com/1695852/53117907-f5743900-3519-11e9-90a0-7387f98a02b6.png)
+
+
+Although pgadmin3 doesn't have a straight DDL for creating with defaults... this would also be nice.
+
+IF you have a not null constraint on the column, you of course cannot create the column and then set it to not null, but it is convenient if you want to do a quick alter set not null if it's pertinent to the situation.
+
+
+The ideal DDL to show would be a single create statement along with the individual features
+
+ALTER TABLE live_dialer.campaigns ADD COLUMN numbers_remaining integer NOT NULL DEFAULT 0;
+
+-- OR
+ALTER TABLE live_dialer.campaigns ADD COLUMN numbers_remaining integer;
+ALTER TABLE live_dialer.campaigns ALTER COLUMN numbers_remaining SET NOT NULL;
+ALTER TABLE live_dialer.campaigns ALTER COLUMN numbers_remaining SET DEFAULT 0;
+Ambiguous terms: nice, ideal, convenient
+Questions:
+1. What specific features are considered "nice" in the context of pgadmin3?
+2. Can you clarify what is meant by "ideal" and "convenient" in the context of the DDL for creating columns in pgadmin3?
+Clarified requirement: Omni Pgadmin3 should display a single DDL statement that includes the creation of a column with specific features, such as setting it to not null and assigning a default value. This should be done in a way that allows for quick alterations if necessary.
+
+
+Clarify this requirement: Initial idea from @pasquall in issue #567 . For example if the selected node is a table `table2`:
+
+- **Up**: Goes to the node above in the same level. For example, will select `table1`;
+- **Down**: Goes to the node below in the same level. For example, will select `table3`;
+- **Left**: Ascend a level in the treeview. In this case, will select node `Tables`;
+- **Right**: Descend a level in the treeview. In this case, will expand the `table2` node and select `Columns`.
+Ambiguous terms: same level, ascend, descend
+Questions:
+1. What does "same level" refer to in the context of the treeview?
+2. Can you clarify what is meant by "ascend" and "descend" in the treeview hierarchy?
+Clarified requirement: - **Right**: Moves down a level in the treeview hierarchy. In this case, will expand the `table2` node and select `Columns`.
+
+
+Clarify this requirement: Please confirm when we can expect Oracle Dashboard for Oracle DB.
+
+Thanks
+SSubhan
+Ambiguous terms: confirm, expect
+Questions:
+1. When do you need confirmation by?
+2. What specific information are you looking for regarding the Oracle Dashboard for Oracle DB?
+Clarified requirement: Please provide a timeline for when we can expect the Oracle Dashboard for Oracle DB.
+
+
+Clarify this requirement: Hello,
+
+Can you help me, please, with the following information:
+For PostrgreSQL Debugger - when you will introduce functionality "Step Into"?
+
+Thank you,
+
+Daniel
+Ambiguous terms: introduce, functionality, Step Into
+Questions:
+1. What do you mean by "introduce functionality" in the context of PostgreSQL Debugger?
+2. Can you clarify what you mean by "Step Into" in relation to the PostgreSQL Debugger?
+Clarified requirement: Daniel is asking for information about when the functionality "Step Into" will be implemented in the PostgreSQL Debugger.
+
+
+Clarify this requirement: I'm trying to deploy this on a Heroku-like platform, but the fact that OmniDB is using sqlite databases under the hood makes for a less-than-ideal experience. In order to run in certain environments like Heroku, the app needs to be [stateless](https://12factor.net/processes) and store stateful information in a backing service. 
+
+It looks like this shouldn't be too difficult to achieve since the interface for a different database could be swapped in for the default sqlite one being used currently. The place I know sqlite is being used is for the user database, but it looks like it could be used in a few other places as well.
+Ambiguous terms: less-than-ideal, certain, stateless, stateful, different, few other
+Questions:
+1. What specific challenges does using sqlite databases pose for deploying on a Heroku-like platform?
+2. Can you provide examples of the other places where sqlite is being used besides the user database?
+Clarified requirement: The app needs to be modified to use a different database instead of sqlite, specifically for the user database, in order to deploy successfully on a Heroku-like platform and follow the principles of statelessness.
+
+
+Clarify this requirement: It would be great to have a checkbox whether or not to automatically word-wrap the query editor
+Ambiguous terms: great, checkbox, automatically, word-wrap
+Questions:
+1. What specific action does the checkbox control in relation to word-wrapping?
+2. Can you clarify what you mean by "automatically" word-wrapping?
+Clarified requirement: A checkbox should be added to the query editor to enable or disable automatic word-wrapping.
+
+
+Clarify this requirement: Sometimes it's just really convenient to be able to see multiple things on the screen at once without flipping tabs.  Especially with multiple monitors or multiple virtual workspaces and all that.
+
+I would love to see the ability to detach a tab into its own window.  (And then also be able to bring that tab back into the main window)  Or join that window with another detached window to make a two-tab window.
+Ambiguous terms: convenient, multiple, love, ability, own, main, join, two-tab
+Questions:
+1. What is meant by "detach a tab into its own window"?
+2. Can you clarify what is meant by "join that window with another detached window to make a two-tab window"?
+Clarified requirement: Allow users to separate a tab from the main window into a new window, and provide the option to reattach the tab back to the main window. Additionally, enable the merging of two detached windows to create a window with two tabs.
+
+
+Clarify this requirement: Feature Request
+
+The new group feature is a great start, but it seems that when we select a group, it just moves the checkboxes.  But I would figure for a full-featured group manager, it would filter and only show the servers in the group.
+
+I like the fact that servers can be in multiple groups, so this interface design is nice.  What we need I believe is an 'Group Edit Mode', where you can check or uncheck from the entire list of servers.  And then once you're out of 'Group Edit Mode', then it'll only show the grouped-servers in that group!
+Ambiguous terms: great, full-featured, nice, believe
+Questions:
+1. What specific actions should be available in the "Group Edit Mode"?
+2. How should the interface differentiate between servers that are in multiple groups?
+Clarified requirement: Feature Request: Enhance the group feature by adding a "Group Edit Mode" where users can check or uncheck servers from a list, and once out of this mode, only servers belonging to the selected group are displayed. Servers can be in multiple groups.
+
+
+Clarify this requirement: Add in the navigator inside the schema, an item to list all the aggregate created in this schema.
+Ambiguous terms: Add, navigator, item, aggregate, created
+Questions:
+1. What specific type of navigator are we referring to in this context?
+2. Can you clarify what is meant by "aggregate" in this schema?
+Clarified requirement: Include a navigation element within the schema that lists all the aggregates that have been created within that schema.
+
+
+Clarify this requirement: Unless I'm missing something, snippets are difficult for me to use because I must go find the desired snippet from the snippet tab, then copy it to the clipboard, and then go back to the query window and paste it.   It would be much better if I could use the autocomplete feature to match based on the snippet name and it would expand to the contents of that snippet in the query window.
+
+Is there a currently better way to do this other than copy/paste? If not, I'd like to request this feature.
+
+Thanks.
+Ambiguous terms: difficult, better, much better, currently better
+Questions:
+1. What specifically makes using snippets difficult in the current process?
+2. What do you mean by "currently better way" in this context?
+Clarified requirement: The user finds it challenging to use snippets because they have to manually locate, copy, and paste them. They are requesting a feature where they can use autocomplete to match snippet names and have them expand directly in the query window, instead of the current manual process. They are also inquiring if there is an alternative method to copy/paste snippets efficiently.
+
+
+Clarify this requirement: Hi there, loving OmniDB so far!
+
+The default behaviour when submitting a SELECT query (in a Query Tab) seems to be to return at most 50 rows, at which point "Fetch more" and "Fetch all" buttons pop up (and work as advertised).
+
+I think the limit of 50 should be both configurable and removable. In my workflow I am rarely interested in a subset of query results.
+
+Thanks!
+Ambiguous terms: configurable, removable, subset
+Questions:
+1. What does "configurable" mean in this context?
+2. How would you define "subset" of query results?
+Clarified requirement: The default behavior in OmniDB when submitting a SELECT query is to return a maximum of 50 rows, with the option to fetch more or all results. The requester suggests that the limit of 50 rows should be adjustable and able to be removed, as they are typically interested in viewing all query results in their workflow.
+
+
+Clarify this requirement: I am interested in finding/contributing to efforts to create an open source data analysis platform, similar to what Tableau offers. I have found a couple of solid contenders, such as [Apache Superset](https://superset.incubator.apache.org/). OmniDB also seems compelling, being built with Python/Django. I notice there is already some OmniDB code related to data mining (in dataMining.js). 
+
+What are your thoughts on OmniDB serving as a basis for some data analysis extensions, such as visualizing the output of queries in a simple and intuitive manner?
+Ambiguous terms: simple, intuitive
+Questions:
+1. What specific criteria define "simple" in the context of visualizing query outputs?
+2. How would you define "intuitive" when it comes to data analysis extensions?
+Clarified requirement: I am exploring the potential of using OmniDB as a foundation for developing data analysis extensions. This involves visualizing query outputs in a manner that is straightforward and easy to understand.
+
+
+Clarify this requirement: Hi,
+Some feature requests here, as we are in the process of comparing temboard, pgadmin4 and omnidb.
+
+What we really appreciate with temboard is its ability to automatically register new installed databases. For example, we have to deploy tons of new PostgreSQL servers/instances/databases. This is automated with ansible. One step in the automated process is to install the temboard agent in a newly installed PostgreSQL server. Then this agent automatically contact the temboard server to register all PostgreSQL instances and databases found on the newly installed PostgreSQL server.
+
+What we also really like with temboard is that temboard users don't have to recreate connections to the PostgreSQL servers they have to manage: it's done once for all users.
+So to reproduce this in omnidb seem currently not possible.
+One suggestion could be to implement groups in omnidb. Then associate users and PostgreSQL connections to groups: by the way, all users in a group could automatically get access to all PostgreSQL connections assigned to that group.
+This last feature request would be particularly important and urgent to continue considering omnidb for an enterprise usage, when you have teams of several tens of DBAs.
+Ambiguous terms: automatically, tons of, user-friendly, really appreciate, like, currently, possible, one suggestion, could be, particulary important, urgent, several tens of
+Questions:
+1. Can you clarify what you mean by "recreate connections to the PostgreSQL servers" in temboard?
+2. What specific functionality in omnidb is currently preventing the reproduction of the feature you like in temboard?
+Clarified requirement: In the comparison of temboard, pgadmin4, and omnidb, the team appreciates temboard's ability to automatically register new installed databases and the seamless connection management for users. They are looking for omnidb to implement a similar feature where users do not have to recreate connections to PostgreSQL servers and databases. The suggestion is to introduce groups in omnidb, allowing users in a group to automatically access PostgreSQL connections assigned to that group. This feature is crucial for enterprise usage with multiple DBAs.
+
+
+Clarify this requirement: I love OmniDB and think the user experience could be improved with some UI changes. With an application like this that I easily spend several hours a day using, even the most minor changes can significantly improve how pleasant it is to work with the application and make it the most usable solution of any DB GUI.
+
+- Auto fit the width of columns in the `Data` view of query output. Only if the column is very wide (for example a huge JSON column) should it be cut off.
+  - For the columns that are cut off, double clicking the column width expander should auto fit that column
+- Auto fit the width of the navigator window on the left and always keep it auto fit. So if you collapse some nodes causing it to need less width then it shrinks, and same when expanding some nodes it should expand to the width it needs
+- The table details window on the bottom left of the screen should be able to be closed in settings. For the kind of information I need when I'm in the GUI it isn't something I ever look at so it takes up useful screen real estate from the navigator window
+- Closing a tab shouldn't require a confirmation, at least this should be configurable in settings. We are used to closing tabs without confirmation in browsers, text editors, IDEs, and this should be no different. The only case is if you have unsaved changes then it should prompt if we'd like to save changes
+- A less intrusive close icon should be used, for example the way browsers do it where the close icon appears only when you mouse over the tab. Because right now I have many distracting bright red "X" icons all over the screen
+- Be able to customize the font used in the application. I have some nice system fonts that I use in my IDE and other applications and it would be good to be able to use the same one in this application, which is also nice when all applications I use have a consistent font
+- Don't make all text in the navigator on the left in a bold font, because when everything is bold then nothing stands out in the navigator window and it's harder on the eyes
+Ambiguous terms: improved, pleasant, usable, minor, most, less intrusive, nice, consistent, harder
+Questions:
+1. What specific UI changes are being suggested for the OmniDB application?
+2. Can you provide examples of the kind of information displayed in the table details window that is not needed?
+Clarified requirement: - Avoid using bold font for all text in the left navigator window to improve visibility."
+
+
+Clarify this requirement: Pgadmin3 has this nice feature so you can easily find for example a function name just by type the first char of it but in OmniDB if i have a lot of functions inside my database schema i have to scroll down by myself to get to the one that i am searching for!
+Ambiguous terms: nice, easily, a lot, scroll down by myself, searching for
+Questions:
+1. What specific feature in Pgadmin3 allows users to find a function name by typing the first character?
+2. Can you clarify what you mean by "scroll down by myself" in OmniDB?
+Clarified requirement: In OmniDB, users are unable to easily find a function name by typing the first character like in Pgadmin3, which causes difficulty when searching for a specific function among a large number of functions in the database schema.
+
+
+Clarify this requirement: Selecting a theme is a great feature, but some of the default theme colors are not ideal.  For example in the dark themes, error messages are red on gray and are very difficult to read, especially at the default (small) font size.
+
+It would be great to be able to customize individual component font colors that are part of a theme.
+Ambiguous terms: great, ideal, difficult, customizable, individual
+Questions:
+1. What specific default theme colors are considered not ideal?
+2. Can you provide examples of the individual component font colors that users should be able to customize?
+Clarified requirement: The feature should allow users to customize specific default theme colors that are difficult to read, such as red error messages on gray backgrounds in dark themes, and also customize individual component font colors within a theme.
+
+
+Clarify this requirement: It would be great if OmniDB could support the following use case:
+When viewing some rows in a query result, I would like to navigate to connected tables by (right)-clicking on a data-entry in foreign-key columns. The matched row is then opened in a new query-tab.
+
+I have seen the behavior in Adminer and think it would be very helpful in OmniDB as well.
+Ambiguous terms: great, some, navigate, connected, foreign-key, helpful
+Questions:
+1. What specific actions should be taken when navigating to connected tables by clicking on a data-entry in foreign-key columns?
+2. Can you provide more details on how the behavior in Adminer works for navigating to connected tables?
+Clarified requirement: OmniDB should allow users to navigate to connected tables by clicking on a data-entry in foreign-key columns. When this action is taken, the matched row should be opened in a new query-tab, similar to the behavior in Adminer.
+
+
+Clarify this requirement: Pgadmin3 has this nice feature so you can easily alter things like triggers, sequences (just about everything), by copy/paste and some quick edits by prefixing all the DDL with the associated DROP.
+
+![image](https://user-images.githubusercontent.com/1695852/46637243-423a1300-cb29-11e8-9feb-fd3a04a3704e.png)
+Ambiguous terms: nice, easily, quick
+Questions:
+1. What specific features does Pgadmin3 have for altering triggers and sequences?
+2. Can you clarify what is meant by "prefixing all the DDL with the associated DROP"?
+Clarified requirement: Pgadmin3 allows users to alter triggers, sequences, and other elements by copy/pasting DDL and making quick edits, such as adding the associated DROP statement as a prefix.
+
+
+Clarify this requirement: Hi
+Our users would like to have the possibility to do mass imports from a csv file. There is a closed issue #31 , but for some reason I can't find this functionality in latest OmniDB Server or anywhere in documentation. Does this functionality exist, is it planned or for now we would need to write our own plugin, if we want to get imports from csv?
+
+Regards,
+Ambiguous terms: mass imports, possibility, functionality, planned
+Questions:
+1. What specific actions or operations should be included in the "mass imports" from a csv file?
+2. When referring to the functionality that cannot be found, what specific features or capabilities are expected in this context?
+Clarified requirement: Our users are requesting the ability to perform bulk data imports from a csv file in the latest OmniDB Server. Despite not finding this feature in the current version or documentation, we need to determine if it exists, if it is planned for a future release, or if we should develop a custom plugin for csv imports.
+
+
+Clarify this requirement: If one names query tabs the names are lost on relogin, while the to the content of the tab is kept. Would it be possible to make the query tab names persistent in a similar manner?
+
+Regards
+pgaro
+Ambiguous terms: persistent, similar
+Questions:
+1. What is meant by "persistent" in this context?
+2. How should the query tab names be made persistent in a similar manner?
+Clarified requirement: If one names query tabs, the names are lost on relogin, while the content of the tab is kept. The request is to make the query tab names remain saved even after relogin in a similar way to how the content is retained.
+
+
+Clarify this requirement: For reference: https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution
+Ambiguous terms: reference, notarizing, software, distribution
+Questions:
+1. What specifically is meant by "reference" in this context?
+2. Can you clarify what is involved in the process of "notarizing" software before distribution?
+Clarified requirement: The requirement is to follow the guidelines outlined at https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution for the notarization of macOS software before distribution.
