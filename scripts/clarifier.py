@@ -102,7 +102,7 @@ def process_requirements(data):
         try:
 
             llm_output = clarify_requirement(original, terms)
-            print("🧠 LLM OUTPUT:", llm_output)
+            print("LLM OUTPUT:", llm_output)
             with open("logs/clarifier_raw_output.txt", "a", encoding="utf-8") as f:
                 f.write(f"\n---\nORIGINAL:\n{llm_output.strip()}\n---\n")
 

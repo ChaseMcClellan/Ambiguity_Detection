@@ -52,7 +52,7 @@ def run_collection_pipeline(max_pages=2):
         except Exception as e:
             print(f"Failed to clarify: {original}\n  Error: {e}")
 
-    # 🔁 Append to existing refined data
+    #Append to existing refined data
     os.makedirs(os.path.dirname(REFINED_OUTPUT), exist_ok=True)
     existing = []
     if os.path.exists(REFINED_OUTPUT):
