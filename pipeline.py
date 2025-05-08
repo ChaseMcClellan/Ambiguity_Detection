@@ -1,4 +1,4 @@
-# pipeline.py — Full automation pipeline
+# pipeline.py — full data pipeline
 
 import sys
 import os
@@ -10,7 +10,7 @@ from scripts.fine_tune import run_fine_tuning
 
 
 def run_full_pipeline():
-    print("🔁 Starting full clarification pipeline...")
+    print("Starting full clarification pipeline...")
 
     # Step 1: Collect new labeled data
     run_collection_pipeline(max_pages=3)

@@ -53,34 +53,43 @@ def load_ambiguity_report(filepath):
   except json.JSONDecodeError as e:
    raise ValueError(f"Cannot parse json: {e}")
 
-def parse_llm_response(llm_output):
-    #extract questions and rewritten requirement from LLM response string
-    lines = llm_output.strip().splitlines()
-
-    que = [line.strip('- ') for line in lines if line.strip().startswith("- Q")]
-    #Initialize rewritten requirement as empty
+def parse_llm_response(text):
+    questions = []
     rewritten = ""
 
-    # Loop through each line to find the one that starts with "Rewritten Requirement:"
-    for i, line in enumerate(lines):
-        if line.strip().startswith("Rewritten Requirement:"):
+    lines = text.strip().split("\n")
+    for line in lines:
+        line_lower = line.lower().strip()
+
+        if "rewritten requirement" in line_lower:
+            # Try to extract after the colon, or fallback to next non-empty line
             parts = line.split(":", 1)
-            # Case 1 The rewritten requirement is on the same line
             if len(parts) > 1 and parts[1].strip():
                 rewritten = parts[1].strip()
             else:
-                # Case 2 The rewritten requirement is on the next lines
-                # Look ahead to find the next non-empty line as the rewritten version
-                for j in range(i + 1, len(lines)):
-                    if lines[j].strip():
-                        rewritten = lines[j].strip()
+                # fallback: look ahead
+                for next_line in lines[lines.index(line)+1:]:
+                    if next_line.strip():
+                        rewritten = next_line.strip()
                         break
-            break # Exit loop once we've found and handled the rewritten requirement
 
-    if not que or rewritten is None:
-        raise ValueError("Malformed LLM response. Could not parse questions or rewritten requirement.")
+        elif (
+            line_lower.startswith("- q") or
+            line_lower.startswith("q") or
+            line_lower.startswith("1.") or
+            line_lower.startswith("2.")
+        ):
+            questions.append(line.strip("- ").strip())
 
-    return que, rewritten
+    if not questions or not rewritten:
+        # Log malformed output for review
+        os.makedirs("logs", exist_ok=True)
+        with open("logs/clarifier_debug.txt", "a", encoding="utf-8") as f:
+            f.write(f"\n--- MALFORMED LLM RESPONSE ---\n{text.strip()}\n")
+        raise ValueError("Malformed LLM response")
+
+    return questions[:2], rewritten
+
 
 def process_requirements(data):
     refined = []

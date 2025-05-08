@@ -1,72 +1,74 @@
-import requests
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
 
-OLLAMA_API = "http://localhost:11434/api/generate"
-MODEL_NAME = "llama3.2:3b"
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-
-def generate_with_ollama(prompt, model=MODEL_NAME):
-    """Send a prompt to Ollama and return the generated response."""
-    data = {
-        "model": model,
-        "prompt": prompt,
-        "stream": False
-    }
-
-    response = requests.post(OLLAMA_API, json=data)
-    if response.status_code == 200:
-        return response.json()["response"]
-    else:
-        return f"Error: {response.status_code}, {response.text}"
-
+def generate_with_openai(prompt, model="gpt-3.5-turbo"):
+    response = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.5,
+        max_tokens=512
+    )
+    return response.choices[0].message.content.strip()
 
 def clarify_requirement(requirement, ambiguous_terms):
-    """
-    Given a vague requirement and list of ambiguous terms, ask the model
-    to generate clarifying questions and rewrite it clearly.
-    """
     terms = ", ".join(ambiguous_terms)
     prompt = f"""
+You are a strict formatting bot trained to clarify ambiguous software requirements.
 
-    You are a software requirements analyst.
+INSTRUCTIONS:
+- You will output in **EXACTLY** the following format — no changes, no explanations.
+- If the input is unclear or vague, do your best.
 
-    Given the requirement below, identify any ambiguous or vague terms. Then:
-    1. Ask exactly **two clarifying questions** to help refine the requirement.
-    2. Rewrite the requirement to be **clearer and more specific**, using neutral, concise language.
-    
-Original Requirement:
-"{requirement}"
-
-Ambiguous terms detected: {terms}
-
-Please:
-1. Ask 2 clarifying questions to improve the requirement.
-2. Rewrite the requirement with specific details only making it more specific based on the ambiguous terms. Do not add extra functionality or assumptions.
-
-Respond in this format:
+FORMAT:
 Questions:
-- Q1
-- Q2
+1. [question 1]
+2. [question 2]
 
-Rewritten Requirement:
-<write your improved version here on this line>
+Clarified requirement: [your clarified requirement on this line]
+
+EXAMPLE INPUT:
+Requirement: "The UI must be clean and user-friendly."
+Ambiguous terms: clean, user-friendly
+
+EXAMPLE OUTPUT:
+Questions:
+1. What does "clean" mean in terms of UI layout or elements?
+2. What specific actions should be considered user-friendly?
+
+Clarified requirement: The UI must display a minimal layout with no more than 3 colors, and each element must include tooltips and accessible labels.
+
+----
+
+Now process this:
+
+Requirement: "{requirement}"
+Ambiguous terms: {terms}
+
+Respond ONLY using the format shown above.
 """
-    return generate_with_ollama(prompt)
-
+    return generate_with_openai(prompt)
 
 def detect_ambiguity_with_llm(requirement: str):
     prompt = f"""
-    You are a software requirements reviewer.
+You are a software requirements reviewer.
 
-    Task:
-    - Analyze the requirement carefully.
-    - List any words or phrases that are ambiguous, unclear, or subjective.
-    - Return the list in a simple JSON array format. Example:
-        ["fast", "secure", "easy to use"]
+Task:
+- Read the requirement carefully.
+- Identify and list any ambiguous, vague, or subjective words.
+- Respond with only a JSON array of the ambiguous terms.
 
-    If no ambiguous terms are found, return:
-        ["None"]
+Examples:
+Input: "The app should be fast and user-friendly."
+Output: ["fast", "user-friendly"]
 
-    Requirement:
-    \"\"\"{requirement}\"\"\"
-    """
-    return generate_with_ollama(prompt)
+If no ambiguous terms are found, respond with:
+["None"]
+
+Requirement:
+""{requirement}""
+"""
+    return generate_with_openai(prompt)
