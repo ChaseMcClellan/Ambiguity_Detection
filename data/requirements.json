@@ -103,8 +103,8 @@
     "title": "OmniDB 3b autocompletion",
     "body": "OmniDB 3 b slows down significantly during typing of the search actually turns up objects matching the completion. Even a keystroke isn't necessarily helping. It seems the list is newly generated for every prefix after every keystroke, even though I finished typing the complete relname already. That is particular annoying when OmniDB starts to do lookups of relations within the where or the group by clause.\r\n\r\nThere is even a case when the js is very slow, where the cursor looses focus. I can reproduce that behavior by typing a frequent regclass prefix, but I don't know what causes this.\r\n\r\nAll the best\r\npgaro",
     "labels": [
-      "enhancement",
-      "bug"
+      "bug",
+      "enhancement"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/1236"
   },
@@ -113,8 +113,8 @@
     "title": "OmniDB 3b edit data tab",
     "body": "Not specifying a value leads to '' for strings and a syntax error for int etc.\r\n\r\nWhile the later is awful, I think the former is not really desirable either. null sounds like the sane default to me, in particular since that does avoid postgres internal defaults for triggering. Which has the advantage of being independent from the type.",
     "labels": [
-      "enhancement",
-      "bug"
+      "bug",
+      "enhancement"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/1235"
   },
@@ -141,8 +141,8 @@
     "title": "Feature request",
     "body": "Hi, \r\nAre there any plans to support other databases besides the standard SQL? Example ElasticSearch, Mongo, Cassandra?",
     "labels": [
-      "question",
-      "enhancement"
+      "enhancement",
+      "question"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/1226"
   },
@@ -188,8 +188,8 @@
     "title": "List of desired shortcuts",
     "body": "Hello folks, \r\n\r\nAfter some comments and tests, we decided to open this issue so the community could propose and decide on which shortcuts should be maintained in OmniDB. This may be constantly updated according to comments and considerations.\r\n\r\n**Now available**:\r\n- `Autocomplete`\r\n- `Cancel Query`\r\n- `Indent`\r\n- `New Inner Tab`\r\n- `Remove Current Inner Tab`\r\n- `Run Explain`\r\n- `Run Explain Analyze`\r\n- `Run Query`\r\n- `Select Left Inner Tab`\r\n- `Select Right Inner Tab`\r\n\r\n**Returning** (being re-included):\r\n- `Next Command (Console Tab)`\r\n- `Previous Command (Console Tab)`\r\n- `Select Left Outer Tab`\r\n- `Select Right Outer Tab`\r\n\r\n**Removed**:\r\n- `New Connection Tab`\r\n- `Remove Current Connection Tab`\r\n\r\n**NEW**:\r\n- empty\r\n\r\nThanks",
     "labels": [
-      "enhancement",
-      "announcements"
+      "announcements",
+      "enhancement"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/1196"
   },
@@ -425,9 +425,9 @@
     "title": "Support to PostgreSQL 12",
     "body": "",
     "labels": [
-      "postgresql",
+      "bug",
       "enhancement",
-      "bug"
+      "postgresql"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/961"
   },
@@ -436,8 +436,8 @@
     "title": "Function parameters values on debug lost if you refresh the function code",
     "body": "Hi, I'm using 2.15 and I like a lot the debugging option, but there is a little improvement could be done: If you repeatedly modify and debug a function, and this function have parameters you must to set those parameters on each debug. This is because every time you refresh the thebug window to update the code, the parameters values are gone.\r\n\r\nI checked that this could be avoided if you set the function parameter to a default, but this only work if the function has a single parameter.\r\n\r\nThe solution could be to save the parameters to debug when you refresh the code to update it.\r\nLet me know if this is clear enough and a lot of thanks to all people contributing to this great tool.\r\n\r\nOscar\r\n",
     "labels": [
-      "postgresql",
-      "enhancement"
+      "enhancement",
+      "postgresql"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/956"
   },
@@ -455,8 +455,8 @@
     "title": "Create DB connections from .pgpass",
     "body": "Hi,\r\n\r\nin my point of view, it could be a great enhancement to be able to import/create OmniDB connections from the .pgpass file. I think this could be done for other DB too.\r\n\r\n",
     "labels": [
-      "postgresql",
-      "enhancement"
+      "enhancement",
+      "postgresql"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/930"
   },
@@ -474,8 +474,8 @@
     "title": "Storing MySQL server password",
     "body": "Hello, we're currently testing and gettting ready for production with the software which we find it amazing so far.\r\nThe main problem is storing the passwords. \r\nWe're running SQL servers (Mysql and postgresql).\r\nFor postgresql we're using .pgpass which is working good, but we must have the same thing for mysql aswell. I tried creating a .my.cnf file with the following info \r\n\r\n```\r\n[client]\r\nuser = user\r\npassword = password\r\nhost = serveraddress\r\n```\r\nBut it's not working as expected... Any other option for this? Thank you",
     "labels": [
-      "mysql",
-      "enhancement"
+      "enhancement",
+      "mysql"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/905"
   },
@@ -511,8 +511,8 @@
     "title": "Feature: Display Row Security Policies in tree view",
     "body": "Hi OmniDB team,\r\n\r\nin our web api, we're using Row Security Policies for different purposes. Right now, the console tab do the job (obviously :) ) but it would be cool if OmniDB could display these (on a per table basis) ion the tree view.\r\n\r\nDon't know if it's a very asked feature (don't know any GUI PG tools displaying RLS) but I try asking :)",
     "labels": [
-      "postgresql",
-      "enhancement"
+      "enhancement",
+      "postgresql"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/865"
   },
@@ -549,8 +549,8 @@
     "title": "Debug - Step Into",
     "body": "Hello,\r\n\r\nCan you help me, please, with the following information:\r\nFor PostrgreSQL Debugger - when you will introduce functionality \"Step Into\"?\r\n\r\nThank you,\r\n\r\nDaniel",
     "labels": [
-      "postgresql",
-      "enhancement"
+      "enhancement",
+      "postgresql"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/837"
   },
@@ -595,8 +595,8 @@
     "title": "List Aggregate for postgresql",
     "body": "Add in the navigator inside the schema, an item to list all the aggregate created in this schema.",
     "labels": [
-      "postgresql",
-      "enhancement"
+      "enhancement",
+      "postgresql"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/802"
   },

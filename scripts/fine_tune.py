@@ -1,77 +1,67 @@
-# scripts/fine_tune.py
-from transformers import (
-    GPT2Tokenizer, GPT2LMHeadModel,
-    Trainer, TrainingArguments,
-    DataCollatorForLanguageModeling
-)
-from datasets import Dataset
+from datasets import load_dataset
+from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer, DataCollatorForLanguageModeling
+from transformers import logging
+import torch
+
+# Optional: Suppress extensive logging
+logging.set_verbosity_error()
 
 MODEL_NAME = "gpt2"
-OUTPUT_DIR = "models/clarified_model"
 TRAIN_FILE = "data/clarification_train.txt"
+OUTPUT_DIR = "./fine_tuned_model"
 
+# Load and tokenize dataset
+def load_custom_dataset(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        lines = f.read().strip().split("\n\n")
+    return [{"text": line.strip()} for line in lines if line.strip()]
 
-def load_model_and_tokenizer():
-    tokenizer = GPT2Tokenizer.from_pretrained(MODEL_NAME)
-    model = GPT2LMHeadModel.from_pretrained(MODEL_NAME)
+raw_data = load_custom_dataset(TRAIN_FILE)
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+tokenizer.pad_token = tokenizer.eos_token  # Important for GPT2
 
-    # Add pad token
-    tokenizer.pad_token = tokenizer.eos_token
-    model.config.pad_token_id = tokenizer.eos_token_id
+def tokenize_function(examples):
+    return tokenizer(examples["text"], truncation=True, padding="max_length", max_length=512)
 
-    return model, tokenizer
+# Prepare dataset
+from datasets import Dataset
+dataset = Dataset.from_list(raw_data)
+tokenized_dataset = dataset.map(tokenize_function, batched=True)
 
+# Load model
+model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
 
-def prepare_dataset(tokenizer, train_file):
-    with open(train_file, "r", encoding="utf-8") as f:
-        lines = [line.strip() for line in f if line.strip()]
+# Training config
+training_args = TrainingArguments(
+    output_dir=OUTPUT_DIR,
+    per_device_train_batch_size=2,
+    gradient_accumulation_steps=4,
+    num_train_epochs=3,
+    logging_steps=10,
+    learning_rate=2e-4,
+    lr_scheduler_type="linear",
+    warmup_steps=5,
+    weight_decay=0.01,
+    fp16=torch.cuda.is_available(),
+    save_total_limit=1,
+    save_strategy="no",  # No intermediate checkpoints
+    report_to="none"
+)
 
-    dataset = Dataset.from_dict({"text": lines})
+data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
-    def tokenize_function(example):
-        result = tokenizer(
-            example["text"],
-            padding="max_length",
-            truncation=True,
-            max_length=256
-        )
-        result["labels"] = result["input_ids"].copy()
-        return result
+# Trainer setup
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_dataset,
+    tokenizer=tokenizer,
+    data_collator=data_collator
+)
 
-    return dataset.map(tokenize_function, batched=False)
+# Train
+trainer.train()
 
-
-def run_fine_tuning(train_file=TRAIN_FILE):
-    model, tokenizer = load_model_and_tokenizer()
-    tokenized_dataset = prepare_dataset(tokenizer, train_file)
-
-    training_args = TrainingArguments(
-        output_dir=OUTPUT_DIR,
-        evaluation_strategy="epoch",
-        num_train_epochs=3,
-        per_device_train_batch_size=4,
-        save_steps=10,
-        save_total_limit=2,
-        logging_dir="logs",
-        logging_steps=10,
-        remove_unused_columns=False  # Required to keep 'text' around
-    )
-
-    data_collator = DataCollatorForLanguageModeling(
-        tokenizer=tokenizer,
-        mlm=False
-    )
-
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=tokenized_dataset,
-        tokenizer=tokenizer,
-        data_collator=data_collator
-    )
-
-    trainer.train()
-
-    model.save_pretrained(OUTPUT_DIR)
-    tokenizer.save_pretrained(OUTPUT_DIR)
-    print(f"Fine-tuned model saved to {OUTPUT_DIR}")
+# Save final model
+trainer.save_model(OUTPUT_DIR)
+tokenizer.save_pretrained(OUTPUT_DIR)
