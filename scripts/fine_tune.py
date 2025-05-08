@@ -1,13 +1,11 @@
-from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer, DataCollatorForLanguageModeling
 from transformers import logging
 import torch
 
-# Optional: Suppress extensive logging
 logging.set_verbosity_error()
 
 MODEL_NAME = "gpt2"
-TRAIN_FILE = "data/clarification_train.txt"
+TRAIN_FILE = "../data/clarification_train.txt"
 OUTPUT_DIR = "./fine_tuned_model"
 
 # Load and tokenize dataset
@@ -18,17 +16,17 @@ def load_custom_dataset(file_path):
 
 raw_data = load_custom_dataset(TRAIN_FILE)
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-tokenizer.pad_token = tokenizer.eos_token  # Important for GPT2
+tokenizer.pad_token = tokenizer.eos_token  #gpt2
 
 def tokenize_function(examples):
     return tokenizer(examples["text"], truncation=True, padding="max_length", max_length=512)
 
-# Prepare dataset
+#dataset
 from datasets import Dataset
 dataset = Dataset.from_list(raw_data)
 tokenized_dataset = dataset.map(tokenize_function, batched=True)
 
-# Load model
+#load
 model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
 
 # Training config
@@ -44,7 +42,7 @@ training_args = TrainingArguments(
     weight_decay=0.01,
     fp16=torch.cuda.is_available(),
     save_total_limit=1,
-    save_strategy="no",  # No intermediate checkpoints
+    save_strategy="no",
     report_to="none"
 )
 

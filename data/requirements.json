@@ -103,8 +103,8 @@
     "title": "OmniDB 3b autocompletion",
     "body": "OmniDB 3 b slows down significantly during typing of the search actually turns up objects matching the completion. Even a keystroke isn't necessarily helping. It seems the list is newly generated for every prefix after every keystroke, even though I finished typing the complete relname already. That is particular annoying when OmniDB starts to do lookups of relations within the where or the group by clause.\r\n\r\nThere is even a case when the js is very slow, where the cursor looses focus. I can reproduce that behavior by typing a frequent regclass prefix, but I don't know what causes this.\r\n\r\nAll the best\r\npgaro",
     "labels": [
-      "bug",
-      "enhancement"
+      "enhancement",
+      "bug"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/1236"
   },
@@ -113,8 +113,8 @@
     "title": "OmniDB 3b edit data tab",
     "body": "Not specifying a value leads to '' for strings and a syntax error for int etc.\r\n\r\nWhile the later is awful, I think the former is not really desirable either. null sounds like the sane default to me, in particular since that does avoid postgres internal defaults for triggering. Which has the advantage of being independent from the type.",
     "labels": [
-      "bug",
-      "enhancement"
+      "enhancement",
+      "bug"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/1235"
   },
@@ -188,8 +188,8 @@
     "title": "List of desired shortcuts",
     "body": "Hello folks, \r\n\r\nAfter some comments and tests, we decided to open this issue so the community could propose and decide on which shortcuts should be maintained in OmniDB. This may be constantly updated according to comments and considerations.\r\n\r\n**Now available**:\r\n- `Autocomplete`\r\n- `Cancel Query`\r\n- `Indent`\r\n- `New Inner Tab`\r\n- `Remove Current Inner Tab`\r\n- `Run Explain`\r\n- `Run Explain Analyze`\r\n- `Run Query`\r\n- `Select Left Inner Tab`\r\n- `Select Right Inner Tab`\r\n\r\n**Returning** (being re-included):\r\n- `Next Command (Console Tab)`\r\n- `Previous Command (Console Tab)`\r\n- `Select Left Outer Tab`\r\n- `Select Right Outer Tab`\r\n\r\n**Removed**:\r\n- `New Connection Tab`\r\n- `Remove Current Connection Tab`\r\n\r\n**NEW**:\r\n- empty\r\n\r\nThanks",
     "labels": [
-      "announcements",
-      "enhancement"
+      "enhancement",
+      "announcements"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/1196"
   },
@@ -425,9 +425,9 @@
     "title": "Support to PostgreSQL 12",
     "body": "",
     "labels": [
-      "bug",
       "enhancement",
-      "postgresql"
+      "postgresql",
+      "bug"
     ],
     "url": "https://github.com/OmniDB/OmniDB/issues/961"
   },
