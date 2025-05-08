@@ -8,7 +8,7 @@ MODEL_NAME = "gpt2"
 TRAIN_FILE = "../data/clarification_train.txt"
 OUTPUT_DIR = "./fine_tuned_model"
 
-# Load and tokenize dataset
+#
 def load_custom_dataset(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
         lines = f.read().strip().split("\n\n")
@@ -29,7 +29,7 @@ tokenized_dataset = dataset.map(tokenize_function, batched=True)
 #load
 model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
 
-# Training config
+#config
 training_args = TrainingArguments(
     output_dir=OUTPUT_DIR,
     per_device_train_batch_size=2,

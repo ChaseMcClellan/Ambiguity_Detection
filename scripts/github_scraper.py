@@ -9,7 +9,7 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"}
 
 # Repo to scrape from
-REPO = "OmniDB/OmniDB"
+REPO = "eslint/eslint"
 
 # Labels that likely indicate a requirement
 TARGET_LABELS = {"enhancement", "feature", "idea", "proposal", "suggestion"}

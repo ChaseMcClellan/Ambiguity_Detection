@@ -1,702 +1,637 @@
 [
   {
-    "id": 1273,
-    "title": "suggestion - change \"add connection\" button on left nav",
-    "body": "I find the left navigation button for \"add connection\" confusing.   It seems to be the gateway to two different features:  creating a new connection definition, and opening a new connection.\r\n\r\nIf it were me I would\r\n\r\n1. Rename the button to \"connect\"\r\n2. Remove the \"New Connection\" value from the slide-off\r\n3. Make the slide-off from the button be the existing connection values (e.g. the ones that you get currently by doing to \"new connection\" -> \"connection\".\r\n",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1273"
-  },
-  {
-    "id": 1271,
-    "title": "right-click copy in SQL pane ignores selection",
-    "body": "in the SQL pane, create a new sql statement:  \r\n\r\n    select * from foo where id = 1234\r\n\r\nhighlight \"1234\" and right click.  Choose \"copy\"\r\n\r\nInstead of copying the highlighted text, it seems to copy the entire contents of the SQL pane, not just the highlighted text.  It also brings up a modal dialog box containing the copied SQL which must be dismissed.\r\n\r\nFWIW, ctrl-c and ctrl-v work as expected.\r\n\r\nBONUS ISSUE:   the right-click does not offer you a \"paste\" option.\r\n\r\nI'm running Firefox in Ubuntu Mate, if that makes any difference.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1271"
-  },
-  {
-    "id": 1270,
-    "title": "UI request -- change behavior of settings widget",
-    "body": "The settings widget (\"gears\" icon in upper right corner) expands on hover.  There is just enough of a delay when I mouse over that that I click on the link. But by the time I click, the widget has expanded, and I end up clicking on the \"logout\" link.\r\n\r\nSome alternative solutions\r\n\r\n1. At a minimum, don't have a clickable link replace the hover zone\r\n2. Leave that settings widget expanded at all times.  There is plenty of space.\r\n3. Move the contents of the settings widget to the left-side menu bar.  That already includes some of the features from the widget anyway.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1270"
-  },
-  {
-    "id": 1266,
-    "title": "No ways to copy column name from Data table",
-    "body": "Very often we need to copy column name (table field name) to clipboard, but interface don't allow this. Can we make it possible, maybe via right-click menu \"Copy column title\"?",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1266"
-  },
-  {
-    "id": 1263,
-    "title": "Accept empty server and port in Create connection dialog with filling default values",
-    "body": "In most cases databases are launched locally on default ports. For simplify creating new connection will be good in \"Create connection\" form make \"Server\" and \"Port\" fields as not required, and test the database defaults (localhost and default port), if those fields are not filled. \r\nWhat do you think about this idea?",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1263"
-  },
-  {
-    "id": 1257,
-    "title": "New feature: allows editing of SQL code while a query is running",
-    "body": "I would like to suggest a new feature that deals with the possibility of continuing to edit the SQL code in the editor while a specific query is running.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1257"
-  },
-  {
-    "id": 1256,
-    "title": "Beta 3 versions have generic bundle identifier on macOS",
-    "body": "On macOS, every app is supposed to have a unique bundle identifier (`CFBundleIdentifier` key in `Info.plist`). A proper one for this app would be `org.omnidb.omnidb` or just `org.omnidb`.\r\n\r\nVersion 2 of this app had `com.electron.omnidb` which isn’t the best but it was good enough. However, the new betas use `io.nw.nwjs` which is incredibly generic. It means that other apps (and macOS in general) will have a harder time identifying and interacting with your app.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1256"
-  },
-  {
-    "id": 1242,
-    "title": "Remember window size from previous session",
-    "body": "When opening OmniDB, the application window always opens maximized to the screen, regardless of the application window size when last opened. Clicking the maximize icon in the upper right shrinks the window down, but not to the same size as when the application was previously open. This means I have to manually resize the application window every time I open the application.\r\n\r\nThanks for the good work! I really enjoy using OmniDB.\r\n\r\nOmniDB 3.0.3b\r\nmacOS 10.15.7",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1242"
-  },
-  {
-    "id": 1241,
-    "title": "OmniDB 3b scrolling bug",
-    "body": "Upon scrolling down in the query tab and resizing it to make it smaller, i.e. the query result bigger, it becomes impossible to scroll down completely, i.e. the lower part of the query can't be reached without increasing the query size again.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1241"
-  },
-  {
-    "id": 1240,
-    "title": "Filter large database list in Postgresql",
-    "body": "I'm running a heroku instance with a Postgres add-on.  The server has ~2000 databases.  I can't find a way to filter to only show my database, is there a feature in OmniDB for that?",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1240"
-  },
-  {
-    "id": 1238,
-    "title": "Allows SQL indentation for the selected query only.",
-    "body": "Suggestion: It allows to perform the SQL indentation from the Indent SQL button for a specific selected query.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1238"
-  },
-  {
-    "id": 1236,
-    "title": "OmniDB 3b autocompletion",
-    "body": "OmniDB 3 b slows down significantly during typing of the search actually turns up objects matching the completion. Even a keystroke isn't necessarily helping. It seems the list is newly generated for every prefix after every keystroke, even though I finished typing the complete relname already. That is particular annoying when OmniDB starts to do lookups of relations within the where or the group by clause.\r\n\r\nThere is even a case when the js is very slow, where the cursor looses focus. I can reproduce that behavior by typing a frequent regclass prefix, but I don't know what causes this.\r\n\r\nAll the best\r\npgaro",
+    "id": 19706,
+    "title": "Change Request: Make warnings suppressable",
+    "body": "### ESLint version\n\nv9.26.0\n\n### What problem do you want to solve?\n\nI'm trying out the brilliant [_Bulk Suppression_](https://eslint.org/docs/latest/use/suppressions) feature released in v9.24. It's really promising for legacy codebases, to suppress violations in legacy code while still enabling strict rules on new code. It also helps to keep `eslint-disable` directives only for false positives and for violations that I'm okay with not fixing.\n\nThe main downside I've seen so far is that there is no way to **suppress warning-level violations** — from the docs:\n\n> Only rules configured as \"error\" are suppressed. If a rule is enabled as \"warn\", ESLint will not suppress the violations.\n\n### What do you think is the correct solution?\n\nI think the bulk suppression feature should simply work for all enabled rules, regardless of `error`/`warn` level.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nMy linting config relies heavily on warnings as a way to reduce noise during development. For instance, when I declare a variable, I don't want to see a red squiggle before I've had time to write the code that makes use of it. Yellow squiggles are much less confronting and easier to \"tune out\".\n\nBut once I'm ready to commit/push my code, I want to make sure I'm not adding any new warnings to the codebase, so I always run ESLint with `--max-warnings=0`.\n\nBeing able to suppress warnings would be really beneficial for me for the same reason as being able to suppress errors: I currently have over 3000 warnings in the legacy codebase I'm working on; they are all legit, but fixing them is not worth the effort, and if I disable the rules, I don't get warned when I write new code :cry:\n\nIn effect, I could pass the number of warnings that I want to suppress via `--max-warnings`, but it's not ideal since one could very well fix a warning in legacy code and introduce a new warning in new code within the same commit... I think the bulk the suppression feature has the same limitation but only on a rule-by-rule basis at least.\n\n_Originally posted by @axelboc in https://github.com/eslint/eslint/discussions/19613_",
     "labels": [
       "enhancement",
-      "bug"
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1236"
+    "url": "https://github.com/eslint/eslint/issues/19706"
   },
   {
-    "id": 1235,
-    "title": "OmniDB 3b edit data tab",
-    "body": "Not specifying a value leads to '' for strings and a syntax error for int etc.\r\n\r\nWhile the later is awful, I think the former is not really desirable either. null sounds like the sane default to me, in particular since that does avoid postgres internal defaults for triggering. Which has the advantage of being independent from the type.",
+    "id": 19696,
+    "title": "Change Request: switch to empathic for fs traversal",
+    "body": "### ESLint version\n\n9.x\n\n### What problem do you want to solve?\n\nWe currently use `find-up` to find the closest flat config file.\n\n[empathic](https://github.com/lukeed/empathic) is a much faster alternative (benchmarks in the repo)\n\nwe have already migrated to this in various other repos, so it has been well tested. given that we are settling on it across many dev tools, it will also de-dupe increasingly well in future (as it replaces many different `find-*` packages with just one)\n\n### What do you think is the correct solution?\n\nSwitch to the faster dependency.\n\n### Participation\n\n- [x] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
       "enhancement",
-      "bug"
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1235"
+    "url": "https://github.com/eslint/eslint/issues/19696"
   },
   {
-    "id": 1233,
-    "title": "console \\ef and quicknavigation through the tree",
-    "body": "This is the main functionalities I'm missing all the time. The idea would be to simply open the function/table with the corresponding regclass/regproc without the need to tediously navigate through the entire tree.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1233"
-  },
-  {
-    "id": 1229,
-    "title": "login via ssh with jump proxy and ssh agent",
-    "body": "use ssh agent is much easier to use. we can just ssh-add then omnidb should be ready to connect.\r\n\r\nIt will also be much useful, if the omnidb allow custom ssh command or just use the same .ssh/config as ssh command.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1229"
-  },
-  {
-    "id": 1226,
-    "title": "Feature request",
-    "body": "Hi, \r\nAre there any plans to support other databases besides the standard SQL? Example ElasticSearch, Mongo, Cassandra?",
+    "id": 19682,
+    "title": "Change Request: Spin off the MCP Server into a Separate CLI Package",
+    "body": "### ESLint version\n\nv9.26.0\n\n### What problem do you want to solve?\n\nESLint [v9.26.0](https://eslint.org/blog/2025/05/eslint-v9.26.0-released/#mcp-server-integration) introduces a built-in MCP server (#19592), which on its own is a brilliant feature! 👏\n\nHowever, adding `@modelcontextprotocol/sdk` as a direct dependency of the core library package bloats the dependency graphs of users who don't use the MCP at all.\n\nI noticed this when a seemingly routine `pnpm up` caused a `+600` diff in the `pnpm-lock.yaml`. Sure enough, the culprit was `@modelcontextprotocol/sdk`.[^1]\n\n[^1]: Here are the [declared dependencies](https://github.com/modelcontextprotocol/typescript-sdk/blob/621ccea997bf318ee99c7f64ce19609e838615fa/package.json#L48-L59) in the `package.json`.\n\n### What do you think is the correct solution?\n\nSpin off the MCP server as its own _separate_ CLI package from the core ESLint CLI package.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nAs I'd like to minimize the dependency surface of my projects, I consider this to be an essential refactor.",
     "labels": [
       "enhancement",
-      "question"
+      "accepted",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1226"
+    "url": "https://github.com/eslint/eslint/issues/19682"
   },
   {
-    "id": 1225,
-    "title": "Save the state of the autocomplete button",
-    "body": "Suggestion: I don't particularly use the autocomplete and whenever I open OmniDB, I need to disable the button for all databases that are opened.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1225"
-  },
-  {
-    "id": 1205,
-    "title": "Version Control of Snippets",
-    "body": "Wouldn't be great to have version control (git) for pulling and pushing the snippets from/to a snippets repo. \r\nI know there are open source components for doing that, such as https://github.com/alberthier/git-webui, which can be added into OmniDB roadmap.\r\n\r\n",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1205"
-  },
-  {
-    "id": 1199,
-    "title": "Remember tree view state",
-    "body": "Every time I open OmniDB or reload the page, I must click and scroll through five levels of tree navigation to get to the (only) schema I use. \r\n\r\n- It would be nice if OmniDB remembered the tree state for each connection tab - ! \r\n- Alternatively/additionally, connections could have a 'default' tree state that they open in. \r\n- Or, one could save the tree state as a bookmark, to open it in a single click. \r\n\r\nMy tree levels are Postgres 11.6 -> Databases -> myDB -> Schemas -> mySchema.\r\nI never need/use anything in the tree except mySchema. \r\n\r\nThanks! I love OmniDB!",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1199"
-  },
-  {
-    "id": 1198,
-    "title": "OmniDB 3.0.2b : Currently Working Server IP Address/Connection-Name Display Issue",
-    "body": "I am finding difficult to view which server I am working on. \r\nI always work with minimum 3 server and always need to switch to other server\r\n\r\n1. In Sidebar current server shows as Icon when you move mouse then only it is showing detail of connection\r\n2. In tree view also no IP address or connection-name showing.\r\n\r\nif you can add ip address/connection-name in tree view that will help.",
+    "id": 19680,
+    "title": "Change Request: Repeatable performance test",
+    "body": "### ESLint version\n\nHEAD\n\n### What problem do you want to solve?\n\nRight now we have `npm run test:performance` as a performance tests, however, it gives me inconsistent results when run over time. In most cases, the times increase the more times I run the test even without any changes to the code. This makes it difficult to determine if changes are actually affecting overall performance.\n\nFor instance, here are two runs, executed back-to-back on my machine. The median for single-file linting is almost an entire one second longer in the second run then the first, and the median for the multi-file linting is more than two seconds longer.\n\n<details><summary>Run 1</summary>\n\n```shell\n$ npm run test:performance\n\n> eslint@9.25.1 test:performance\n> node Makefile.js perf\n\n\nLoading:\n  Load performance Run #1:  393.2312ms\n  Load performance Run #2:  362.5725ms\n  Load performance Run #3:  375.9464ms\n  Load performance Run #4:  418.9092ms\n  Load performance Run #5:  289.1527ms\n\n  Load Performance median:  375.9464ms\n\n\nSingle File:\n  CPU Speed is 2304 with multiplier 13000000\n  Performance Run #1:  5141.3512ms\n  Performance Run #2:  4238.4965ms\n  Performance Run #3:  3736.1255ms\n  Performance Run #4:  3756.1516ms\n  Performance Run #5:  3902.634ms\n\n  Performance budget ok:  3902.634ms (limit: 5642.361111111111ms)\n\n\nMulti Files (450 files):\n  CPU Speed is 2304 with multiplier 39000000\n  Performance Run #1:  10183.0626ms\n  Performance Run #2:  9867.0768ms\n  Performance Run #3:  10272.8082ms\n  Performance Run #4:  10528.0819ms\n  Performance Run #5:  12737.2459ms\n\n  Performance budget ok:  10272.8082ms (limit: 16927.083333333332ms)\n\n```\n</details>\n\n<details><summary>Run 2</summary>\n\n```shell\n$ npm run test:performance\n\n> eslint@9.25.1 test:performance\n> node Makefile.js perf\n\n\nLoading:\n  Load performance Run #1:  292.4174ms\n  Load performance Run #2:  309.7286ms\n  Load performance Run #3:  317.5898ms\n  Load performance Run #4:  486.638ms\n  Load performance Run #5:  320.4985ms\n\n  Load Performance median:  317.5898ms\n\n\nSingle File:\n  CPU Speed is 2304 with multiplier 13000000\n  Performance Run #1:  3710.871ms\n  Performance Run #2:  3886.6845ms\n  Performance Run #3:  4845.4551ms\n  Performance Run #4:  5080.1957ms\n  Performance Run #5:  4950.8853ms\n\n  Performance budget ok:  4845.4551ms (limit: 5642.361111111111ms)\n\n\nMulti Files (450 files):\n  CPU Speed is 2304 with multiplier 39000000\n  Performance Run #1:  12910.4252ms\n  Performance Run #2:  12239.1613ms\n  Performance Run #3:  12555.3277ms\n  Performance Run #4:  13088.5363ms\n  Performance Run #5:  12608.6794ms\n\n  Performance budget ok:  12608.6794ms (limit: 16927.083333333332ms)\n\n\n```\n\n</details>\n\n### What do you think is the correct solution?\n\nI'm not sure. Maybe the perf test should run in a Docker container?\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nLooking for a volunteer to dig into this.",
     "labels": [
       "enhancement",
-      "duplicate"
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1198"
+    "url": "https://github.com/eslint/eslint/issues/19680"
   },
   {
-    "id": 1196,
-    "title": "List of desired shortcuts",
-    "body": "Hello folks, \r\n\r\nAfter some comments and tests, we decided to open this issue so the community could propose and decide on which shortcuts should be maintained in OmniDB. This may be constantly updated according to comments and considerations.\r\n\r\n**Now available**:\r\n- `Autocomplete`\r\n- `Cancel Query`\r\n- `Indent`\r\n- `New Inner Tab`\r\n- `Remove Current Inner Tab`\r\n- `Run Explain`\r\n- `Run Explain Analyze`\r\n- `Run Query`\r\n- `Select Left Inner Tab`\r\n- `Select Right Inner Tab`\r\n\r\n**Returning** (being re-included):\r\n- `Next Command (Console Tab)`\r\n- `Previous Command (Console Tab)`\r\n- `Select Left Outer Tab`\r\n- `Select Right Outer Tab`\r\n\r\n**Removed**:\r\n- `New Connection Tab`\r\n- `Remove Current Connection Tab`\r\n\r\n**NEW**:\r\n- empty\r\n\r\nThanks",
+    "id": 19673,
+    "title": "Rule Change: Update no-shadow-restricted-names to report globalThis by default",
+    "body": "### What rule do you want to change?\n\nno-shadow-restricted-names \n\n### What change do you want to make?\n\nGenerate more warnings\n\n### How do you think the change should be implemented?\n\nA new default behavior\n\n### Example code\n\n```js\n/*eslint no-shadow-restricted-names: \"error\"*/\n\nconst globalThis = {};\n\nfunction test(globalThis) {}\n```\n\n### What does the rule currently do for this code?\n\nNo warnings reported\n\n### What will the rule do after it's changed?\n\nReport shadowing of `globalThis`.\n\n### Participation\n\n- [ ] I am willing to submit a pull request to implement this change.\n\n### Additional comments\n\nRelated: https://github.com/eslint/eslint/issues/19658",
+    "labels": [
+      "rule",
+      "enhancement",
+      "breaking"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/19673"
+  },
+  {
+    "id": 19662,
+    "title": "Change Request: Can we make the Linter.Settings an interface for module declaration merging?",
+    "body": "### ESLint version\n\n9.25.1\n\n### What problem do you want to solve?\n\nSettings is current typed as any record `{ [key: string]: unknown }`, which is totally valid. However, some plugins make use of the settings options pretty extensively (like react, jsx-a11y, perfectionist, etc.).\n\nIf the Linter.Settings was an interface type, then every consumer could optionally add a module declaration to the package, and add the plugin's type info into the setting.\n\nExample:\n\n```ts\ndeclare module 'eslint' {\n    interface ConfigSettings {\n        'jsx-a11y': {\n            components: Record<string, string>;\n        };\n    }\n}\n\nexport default defineConfig({\n    settings: {\n        // ...IDE Now gives me type suggestions for a `jsx-a11y` property in here!\n    }\n});\n\n```\n\n### What do you think is the correct solution?\n\nIt keeps all the current functionality and is the TS recommended way of letting consumers add their own type info at their own discretion.\n\n### Participation\n\n- [x] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
       "enhancement",
-      "announcements"
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1196"
+    "url": "https://github.com/eslint/eslint/issues/19662"
   },
   {
-    "id": 1191,
-    "title": "OmniDB 3.0.2b : Editor and Interface Font Size",
-    "body": "How can I change the font size of editor and interface separately. \r\n\r\nIn old version there is option to do the same.\r\n\r\n",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1191"
-  },
-  {
-    "id": 1189,
-    "title": "SSH tab doesn´t expand all window",
-    "body": "In 3.0.2b the ssh tab only uses a little box in the tab in the up-left corner\r\n![image](https://user-images.githubusercontent.com/36895220/98289374-15f65800-1f76-11eb-94c0-a69dce2ce3cb.png)\r\n",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1189"
-  },
-  {
-    "id": 1187,
-    "title": "Save user layout on OmniDB metadata",
-    "body": "Follow-up of #403 \r\n\r\nImplement a way for the user to override OmniDB default layout, specifying custom dimensions of each panel",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1187"
-  },
-  {
-    "id": 1183,
-    "title": "oracle/objects in other schemas ",
-    "body": "Hi guys, can you please add the ability to view objects of other schemas in oracle connections ? ",
+    "id": 19655,
+    "title": "Change Request: add `meta.namespace` and rewrite rule names from extended configs",
+    "body": "### ESLint version\n\n9.24.0\n\n### What problem do you want to solve?\n\nESLint currently has confusing behavior around custom plugin keys, string based extends and rule configurations.\n\nAn example:\n\n```js\nimport { defineConfig } from \"eslint/config\";\nimport { plugin as ts } from \"typescript-eslint\";\n\nexport default defineConfig(\n    {\n        plugins: {\n            ts,\n        },\n        extends: [\"ts/stylistic\"],\n        rules: {\n            \"ts/array-type\": \"off\",\n        },\n    },\n);\n```\n\nThis not work as I would intuitively expect: it does not disable the `@typescript-eslint/array-type` rule added by the `ts/stylistic` config. This is confusing because to make this work I have to know the name the plugin decided to use for its rules, but extends does not have this restrictions.\n\nFor more information and examples, see the [relevant part of RFC126](https://github.com/eslint/rfcs/blob/bd9dc57de306e596a6d680e4a199afdd9659ed32/designs/2024-config-extends/README.md#reassignable-plugin-configs).\n\n### What do you think is the correct solution?\n\nIn eslint/rfcs#126 it was proposed to solve this by adding a new `meta.namespace` key to `Plugin` and have `defineConfig` rewrite the key used to reference a rule in the extended configurations. At least that is how I understood the solution, for more details, see the RFC text.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nSince the RFC is merged, I assume the decision on this was already made? I am mainly opening this issue, because I just ran into this, remembered some talk about it in the RFC, but did not find an issue I could subscribe to for updates. I searched the issue tracker for this, but the only thing I found was #19116, which is already closed.",
     "labels": [
       "enhancement",
-      "oracle"
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1183"
+    "url": "https://github.com/eslint/eslint/issues/19655"
   },
   {
-    "id": 1181,
-    "title": "OmniDB icon overlay on the scroll",
-    "body": "The OmniDB icon in the lower right corner, is overlapping the list scroll, this prevents the scroll from being pulled via click.\r\n\r\n![image](https://user-images.githubusercontent.com/11354911/97636206-856cc480-1a17-11eb-9466-4be410be2720.png)\r\n",
+    "id": 19653,
+    "title": "Rule Change: [no-useless-escape] Should not warn about \\- in RegExp character sets: `/[0\\-]/`",
+    "body": "### What rule do you want to change?\n\nno-useless-escape\n\n### What change do you want to make?\n\nGenerate fewer warnings\n\n### How do you think the change should be implemented?\n\nA new option\n\n### Example code\n\n```js\n/[0\\-]/\n```\n\n### What does the rule currently do for this code?\n\nIt currently marks `\\-` as a useless escape\n\n### What will the rule do after it's changed?\n\nIt will not mark `\\-` as a useless escape in regex character sets\n\n### Participation\n\n- [x] I am willing to submit a pull request to implement this change.\n\n### Additional comments\n\n`/[0\\-]/` while technically a useless escape, omitting the escape is a common source of errors when additional characters are added to the character set accidentally creating a character range. For example `/[0-]/` extended into `/[0-9]/` produces a very different outcome than adding a single character `9` to the character set.",
     "labels": [
-      "enhancement"
+      "rule",
+      "enhancement",
+      "accepted"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1181"
+    "url": "https://github.com/eslint/eslint/issues/19653"
   },
   {
-    "id": 1180,
-    "title": "Improve outer menu",
-    "body": "Outer Menu is not very practical yet.\r\n\r\nAs of now, the outer menu is collapsed by default when working on a clientWindow that is smaller than 1981px.\r\nWhile extended, it is floating above the content.\r\n\r\nThis is not ideal, forcing the user to navigate the menu or expand it manually to better locate connections.\r\n\r\nSuggestion is to apply the large screen layout when extended and apply it as the default status.\r\n\r\n![menu_change](https://user-images.githubusercontent.com/11302800/97593840-d57c6480-19e0-11eb-9c42-07d2120195fd.png)\r\n",
+    "id": 19650,
+    "title": "Change Request: --ignore flag",
+    "body": "### ESLint version\n\nv8.57.1\n\n### What problem do you want to solve?\n\nwhen adding a new rule not all rules and/or uses of the rule are fixable with the `fix` flag. i would like a new flag added that adds an ignore rule to those lines so i dont have to manually do this.\n\n### What do you think is the correct solution?\n\nadd a new `ignore` flag.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nthis would make enabling new flags a lot easier since eslint already knows the lines effected and by what rules.",
     "labels": [
       "enhancement",
-      "fixed"
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1180"
+    "url": "https://github.com/eslint/eslint/issues/19650"
   },
   {
-    "id": 1179,
-    "title": "Notarize software for Apple",
-    "body": "For reference: https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution\r\n",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1179"
-  },
-  {
-    "id": 1171,
-    "title": "explain",
-    "body": "One thing I wondered about is if there is a good way to make stuff like buffers or verbose configurable. Not having them is usually worse than having a bit of noise, but making it optional would be nice in some places.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1171"
-  },
-  {
-    "id": 1164,
-    "title": " SSO authentication by OpenID?",
-    "body": "Greetings, is there a way to authenticate users by Open-Id Client? We have a Keycloak SSO server. Could it be through some plugin or community code to perform this authentication?",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1164"
-  },
-  {
-    "id": 1156,
-    "title": "add signout-on-close option",
-    "body": "When running omnidb in server mode, I would like to be logged out when I close my browser.  (For double bonus points, I would like to be able to configure my session to expire after X minutes of non-use, but that might be a bridge too far.)",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1156"
-  },
-  {
-    "id": 1138,
-    "title": "Debugger Plugin for PostgreSQL on Windows",
-    "body": "Hi how do i get omnidb_plugin for PostgreSQL 11 or 12 on windows?\r\nDLL seems to be missing from omnidb-plugin_2.17.0-windows-amd64.zip.\r\n\r\nThanks,",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1138"
-  },
-  {
-    "id": 1137,
-    "title": "How to change sqlite to mysql ?",
-    "body": "hi，How to change sqlite to mysql ? \r\nbecause our project USES mysql to manage user rights and so on",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1137"
-  },
-  {
-    "id": 1089,
-    "title": "Data Table copy Column Headers and Tree View memory",
-    "body": "Hi,\r\nNew user here, looking to replace client-side pgAdmin with a server-side solution. OmniDB looks perfect for the job - lightweight / pretty / intuitive :-)\r\n\r\nHaving had a play, there are two features I miss from pgAdmin3:\r\n\r\n1. The option to include field headers when copying from the Data Table output (via both clipboard or csv export methods)\r\n2. The expanded tree view being remembered from session to session.  This saves quite a few clicks upon startup.\r\n\r\nApologies if these features already exist and I have missed them.  I look forward to using the software in anger :-)\r\n\r\n(using omnidb-server on CentOS7,  omnidb-app_2.17.0-centos-amd64.rpm)\r\n\r\nCheers,\r\n\r\nRob",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1089"
-  },
-  {
-    "id": 1084,
-    "title": "Support for CentOS 8 / RedHat 8",
-    "body": "Build containers and UAT machines.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1084"
-  },
-  {
-    "id": 1062,
-    "title": "Error In SQL Syntax With Variable In Query Tab",
-    "body": "Hi,\r\n\r\nI'm running OmniDB 2.16.0 with 10.4.8-MariaDB-1:10.4.8+maria~bionic-log. I'm getting a 1064 error when using variables.\r\n\r\n## To reproduce:\r\n\r\n1. Open a new Query Tab\r\n1. Enter the following query:\r\n\r\n        SET @avalue=\"my value\";\r\n        SELECT @avalue;\r\n\r\n1. Run the query\r\n\r\n**Expected result:**\r\n```\r\n+----------+\r\n| @avalue  |\r\n+----------+\r\n| my value |\r\n+----------+\r\n```\r\n\r\n**Actual result:**\r\n\r\n`(1064, \"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT @avalue' at line 2\")`\r\n\r\n_If I copy-paste the query into a **>\\_ Console** tab and run it, the query produces the expected result._",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1062"
-  },
-  {
-    "id": 1050,
-    "title": "quick search",
-    "body": "please add quick searck in menu tree\r\n\r\nPor favor agregar una busqueda rapida en el arbol de menu\r\n![2ndquadrant2](https://user-images.githubusercontent.com/2963281/65079490-eac13b80-d964-11e9-906f-00defc33b38e.png)\r\n",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1050"
-  },
-  {
-    "id": 1049,
-    "title": "Clone row",
-    "body": "Data Actions -> Edit Data\r\n\r\nIt would be really nifty to be able to right click a row and do 'Clone Row' and have the new row go into the bottom of the grid into the normal spot of a new row so that you can edit it prior to doing a save.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1049"
-  },
-  {
-    "id": 1045,
-    "title": "Individual element color control",
-    "body": "Something that would be great would be to be able to control the colors of individual elements (ie, build our own themes).\r\n\r\nI'm a huge fan of dark mode, easier on the eyes, especially at night.\r\n\r\nAll the dark mode themes I've tried so far have an off-white color for the text, which is hard to read.  I would like to be able to set the query editor font color to be plain white, and adjust the other colors like keywords/comments and such.\r\n\r\nThanks!",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1045"
-  },
-  {
-    "id": 1044,
-    "title": "Table columns DDL",
-    "body": "Another thing I miss from pgadmin3.\r\n\r\nClick on a column and show the DDL to create that column\r\nALTER TABLE foo ADD COLUMN bar text DEFAULT 'abc123' NOT NULL;\r\n\r\nAlso, split the DDL into individual actions\r\nALTER TABLE foo ADD COLUMN bar text;\r\nALTER TABLE foo ALTER COLUMN bar SET DEFAULT 'abc123';\r\nALTER TABLE foo ALTER COLUMN bar SET NOT NULL;",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/1044"
-  },
-  {
-    "id": 996,
-    "title": "User interface for omnidb.conf",
-    "body": "",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/996"
-  },
-  {
-    "id": 992,
-    "title": "Upgrade Django to 2.2",
-    "body": "",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/992"
-  },
-  {
-    "id": 983,
-    "title": "Upgrade Cytoscape to 3.0 and Cytoscape Spread to latest version",
-    "body": "",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/983"
-  },
-  {
-    "id": 969,
-    "title": "Advanced Object Search in context menu of inner tab creation",
-    "body": "",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/969"
-  },
-  {
-    "id": 968,
-    "title": "Outer and inner tabs enhancements",
-    "body": "- Do not merge inner tabs of similar outer tabs into a unique outer tab while reloading a previous session\r\n\r\n- Callback for saving inner tab name on the fly instead of waiting for inner tab query execution\r\n\r\n- Callback for saving new inner tab  at creation time instead of query execution",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/968"
-  },
-  {
-    "id": 962,
-    "title": "Auto-refresh of the Tree View",
-    "body": "",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/962"
-  },
-  {
-    "id": 961,
-    "title": "Support to PostgreSQL 12",
-    "body": "",
+    "id": 19651,
+    "title": "Change Request: Add isGlobalReference() to SourceCode",
+    "body": "### Which packages would you like to change?\n\n- [ ] `espree`\n- [x] `eslint-scope`\n- [ ] `eslint-visitor-keys`\n\n### What problem do you want to solve?\n\nThere are a lot of ESLint rules that need to determine if a given identifier refers to a global or not. As a result, we have multiple copies of functions that try to determine if an identifier refers to a global:\nhttps://github.com/search?q=repo%3Aeslint%2Feslint%20isglobal&type=code\n\nThat also means plugin rules need to implement their own.\n\n### What do you think is the correct solution?\n\nI think this is common enough that we should add a `isGlobalReference()` method to ~~`ScopeManager`~~ `SourceCode` to encapsulate this functionality:\n\n```js\nconst isGlobal = sourceCode.isGlobalScope(node);\n```\n\nI think the method should accept a node and then determine from that node if it contains a reference to a global variable. Basically, we can copy the code from here:\n\nhttps://github.com/eslint/eslint/blob/e62e26761561e1d78c6466a2d74dbf946012fddc/lib/rules/prefer-regex-literals.js#L175-L184\n\n~~Then maybe we could expose the method on `SourceCode` to make it easier for rules to access.~~\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nLooking for a volunteer to take this on.",
     "labels": [
       "enhancement",
-      "postgresql",
-      "bug"
+      "accepted",
+      "evaluating",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/961"
+    "url": "https://github.com/eslint/eslint/issues/19651"
   },
   {
-    "id": 956,
-    "title": "Function parameters values on debug lost if you refresh the function code",
-    "body": "Hi, I'm using 2.15 and I like a lot the debugging option, but there is a little improvement could be done: If you repeatedly modify and debug a function, and this function have parameters you must to set those parameters on each debug. This is because every time you refresh the thebug window to update the code, the parameters values are gone.\r\n\r\nI checked that this could be avoided if you set the function parameter to a default, but this only work if the function has a single parameter.\r\n\r\nThe solution could be to save the parameters to debug when you refresh the code to update it.\r\nLet me know if this is clear enough and a lot of thanks to all people contributing to this great tool.\r\n\r\nOscar\r\n",
+    "id": 19635,
+    "title": "Change Request: Ajv validate does not work when eval is blocked by CSP",
+    "body": "### ESLint version\n\n9.24.0\n\n### What problem do you want to solve?\n\nAn issue occurs in bundling ESLint for WebExtension use.\n\nIt appears that ESLint is depending [Ajv](https://github.com/eslint/eslint/blob/910bd13c4cb49001f2a9f172229360771b857585/package.json#L120) to [validate ESLint configurations](https://github.com/eslint/eslint/blob/910bd13c4cb49001f2a9f172229360771b857585/lib/config/rule-validator.js#L158) by matching them to a JSON schema. Ajv [uses Function()](https://github.com/ajv-validator/ajv/blob/82735a15826a30cc51e97a1bbfb59b3d388e4b98/lib/compile/index.ts#L171) to compile JSON schemas into JavaScript functions.\n\nThe `new Function()` is blocked by the browser CSP which results in a `throw`.\n\nSee also: [Errors with eslint-linter-browserify](https://github.com/UziTech/eslint-linter-browserify/issues/519)\n\n\n\n### What do you think is the correct solution?\n\nAn alternative method (for the WebExtension context) would be greatly beneficial.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nAlthough ESLont v8  also used the same validation, it causes no issues in the WebExtension context.\nIt is possible that it is not called (tested 8.41.0 & 8.57.0).",
     "labels": [
       "enhancement",
-      "postgresql"
+      "repro:yes",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/956"
+    "url": "https://github.com/eslint/eslint/issues/19635"
   },
   {
-    "id": 945,
-    "title": "FR: export graph",
-    "body": "It would be useful to have the possibiity to export the graph as image and as well as graph with possibility to modify the placement of nodes.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/945"
-  },
-  {
-    "id": 930,
-    "title": "Create DB connections from .pgpass",
-    "body": "Hi,\r\n\r\nin my point of view, it could be a great enhancement to be able to import/create OmniDB connections from the .pgpass file. I think this could be done for other DB too.\r\n\r\n",
+    "id": 19603,
+    "title": "Change Request: Support bulk suppression in Node.js API",
+    "body": "### ESLint version\n\n9.24.0\n\n### What problem do you want to solve?\n\nThanks to [this PR](https://github.com/eslint/eslint/pull/19159),  bulk suppressions were implemented in ESLint. \nHowever, this functionality is not implemented in the Node.js API and is not available from libraries such as vscode-eslint.\n\n### What do you think is the correct solution?\n\nBy porting the bulk suppression functionality to the ESLint engine,\ndevelopers using ESLint via the API will also be able to use the bulk suppression functionality.\n\n### Participation\n\n- [x] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
       "enhancement",
-      "postgresql"
+      "needs design",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/930"
+    "url": "https://github.com/eslint/eslint/issues/19603"
   },
   {
-    "id": 915,
-    "title": "add \"execute current query\" command",
-    "body": "I often end up working with a whole bunch of queries in a tab, so my tab looks like this:\r\n\r\n```\r\nselect * from foo;\r\n\r\nselect * from bar;\r\n```\r\n\r\nWhat would be really convenient is a command (with associated key combination) that would allow me to execute the query that my text cursor is currently in.\r\n\r\nSo if my cursor is anywhere in `select * from bar` and I hit the right key combo, Omnidb figures out where the statement blocks are, and only executes `select * from bar`, and ignores `select * from foo`\r\n\r\nthis is a feature that I've seen in other products, and I thought I would hate it, but it turns out to be super-convenient",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/915"
-  },
-  {
-    "id": 905,
-    "title": "Storing MySQL server password",
-    "body": "Hello, we're currently testing and gettting ready for production with the software which we find it amazing so far.\r\nThe main problem is storing the passwords. \r\nWe're running SQL servers (Mysql and postgresql).\r\nFor postgresql we're using .pgpass which is working good, but we must have the same thing for mysql aswell. I tried creating a .my.cnf file with the following info \r\n\r\n```\r\n[client]\r\nuser = user\r\npassword = password\r\nhost = serveraddress\r\n```\r\nBut it's not working as expected... Any other option for this? Thank you",
+    "id": 19495,
+    "title": "Change Request: Enable JSX reference tracking",
+    "body": "### ESLint version\n\nHEAD\n\n### What problem do you want to solve?\n\nESLint currently doesn't track JSX references. For example:\n\n```js\nimport { Card } from \"./card.jsx\";\n\nexport function createCard(name) {\n    return <Card name={name} />;\n}\n```\n\nRight now, ESLint doesn't know that `<Card>` is a reference to the `Card` import.\n\n### What do you think is the correct solution?\n\nEnable JSX reference tracking in `eslint-scope`. This has already been added to `eslint-scope` but has not been enabled in ESLint.\n\n### Participation\n\n- [x] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nTracking for v10.",
     "labels": [
       "enhancement",
-      "mysql"
+      "accepted",
+      "core",
+      "breaking"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/905"
+    "url": "https://github.com/eslint/eslint/issues/19495"
   },
   {
-    "id": 884,
-    "title": "Add shortcut for \"Save changes\"",
-    "body": "I use Edit Data pages a lot.\r\nIt would be very handy to be able to apply the changes without reaching for a mouse.\r\n\r\nThanks a lot in advance, and thanks for your work - OmniDB is just great!",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/884"
-  },
-  {
-    "id": 883,
-    "title": "Copy selections as sql statements",
-    "body": "Feature request:\r\n\r\nSelect multiple rows, right click and copy selections as sql statement like insert/delete.\r\n\r\nOnce copied, the clipborad should have someting like\r\n\r\n```sql\r\nINSERT INTO MyTable(ID,Col1,Col2,Col3) VALUES (10,'hello world','some value','2010-10-20');\r\nINSERT INTO MyTable(ID,Col1,Col2,Col3) VALUES (11,'hello world','some value','2010-10-20');\r\nINSERT INTO MyTable(ID,Col1,Col2,Col3) VALUES (12,'hello world','some value','2010-10-20');\r\n```\r\n\r\nSequel Pro can do this but it is a macOS only software.\r\n\r\n![](https://www.endpoint.com/blog/2014/01/10/copy-data-between-mysql-databases-with/image-1.png)\r\n\r\nLet me know if it is on the roadmap, Thanks :)",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/883"
-  },
-  {
-    "id": 881,
-    "title": "Table has no primary key, existing rows will be read only.",
-    "body": "Table has no primary key, existing rows will be read only.\r\n![image](https://user-images.githubusercontent.com/25076827/54358737-07ba4080-469c-11e9-8c39-e93a14cab116.png)\r\n",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/881"
-  },
-  {
-    "id": 865,
-    "title": "Feature: Display Row Security Policies in tree view",
-    "body": "Hi OmniDB team,\r\n\r\nin our web api, we're using Row Security Policies for different purposes. Right now, the console tab do the job (obviously :) ) but it would be cool if OmniDB could display these (on a per table basis) ion the tree view.\r\n\r\nDon't know if it's a very asked feature (don't know any GUI PG tools displaying RLS) but I try asking :)",
+    "id": 19462,
+    "title": "Change Request: Allow rules to specify the languages/dialects they work on",
+    "body": "### ESLint version\n\nHEAD\n\n### What problem do you want to solve?\n\nCurrently, a rule has no way to indicate if it works on any given language. This information would be helpful for two reasons:\n\n1. Documentation purposes - being able to see which JS rules have been updated to support TS syntax.\n2. Runtime purposes - automatically turning off rules that don't apply to the given language (for instance, turning off JS rules when linting CSS files)\n\n### What do you think is the correct solution?\n\nIn the 2025-02-20 TSC meeting, we discussed adding two properties to `meta`:\n\n1. `meta.language` - a string, such as \"javascript\", \"css\"\n2. `meta.dialects` - an array of strings, such as `[\"javascript\", \"typescript\"]`\n\n@JoshuaKGoldberg [suggested](https://github.com/eslint/eslint/pull/19431/files/de59b04450d780f0e5c4f8826c318f8d263438f0..b7b964a3d87fa0044ffab51cbe3fe69bf514b6b9#r1968176879) merging both properties into a single object instead.\n\nIt's probably worth putting together an RFC that takes into account the two use cases (documentation and runtime) as well as finalizing what the `meta` info should look like.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
       "enhancement",
-      "postgresql"
+      "tsc waiting",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/865"
+    "url": "https://github.com/eslint/eslint/issues/19462"
   },
   {
-    "id": 864,
-    "title": "Feature: Show DDL for individual columns",
-    "body": "Omni\r\n![image](https://user-images.githubusercontent.com/1695852/53117769-a5957200-3519-11e9-89ef-30cc2436c067.png)\r\n\r\nPgadmin3 has a nice feature where you see the DDL for creating an individual column\r\n![image](https://user-images.githubusercontent.com/1695852/53117907-f5743900-3519-11e9-90a0-7387f98a02b6.png)\r\n\r\n\r\nAlthough pgadmin3 doesn't have a straight DDL for creating with defaults... this would also be nice.\r\n\r\nIF you have a not null constraint on the column, you of course cannot create the column and then set it to not null, but it is convenient if you want to do a quick alter set not null if it's pertinent to the situation.\r\n\r\n\r\nThe ideal DDL to show would be a single create statement along with the individual features\r\n\r\nALTER TABLE live_dialer.campaigns ADD COLUMN numbers_remaining integer NOT NULL DEFAULT 0;\r\n\r\n-- OR\r\nALTER TABLE live_dialer.campaigns ADD COLUMN numbers_remaining integer;\r\nALTER TABLE live_dialer.campaigns ALTER COLUMN numbers_remaining SET NOT NULL;\r\nALTER TABLE live_dialer.campaigns ALTER COLUMN numbers_remaining SET DEFAULT 0;\r\n\r\n\r\n\r\n",
+    "id": 19350,
+    "title": "Rule Change: Deprecate no-inline-comments?",
+    "body": "### What rule do you want to change?\n\nno-inline-comments\n\n### What change do you want to make?\n\nIn ESLint v8.53.0 you have [deprecated](https://eslint.org/blog/2023/10/deprecating-formatting-rules/) all rules that relate to formatting and conflict with formatters, in particular Prettier.\n\nI have a question, don't you think that the [`no-inline-comments`](https://eslint.org/docs/latest/rules/no-inline-comments) rule is also related to formatting and should be moved to ESLint Stylistic?\n\nHere's an example. This code:\n\n```js\nconst someValue = \n  someBooleanValue \n    // comments\n    ? []\n    : [otherValue]\n```\n\nWill transform into this:\n\n```js\nconst someValue = someBooleanValue\n  ? // comments\n    []\n  : [otherValue];\n```\n\nPlayground:\n\nhttps://prettier.io/playground/#N4Igxg9gdgLgprEAuc0DOMAEaIFs4BqAhgDYCucmAvJgDpSbZ5wBCEEJcRUx5l9jRgHohmSLnyw0AwQH5MAbQC6MxkkUQYACzgAnXhSUgANCAgAHGAEt0yUEV26IAdwAKDhGmQhSzogE8vUwAjXSIwAGs4GABlInwAGSsoOGQAM1I0OBCwyOiY83DkgHNkGF0KUyzcKzKK7JA4AA9zPStJGFIAFT0oBys4LyQMkiyqks4ARTJNVOHMhoArNCaYibhp2fSF0wBHGfhXJ3MhnzQAWhS4ABMbkxByoisSEoBhPFwib1ISe7R1gCCMHKVmCZEOeiSKW2owaWhguBIAHUtFZ4GhCmA4DFPGirAA3NH+bxgNBBED4igASSgt1gMTAuislgBtJiMH8nBhYxA5icWSRYXM3j5gz0+NSpmSWV0MCORGKn25DUKuhl3mCRGCcF+pl0cH2Vn18sVX3msNMnWCSKs120yAATKYyFkulqhiMeXBcNrrrdrgluMUyAq4AAxCC6T7AkrfcEQe585IwG12rTIACsAAYAL45oA\n\n### What does the rule currently do for this code?\n\nN/A.\n\n### What will the rule do after it's changed?\n\nI think, this rule should be deprecated.\n\n### Participation\n\n- [x] I am willing to submit a pull request to implement this change.\n\n",
     "labels": [
-      "enhancement"
+      "rule",
+      "enhancement",
+      "deprecation",
+      "accepted"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/864"
+    "url": "https://github.com/eslint/eslint/issues/19350"
   },
   {
-    "id": 862,
-    "title": "Navigate through tree view using arrow keys",
-    "body": "Initial idea from @pasquall in issue #567 . For example if the selected node is a table `table2`:\r\n\r\n- **Up**: Goes to the node above in the same level. For example, will select `table1`;\r\n- **Down**: Goes to the node below in the same level. For example, will select `table3`;\r\n- **Left**: Ascend a level in the treeview. In this case, will select node `Tables`;\r\n- **Right**: Descend a level in the treeview. In this case, will expand the `table2` node and select `Columns`.",
+    "id": 19210,
+    "title": "Rule Change: support i18n attributes for rule's meta.message template",
+    "body": "### What rule do you want to change?\n\nevery rule's meta.message attribute\n\n### What change do you want to make?\n\nImplement suggestions\n\n### How do you think the change should be implemented?\n\nA new default behavior\n\n### Example code\n\n```js\n// eslint.config.js\nmodule.exports = [\n  /* ... */\n]\n\n// convert to new structure\nmodule.exports = {\n  language: 'en-US', // en-US as default, and also if not exist rule's language configuration as provided \n  rules: [ /* ... */ ] // the original rules array\n}\n```\n\n### What does the rule currently do for this code?\n\n```js\nmodule.exports = {\n    meta: {\n        type: \"suggestion\",\n\n        docs: {\n            description: \"Require braces around arrow function bodies\",\n            recommended: false,\n            url: \"https://eslint.org/docs/latest/rules/arrow-body-style\"\n        },\n\n        messages: {\n            unexpectedOtherBlock: \"Unexpected block statement surrounding arrow body\",\n            unexpectedEmptyBlock: \"Unexpected block statement surrounding arrow body; put a value of `undefined` immediately after the `=>`.\",\n            unexpectedObjectBlock: \"Unexpected block statement surrounding arrow body; parenthesize the returned value and move it immediately after the `=>`.\",\n            unexpectedSingleBlock: \"Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.\",\n            expectedBlock: \"Expected block statement surrounding arrow body.\"\n        }\n    }\n}\n```\n\n### What will the rule do after it's changed?\n\n```js\nmodule.exports = {\n    meta: {\n        type: \"suggestion\",\n\n        docs: {\n            description: \"Require braces around arrow function bodies\",\n            recommended: false,\n            url: \"https://eslint.org/docs/latest/rules/arrow-body-style\"\n        },\n\n        messages: {\n            // support reading i18n object\n            unexpectedOtherBlock: {\n               \"en-US\": \"Unexpected block statement surrounding arrow body\",\n               \"zh-CN\": \"不期望箭头函数包裹块语句\"\n            },\n            unexpectedEmptyBlock: \"Unexpected block statement surrounding arrow body; put a value of `undefined` immediately after the `=>`.\",\n            unexpectedObjectBlock: \"Unexpected block statement surrounding arrow body; parenthesize the returned value and move it immediately after the `=>`.\",\n            unexpectedSingleBlock: \"Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`.\",\n            expectedBlock: \"Expected block statement surrounding arrow body.\"\n        }\n    }\n}\n```\n\n### Participation\n\n- [x] I am willing to submit a pull request to implement this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
-      "enhancement"
+      "rule",
+      "enhancement",
+      "accepted",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/862"
+    "url": "https://github.com/eslint/eslint/issues/19210"
   },
   {
-    "id": 843,
-    "title": "Dashboard for ORACLE db",
-    "body": "Please confirm when we can expect Oracle Dashboard for Oracle DB.\r\n\r\nThanks\r\nSSubhan",
+    "id": 19173,
+    "title": "Change Request: Make rules TypeScript syntax-aware",
+    "body": "### ESLint version\n\n9.15.0\n\n### What problem do you want to solve?\n\nForking out of #19134 & https://github.com/typescript-eslint/typescript-eslint/issues/10338 -> https://github.com/eslint/eslint/issues/19169#issuecomment-2499150529:\n\n> The only acceptable way to extend a core rule is to copy the file into your own project and then wrap it however you want. That does put more maintenance burden on plugin developers, but that's the point. If you want to do something that isn't officially supported, you need to take full responsibility for that implementation.\n\nThis is not an ideal situation for plugin developers. The required extra work in lieu of having a pluggable API or abstractions necessitates that plugin developers:\n\n- Maintain automations to keep up with ESLint's releases - including copying rules and any imported dependencies from ESLint core & its package dependencies\n  - Amusingly, this again leads plugins to rely on implementation details. Just, now that would only be during their build steps, not their published packages\n- Be deeply familiar with and having a dependency on the potentially any/all implementation details of base rules\n\nMuch of that work is already in play today, including taking the dependency on base rules. Both the current unsupported approach _and_ the recommended _\"copy and wrap\"_ approach cause higher-than-expected levels of implementation detail reliance in extensions.\n\n### What do you think is the correct solution?\n\nI honestly have no good idea. If the goal of ESLint is to not allow plugins to rely on _any_ behavior from rules -which is my interpretation of https://github.com/eslint/rfcs/pull/80#discussion_r629623105 - then generalizing any of the following strategies we typically do in typescript-eslint seem moot.\n\nFor example, [`@typescript-eslint/no-unused-expressions`](https://github.com/typescript-eslint/typescript-eslint/blob/f5e23e28653705fc7021d8c780f0d63656dea518/packages/eslint-plugin/src/rules/no-unused-expressions.ts) effectively wraps the base rule's `ExpressionStatement` with filtering logic. But if we can't rely on the base rule having any particular node selectors, then... 🤷\n\nIf the ESLint team has appetite to work with plugin developers on this, maybe it would be useful as a next step for someone to gather all the various extension rules and strategies they've taken? Just to see what the landscape & common strategies are?\n\n### Participation\n\n- [x] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nPersonally, I don't think resolving this issue should block #19169. The _\"don't do this\"_ urge with the current _\"copy and wrap\"_ recommended approach can be added regardless of this issue. I suspect finding a more preferable strategy (this issue) will take much longer. If and when an alternate strategy is resolved, it can always add it to the docs.\n\nI'll also note that plugins aren't \"choosing\" to write extension rules: they _have_ to to satisfy user need. For example, typescript-eslint's extension rules must act the same as their base rules _except_ for cases where TypeScript's syntax and/or type checking change something. I see extension rules as an expected use case for plugins that just hasn't yet had a formalized first-party ESLint API. If plugins could avoid taking any dependency on core rule behavior in this way -and therefore inconveniencing the ESLint project- that would be even better!\n\n---\n\nEdit (March 2025): The discussion is long enough that comments are being hidden by default. Turning the rules from https://github.com/eslint/eslint/issues/19173#issuecomment-2619649206 into a task list here:\n\n- [x] [`@typescript-eslint/class-methods-use-this`](https://typescript-eslint.io/rules/class-methods-use-this): #19498\n- [x] [`@typescript-eslint/default-param-last`](https://typescript-eslint.io/rules/default-param-last): #19431\n- [x] [`@typescript-eslint/init-declarations`](https://typescript-eslint.io/rules/init-declarations): #19540\n- [ ] [`@typescript-eslint/max-params`](https://typescript-eslint.io/rules/max-params): #19557\n- [x] [`@typescript-eslint/no-array-constructor`](https://typescript-eslint.io/rules/no-array-constructor): #19493\n- [x] [`@typescript-eslint/no-dupe-class-members`](https://typescript-eslint.io/rules/no-dupe-class-members): #19558\n- [x] [`@typescript-eslint/no-empty-function`](https://typescript-eslint.io/rules/no-empty-function): #19551\n- [x] [`@typescript-eslint/no-invalid-this`](https://typescript-eslint.io/rules/no-invalid-this): #19532\n- [x] [`@typescript-eslint/no-loop-func`](https://typescript-eslint.io/rules/no-loop-func): #19559\n- [x] [`@typescript-eslint/no-loss-of-precision`](https://typescript-eslint.io/rules/no-loss-of-precision): #19560\n- [ ] [`@typescript-eslint/no-magic-numbers`](https://typescript-eslint.io/rules/no-magic-numbers): #19561\n- [ ] [`@typescript-eslint/no-redeclare`](https://typescript-eslint.io/rules/no-redeclare): #19563\n- [ ] [`@typescript-eslint/no-restricted-imports`](https://typescript-eslint.io/rules/no-restricted-imports): #19562\n- [ ] [`@typescript-eslint/no-shadow`](https://typescript-eslint.io/rules/no-shadow): #19565\n- [x] [`@typescript-eslint/no-unused-expressions`](https://typescript-eslint.io/rules/no-unused-expressions): #19564 \n- [ ] [`@typescript-eslint/no-unused-vars`](https://typescript-eslint.io/rules/no-unused-vars): #19580\n- [ ] [`@typescript-eslint/no-use-before-define`](https://typescript-eslint.io/rules/no-use-before-define): #19566\n- [x] [`@typescript-eslint/no-useless-constructor`](https://typescript-eslint.io/rules/no-useless-constructor): #19535\n",
     "labels": [
       "enhancement",
-      "oracle"
+      "accepted",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/843"
+    "url": "https://github.com/eslint/eslint/issues/19173"
   },
   {
-    "id": 837,
-    "title": "Debug - Step Into",
-    "body": "Hello,\r\n\r\nCan you help me, please, with the following information:\r\nFor PostrgreSQL Debugger - when you will introduce functionality \"Step Into\"?\r\n\r\nThank you,\r\n\r\nDaniel",
+    "id": 19100,
+    "title": "Change Request: allow passing feature flags via environment variable",
+    "body": "### ESLint version\n\nv9.x\n\n### What problem do you want to solve?\n\nCurrently the only way to pass [feature flags](https://eslint.org/docs/latest/flags/) is via the CLI or NodeJS API directly.\n\nThis is cumbersome at scale because:\n- opting-in users into the flags can require large-scale coordination to get people to change their IDE config\n- turning on a flag means having to update all NodeJS API usages across a repository at the same time\n\n### What do you think is the correct solution?\n\nA much simpler alternative would be allowing passing of feature flags via an environment variable.\nThis would allow setting of the flags via direnv or similar tools to transparently turn on the flags for all developers and tools working in the repo.\n\nFor example at Canva we have tools that would allow us to inject an `export ESLINT_FLAGS=\"unstable_config_lookup_from_file\"` or similar into all users `.bashrc`/etc file -- but for various reasons we could not easily get all users to change their IDE configs (there are multiple IDEs and no shared configuration, for example).\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
       "enhancement",
-      "postgresql"
+      "accepted",
+      "needs design",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/837"
+    "url": "https://github.com/eslint/eslint/issues/19100"
   },
   {
-    "id": 834,
-    "title": "Make user database configurable",
-    "body": "I'm trying to deploy this on a Heroku-like platform, but the fact that OmniDB is using sqlite databases under the hood makes for a less-than-ideal experience. In order to run in certain environments like Heroku, the app needs to be [stateless](https://12factor.net/processes) and store stateful information in a backing service. \r\n\r\nIt looks like this shouldn't be too difficult to achieve since the interface for a different database could be swapped in for the default sqlite one being used currently. The place I know sqlite is being used is for the user database, but it looks like it could be used in a few other places as well. ",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/834"
-  },
-  {
-    "id": 826,
-    "title": "Word wrap in the query editor",
-    "body": "It would be great to have a checkbox whether or not to automatically word-wrap the query editor",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/826"
-  },
-  {
-    "id": 825,
-    "title": "Detach tab into separate window",
-    "body": "Sometimes it's just really convenient to be able to see multiple things on the screen at once without flipping tabs.  Especially with multiple monitors or multiple virtual workspaces and all that.\r\n\r\nI would love to see the ability to detach a tab into its own window.  (And then also be able to bring that tab back into the main window)  Or join that window with another detached window to make a two-tab window.",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/825"
-  },
-  {
-    "id": 822,
-    "title": "Group management - Should only show servers that are included in the selected group",
-    "body": "Feature Request\r\n\r\nThe new group feature is a great start, but it seems that when we select a group, it just moves the checkboxes.  But I would figure for a full-featured group manager, it would filter and only show the servers in the group.\r\n\r\nI like the fact that servers can be in multiple groups, so this interface design is nice.  What we need I believe is an 'Group Edit Mode', where you can check or uncheck from the entire list of servers.  And then once you're out of 'Group Edit Mode', then it'll only show the grouped-servers in that group!\r\n\r\n",
-    "labels": [
-      "enhancement"
-    ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/822"
-  },
-  {
-    "id": 802,
-    "title": "List Aggregate for postgresql",
-    "body": "Add in the navigator inside the schema, an item to list all the aggregate created in this schema.",
+    "id": 19029,
+    "title": "Change Request: Remove `LintMessage#nodeType` and `TestCaseError#type`",
+    "body": "### ESLint version\n\nv10.0.0\n\n### What problem do you want to solve?\n\nIn https://github.com/eslint/eslint/issues/18485#issuecomment-2195450564 it was agreed to deprecate the `nodeType` property on `LintMessage` and remove it in a future release (since that will be breaking change).\n\n`LintMessage#nodeType` and `TestCaseError#type` have been deprecated in #19019, so we should probably remove these two properties in v10.\n\nThis change will have the most visible impact on the unit tests in `eslint`, where the deprecated properties are still found in a number of occurrences and will need to be removed, especially `TestCaseError#type` in rule tests.\n\n### What do you think is the correct solution?\n\nRemove `LintMessage#nodeType` and `TestCaseError#type` in ESLint v10.\n\n* Remove the properties and update the logic if necessary\n* Update type definitions\n* Update unit tests\n* Test the changes with other packages, especially `@eslint/markdown` and `@eslint/json` to ensure that they will still work\n* Note the breaking changes for plugin developers in the migration guide\n\n\n### Participation\n\n- [x] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
       "enhancement",
-      "postgresql"
+      "accepted",
+      "core",
+      "breaking"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/802"
+    "url": "https://github.com/eslint/eslint/issues/19029"
   },
   {
-    "id": 790,
-    "title": "Add autocomplete support for snippets",
-    "body": "Unless I'm missing something, snippets are difficult for me to use because I must go find the desired snippet from the snippet tab, then copy it to the clipboard, and then go back to the query window and paste it.   It would be much better if I could use the autocomplete feature to match based on the snippet name and it would expand to the contents of that snippet in the query window.\r\n\r\nIs there a currently better way to do this other than copy/paste? If not, I'd like to request this feature.\r\n\r\nThanks.",
+    "id": 19013,
+    "title": "Export rules for reuse",
+    "body": "### ESLint version\n\nv9.12.0\n\n### What problem do you want to solve?\n\nSee https://github.com/eslint/eslint/discussions/15011 for more context.\n\nIn short, I want to be able to declare and reuse a core rule with multiple settings. For example:\n\n```js\n{\n\tplugins: {\n\t\tfantozzi: {\n\t\t\trules: {\n\t\t\t\t'no-lodash': require('eslint/lib/rules/no-restricted-imports'),\n\t\t\t\t'prefer-preact': require('eslint/lib/rules/no-restricted-imports'),\n\t\t\t},\n\t\t},\n\t},\n\trules: {\n\t\t'fantozzi:no-lodash': [\n\t\t\t'error',\n\t\t\t{\n\t\t\t\t'patterns': [\n\t\t\t\t\t{\n\t\t\t\t\t\t'message': 'No lodash plz',\n\t\t\t\t\t\t'paths': [\n\t\t\t\t\t\t\t'lodash',\n\t\t\t\t\t\t\t'underscore'\n\t\t\t\t\t\t]\n\t\t\t\t\t},\n\t\t\t\t]\n\t\t\t}\n\t\t],\n\t\t'fantozzi:prefer-preact': [\n\t\t\t'error',\n\t\t\t{\n\t\t\t\t'patterns': [\n\t\t\t\t\t{\n\t\t\t\t\t\t'message': 'Use preact',\n\t\t\t\t\t\t'paths': [\n\t\t\t\t\t\t\t'react'\n\t\t\t\t\t\t]\n\t\t\t\t\t},\n\t\t\t\t]\n\t\t\t}\n\t\t],\n\t}\n}\n```\n\nThis for example allows shared configs to expose a more granular set of rules, and allow consumers to disable specific parts of the rule.\n\n### What do you think is the correct solution?\n\nI think this is currently gate-kept by the `exports` field, which should be broadened to allow imports of specific rules:\n\nhttps://github.com/eslint/eslint/blob/7dd402d33226d821a17b22c4753ce9c40fc909bd/package.json#L21-L23\n\nAlso some documentation wouldn't hurt, following what was mentioned in https://github.com/eslint/eslint/issues/15620#issuecomment-1048388514\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "accepted",
+      "core",
+      "breaking"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/790"
+    "url": "https://github.com/eslint/eslint/issues/19013"
   },
   {
-    "id": 789,
-    "title": "Show More Than 50 Query Results",
-    "body": "Hi there, loving OmniDB so far!\r\n\r\nThe default behaviour when submitting a SELECT query (in a Query Tab) seems to be to return at most 50 rows, at which point \"Fetch more\" and \"Fetch all\" buttons pop up (and work as advertised).\r\n\r\nI think the limit of 50 should be both configurable and removable. In my workflow I am rarely interested in a subset of query results.\r\n\r\nThanks!",
+    "id": 18960,
+    "title": "Change Request: make rule-tester stricter",
+    "body": "### ESLint version\n\nHEAD/v9.10.0\n\n### What problem do you want to solve?\n\n| test | current behavior | proposed behavior |\n|---------|-------------------|---------------------------|\n| `valid: [{code: \"\", errors: [{message: \"xxx\"}]}]` | ✅ | ❌ Valid test cases should not have an 'errors' property\". |\n| `invalid: [{code: \"\", errors: [{}]}]` | ~~✅~~❌ | ❌ Test error must specify either a 'messageId' or 'message'. |\n| `invalid: [{code: \"\", errors: [{message: \"xxx\", suggestions: null}]}]` | ✅ | ❌ Test error object property 'suggestions' should be an array or a number. |\n|`valid: [{code: \"foo\"}]`, `invalid: [{code: \"foo\", errors: 1}]` | ✅| ❌ detected duplicate test case |\n....\n\n### What do you think is the correct solution?\n\nexplained above.\n\nQuestion: should this be a breaking change? or a normal bugfix(can be shipped in eslint v9)?\n\n### Participation\n\n- [x] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nI had a wip https://github.com/aladdin-add/eslint/tree/issue13434-0\n\nthere may be more edge cases, opened the issue to track all these cases.🤓\n",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "core",
+      "breaking"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/789"
+    "url": "https://github.com/eslint/eslint/issues/18960"
   },
   {
-    "id": 780,
-    "title": "Data analysis and visualization extensions",
-    "body": "I am interested in finding/contributing to efforts to create an open source data analysis platform, similar to what Tableau offers. I have found a couple of solid contenders, such as [Apache Superset](https://superset.incubator.apache.org/). OmniDB also seems compelling, being built with Python/Django. I notice there is already some OmniDB code related to data mining (in dataMining.js). \r\n\r\nWhat are your thoughts on OmniDB serving as a basis for some data analysis extensions, such as visualizing the output of queries in a simple and intuitive manner?",
+    "id": 18912,
+    "title": "Change Request: Autogenerated type definitions for rules",
+    "body": "### ESLint version\n\nHEAD\n\n### What problem do you want to solve?\n\nWe inherited a lot of hardcoded rule configuration types from `@types/eslint`, but these were all handcoded and we've already seen that they are out of date. (https://github.com/eslint/eslint/pull/18902, https://github.com/eslint/eslint/pull/18906, https://github.com/eslint/eslint/pull/18905, https://github.com/eslint/eslint/pull/18903, https://github.com/eslint/eslint/pull/18901). Keeping the types in sync with rules is going to be a problem going forward.\n\n### What do you think is the correct solution?\n\nWe should create a script that automatically generates the rule config types based on the rule schemas.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nLooking for a volunteer for this.",
     "labels": [
-      "enhancement"
+      "types",
+      "enhancement",
+      "accepted",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/780"
+    "url": "https://github.com/eslint/eslint/issues/18912"
   },
   {
-    "id": 775,
-    "title": "Feature: automatically register new databases and implement user groups allowing management of several databases for members",
-    "body": "Hi,\r\nSome feature requests here, as we are in the process of comparing temboard, pgadmin4 and omnidb.\r\n\r\nWhat we really appreciate with temboard is its ability to automatically register new installed databases. For example, we have to deploy tons of new PostgreSQL servers/instances/databases. This is automated with ansible. One step in the automated process is to install the temboard agent in a newly installed PostgreSQL server. Then this agent automatically contact the temboard server to register all PostgreSQL instances and databases found on the newly installed PostgreSQL server.\r\n\r\nWhat we also really like with temboard is that temboard users don't have to recreate connections to the PostgreSQL servers they have to manage: it's done once for all users.\r\nSo to reproduce this in omnidb seem currently not possible.\r\nOne suggestion could be to implement groups in omnidb. Then associate users and PostgreSQL connections to groups: by the way, all users in a group could automatically get access to all PostgreSQL connections assigned to that group.\r\nThis last feature request would be particularly important and urgent to continue considering omnidb for an enterprise usage, when you have teams of several tens of DBAs.",
+    "id": 18891,
+    "title": "Change Request: Don't pass BOM to preprocess method",
+    "body": "### ESLint version\n\nHEAD\n\n### What problem do you want to solve?\n\nCurrently, ESLint passes the raw text of a file to a processor's `preprocess()` method, which may include a BOM.\n\nHowever, processors rarely check for the BOM before attempting to parse the text (even our own Markdown processor doesn't do the check), which can lead to hard-to-decipher parsing errors if the parser isn't handling the BOM. This seems like a serious footgun in the API that we should fix.\n\n### What do you think is the correct solution?\n\nInstead, I think we should pass the text with the BOM removed, as it seems like that would be the most expected behavior from a processor perspective. In most cases, this will be a non-breaking change, as any processor that is checking for a BOM will still function as expected while those that do not will avoid a potential error.\n\nThe downside of this change is that processors that return a block representing the entire file in addition to subparts of the file will no longer see the BOM, which means the `unicode-bom` rule won't pick up a BOM in the original file when present.\n\nIf that is a concern, we can add a third parameter to `preprocess()` that indicates whether or not the BOM the present so processors that explicitly want to check for the BOM may do so.\n\n(Note: Returning a block that represents the entire file is suboptimal and something we can hopefully avoid in the future with [prelint plugins](https://github.com/eslint/rfcs/pull/105).)\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "accepted",
+      "core",
+      "breaking"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/775"
+    "url": "https://github.com/eslint/eslint/issues/18891"
   },
   {
-    "id": 773,
-    "title": "UI improvements",
-    "body": "I love OmniDB and think the user experience could be improved with some UI changes. With an application like this that I easily spend several hours a day using, even the most minor changes can significantly improve how pleasant it is to work with the application and make it the most usable solution of any DB GUI.\r\n\r\n- Auto fit the width of columns in the `Data` view of query output. Only if the column is very wide (for example a huge JSON column) should it be cut off.\r\n  - For the columns that are cut off, double clicking the column width expander should auto fit that column\r\n- Auto fit the width of the navigator window on the left and always keep it auto fit. So if you collapse some nodes causing it to need less width then it shrinks, and same when expanding some nodes it should expand to the width it needs\r\n- The table details window on the bottom left of the screen should be able to be closed in settings. For the kind of information I need when I'm in the GUI it isn't something I ever look at so it takes up useful screen real estate from the navigator window\r\n- Closing a tab shouldn't require a confirmation, at least this should be configurable in settings. We are used to closing tabs without confirmation in browsers, text editors, IDEs, and this should be no different. The only case is if you have unsaved changes then it should prompt if we'd like to save changes\r\n- A less intrusive close icon should be used, for example the way browsers do it where the close icon appears only when you mouse over the tab. Because right now I have many distracting bright red \"X\" icons all over the screen\r\n- Be able to customize the font used in the application. I have some nice system fonts that I use in my IDE and other applications and it would be good to be able to use the same one in this application, which is also nice when all applications I use have a consistent font\r\n- Don't make all text in the navigator on the left in a bold font, because when everything is bold then nothing stands out in the navigator window and it's harder on the eyes",
+    "id": 18807,
+    "title": "Change Request: Reject non string replacements in `fixer.replaceText()`",
+    "body": "### ESLint version\n\nv9\n\n### What problem do you want to solve?\n\nIn a rule `fix` function, \r\n\r\n```js\r\nfixer.replaceText(node, replacement.text);\r\n```\r\n\r\nwhen `replacement.text` is undefined, it will replace the node with `undefined`.\n\n### What do you think is the correct solution?\n\nThrow an error instead.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nPrevent mistakes.",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "accepted",
+      "core",
+      "breaking"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/773"
+    "url": "https://github.com/eslint/eslint/issues/18807"
   },
   {
-    "id": 772,
-    "title": "OmniDB doesn't serach functions by typing",
-    "body": "Pgadmin3 has this nice feature so you can easily find for example a function name just by type the first char of it but in OmniDB if i have a lot of functions inside my database schema i have to scroll down by myself to get to the one that i am searching for!",
+    "id": 18787,
+    "title": "Change Request: Refactors prior to core rewrite",
+    "body": "### ESLint version\n\nHEAD\n\n### What problem do you want to solve?\n\nWhile working on a new API design for the core, I've come across the situation where I'm not sure if the API I'm envisioning is practical or will work the way I expect. As such, it will be difficult to design an API from scratch without performing some implementation along the way...and I don't want to have to rewrite the core on my own in the process.\n\n### What do you think is the correct solution?\n\nWhat I'd like to do is start refactoring the current core in a way that makes it easier to experiment with a new API. Specifically, to start pulling things out of `Linter` and `ESLint` and into their own classes. These don't necessarily have to be the final new core API, but it would at least give me an opportunity to explore everything the core is currently doing and see if I can start carving out smaller classes of functionality that will inform the new API.\n\nHere are some of the pieces I have in mind:\n\n- [x] Extract parsing into a class\n- [x] Extract pre/postprocess into a class\n- [x] Extract rule context into a class\n- [x] Extract config normalization/validation into a class\n- [x] Extract ESQuery parsing into a class\n- [ ] Consolidate config-related functionality\n- [ ] Refactor source code traversal to allow for async traversal\n- [ ] Replace `SafeEmitter` with an async-capable option\n\n### Participation\n\n- [X] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "accepted",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/772"
+    "url": "https://github.com/eslint/eslint/issues/18787"
   },
   {
-    "id": 733,
-    "title": "Feature: Font Colors",
-    "body": "Selecting a theme is a great feature, but some of the default theme colors are not ideal.  For example in the dark themes, error messages are red on gray and are very difficult to read, especially at the default (small) font size.\r\n\r\nIt would be great to be able to customize individual component font colors that are part of a theme.",
+    "id": 18696,
+    "title": "Change Request: Ability to disable autofixes on a per-rule basis",
+    "body": "### ESLint version\n\n8.56.0\n\n### What problem do you want to solve?\n\nSome rules provide autofixing, which is great, but can sometimes be broken or otherwise simply unwanted for various reasons.\r\nUnsafe autofixes should be suggestions, and broken fixes should be reported, *but* ESLint is a large ecosystem where some very useful plugins are not always actively maintained. Even then, wanting to disable an autofix for project-specific or personal reasons could still happen.\n\n### What do you think is the correct solution?\n\nI'd like ESLint to provide a way to configure rules to disable their autofixing. I can immediately think of two approaches:\r\n\r\n1. Similar to how Ruff (https://docs.astral.sh/ruff/settings/#lint_unfixable) does it, a top-level key to specify which rules to not autofix would be imo the least disruptive and forward/backwards compatible. It should be overridable (in the `overrides` section), and picked up when extending a configuration.\r\n\r\n2. Another approach I can think of is to encode that in the rule config itself. Something like `\"my-plugin/my-rule\": \"[{severity: \"error\", autofix: False}, {...otherConfigs}]\"` but it's harder to commit to such a change, and means that any config extension needs to reconfigure the rule correctly just to disable autofixing (which is already an issue when someone wants to set a pre-configured rule as warning for example)\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nhttps://www.npmjs.com/package/eslint-plugin-no-autofix is a tool that exists to currently work around this limitation of ESLint, but it is not perfect.\r\n1. It is an extra third-party dependency, with its own potential maintenance issues (having to keep up with ESLint, separate dependencies that can fall out of date, obsolete, unsecure, etc.)\r\n2. It may not work in all environments. For example, pre-commit.ci: https://github.com/aladdin-add/eslint-plugin/issues/98\r\n3. It may not work correctly with all third-party rules: https://github.com/eslint-community/eslint-plugin-eslint-comments/issues/234\r\n\r\nI searched for a similar issue but couldn't find any. So hopefully this isn't an already refused proposal 🤞 ",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "needs design",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/733"
+    "url": "https://github.com/eslint/eslint/issues/18696"
   },
   {
-    "id": 723,
-    "title": "[Feature Request] Navigate via Foreign Key Columns",
-    "body": "It would be great if OmniDB could support the following use case:\r\nWhen viewing some rows in a query result, I would like to navigate to connected tables by (right)-clicking on a data-entry in foreign-key columns. The matched row is then opened in a new query-tab.\r\n\r\nI have seen the behavior in Adminer and think it would be very helpful in OmniDB as well.",
+    "id": 18642,
+    "title": "Change Request: Optimize --fix reruns based on time spent per meta.type",
+    "body": "### ESLint version\r\n\r\n9.6.0\r\n\r\n### What problem do you want to solve?\r\n\r\nRight now when --fix is enabled, ESLint runs all rules in all <=10 rerun iterations. This has historically led to performance issues when two different areas of rules are enabled and have different performance characteristics. That split often looks like:\r\n\r\n* 🍏 [typed linting](https://typescript-eslint.io/getting-started/typed-linting): slower, commonly with `meta.type: \"problem\"`, and only about one round of fixes to report\r\n* 🍌 [stylistic rules](https://eslint.style), faster, commonly with `meta.type: \"layout\"`, with many fixes as rules rewrite code formatting\r\n\r\nToday, each of ESLint's passes run _both_ of those groups of rules each time. For example, if your rule times in those two types are:\r\n\r\n* 🍏 typed rules: ~5,000 milliseconds, with 1 round of fixes applied (very common)\r\n* 🍌 stylistic rules: ~100 milliseconds, with 3 rounds of fixes applied (also common)\r\n\r\n...then your total time will be ~20,400 milliseconds from 4 rounds of ~5,100 milliseconds each. 😬 \r\n\r\n### What do you think is the correct solution?\r\n\r\nI haven't investigated this space deeply enough to know if there's some previously determined optimal way to run these fixes. But surely there's _some_ way to be more efficient than continuously running 🍏 _and_ 🍌!\r\n\r\nStarting proposal: how about, after the first application of rules is run, ESLint:\r\n\r\n1. Groups the rules by `meta.type`, generating a total running time for each of those grouped types\r\n2. Runs only one type of rule at a time, in order of which type group is fastest\r\n\r\nUsing the example above, the order rule type groups would be run is:\r\n\r\n1. Both 🍏 and 🍌 produce fixes: ~5,100ms\r\n2. 🍌 produces fixes, so 🍏 is skipped: ~100ms\r\n3. 🍌 produces fixes, so 🍏 is skipped: ~100ms\r\n4. 🍌 produces no fixes, and then neither does 🍏: ~5,100ms\r\n\r\n...for a total of ~10,400ms. ⚡ \r\n\r\nNote that we'd still be running until no rules report any more fixes. This proposal does not suggest optimistically skipping rules - the final round must always have zero fixes reported. We'd just be optimizing by re-running the quick rules that tend to generate many fixes first.\r\n\r\n### Participation\r\n\r\n- [X] I am willing to submit a pull request for this change.\r\n\r\n### Additional comments\r\n\r\nI'm thinking it might be efficient to only turn this behavior on if the time difference between some groups is significant. Maybe 1 / (N * 2), where N = the number of different types of rules enabled?\r\n\r\nEdit: oh, and: there's an additional optimization of applying the 🍏 slower-area fixes before 🍌 faster-area fixes. That way no 🍏 fixes are skipped in the first round and then applied later.",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "stale",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/723"
+    "url": "https://github.com/eslint/eslint/issues/18642"
   },
   {
-    "id": 722,
-    "title": "Feature: Show Drop DDL",
-    "body": "Pgadmin3 has this nice feature so you can easily alter things like triggers, sequences (just about everything), by copy/paste and some quick edits by prefixing all the DDL with the associated DROP.\r\n\r\n![image](https://user-images.githubusercontent.com/1695852/46637243-423a1300-cb29-11e8-9feb-fd3a04a3704e.png)\r\n",
+    "id": 18573,
+    "title": "Change Request: Transitive dependency on deprecated inflight package",
+    "body": "### ESLint version\n\nv9.4.0 (main branch)\n\n### What problem do you want to solve?\n\nWhen running `npm install` in the `eslint` repo, several deprecation warnings are shown:\r\n\r\n```\r\nnpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\r\nnpm warn deprecated readdir-scoped-modules@1.1.0: This functionality has been moved to @npmcli/fs\r\nnpm warn deprecated debuglog@1.0.1: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.\r\nnpm warn deprecated read-package-json@2.1.2: This package is no longer supported. Please use @npmcli/package-json instead.\r\nnpm warn deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.\r\nnpm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported\r\nnpm warn deprecated rollup-plugin-inject@3.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-inject.\r\nnpm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported\r\nnpm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported\r\nnpm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported\r\nnpm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported\r\nnpm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported\r\nnpm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported\r\nnpm warn deprecated glob@7.1.7: Glob versions prior to v9 are no longer supported\r\nnpm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported\r\nnpm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead\r\nnpm warn deprecated read-installed@4.0.3: This package is no longer supported.\r\nnpm warn deprecated sinon@11.1.2: 16.1.1\r\n```\r\n\r\nMany of these originate in the inflight package being [deprecated by the owner](https://github.com/isaacs/inflight-DEPRECATED-DO-NOT-USE/issues/5#issuecomment-2126153820). The versions of `glob` that use this package were similarly deprecated (also see [this note](https://github.com/isaacs/node-glob/issues/435#issuecomment-1673562165)).\r\n\n\n### What do you think is the correct solution?\n\nThese dependencies come in transitively from other packages that `eslint` depend on. It would be up to them to update, and then for `eslint` to bump dependencies to those versions. \r\n\r\nSince the problems are surfaced to eslint, I thought it would be useful with a ticket to track the progress and link to upstream tickets. \n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "accepted",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/722"
+    "url": "https://github.com/eslint/eslint/issues/18573"
   },
   {
-    "id": 714,
-    "title": "csv import to table",
-    "body": "Hi\r\nOur users would like to have the possibility to do mass imports from a csv file. There is a closed issue #31 , but for some reason I can't find this functionality in latest OmniDB Server or anywhere in documentation. Does this functionality exist, is it planned or for now we would need to write our own plugin, if we want to get imports from csv?\r\n\r\nRegards,",
+    "id": 18095,
+    "title": "Change Request: Standardized export of flat configs to enable programmatic detection",
+    "body": "### ESLint version\r\n\r\n8.56.0\r\n\r\n### What problem do you want to solve?\r\n\r\nESLint configs have traditionally been exported by ESLint plugins under a standard `configs` object (alongside the `rules` object). This has allowed tooling like [eslint-doc-generator](https://github.com/bmish/eslint-doc-generator) and [lintbase.com](https://www.lintbase.com/) to automatically detect/analyze configs and generate documentation regarding them including the list of configs, which rules belong to which configs, etc.\r\n\r\nNew [flat configs](https://eslint.org/docs/latest/use/configure/configuration-files-new) can be exported in a variety of ways, including as an arbitrary file export from the plugin, such as `require('eslint-plugin-ember/configs/recommended')` in this [example](https://github.com/ember-cli/eslint-plugin-ember/pull/2020) I worked on, and not necessarily in the `configs` object exported by the plugin.\r\n\r\nFor existing plugins that want to support both legacy and flat versions of their configs while maintaining backwards-compatability, I've typically seen them leave the `configs` object for legacy configs, and add file exports for the new flat configs.\r\n\r\nTo my knowledge, since there aren't strict requirements around how or where flat configs are exported from, the user has to manually look up in the plugin's README to find out what the configs are and how exactly to import and use them (including whether they are arrays or objects). As you can imagine, depending on the README to discover configs is not conducive to automated tooling.\r\n\r\n### What do you think is the correct solution?\r\n\r\n**Note:** See updated proposal in: https://github.com/eslint/eslint/issues/18095#issuecomment-1951414598\r\n\r\nCould there be a convention or requirement for how plugins should export flat configs? Presumably, this would keep legacy config exporting the same through the `configs` object for backwards-compatability so plugins can support both config types, at least for some time.\r\n\r\nOne idea is to require or suggest plugins to export a new `configurations` object containing a mapping of config name to each loaded flat config.\r\n\r\nAnd what about recommendations around the direct file path entrypoint for exporting flat configs? I've seen plugins using `eslint-plugin-example/configs/config-name` or variations of this. Perhaps we could at least recommend a path format.\r\n\r\nIdeally, any convention or requirement would enable programmatic discoverability of flat configs, with the added benefit of simply making it easier to use flat configs.\r\n\r\n### Participation\r\n\r\n- [X] I am willing to submit a pull request for this change.\r\n\r\n### Additional comments\r\n\r\nRelated:\r\n* https://github.com/bmish/eslint-doc-generator/issues/376",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "accepted",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/714"
+    "url": "https://github.com/eslint/eslint/issues/18095"
   },
   {
-    "id": 705,
-    "title": "Named querys",
-    "body": "If one names query tabs the names are lost on relogin, while the to the content of the tab is kept. Would it be possible to make the query tab names persistent in a similar manner?\r\n\r\nRegards\r\npgaro",
+    "id": 18087,
+    "title": "Change Request: Flat Config does not support FileEnumerator",
+    "body": "### ESLint version\n\nv8\n\n### What problem do you want to solve?\n\neslint-plugin-import uses FileEnumerator in its `no-unused-modules` rule, for the purpose of gathering a list of files are not eslintignored, or ignored by the user's rule config, for checking if any exports or modules are unused.\r\n\r\nIt seems that in flat config, this capability does not exist.\n\n### What do you think is the correct solution?\n\nSomething that may work nicely is a new method on `context` provided to rules, that can achieve the same goal, but I have no idea if this makes sense for eslint or not.\n\n### Participation\n\n- [X] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nThis is the sole remaining blocker (afaik) to eslint-plugin-import supporting Flat Config, after which I plan to do a breaking change to drop older eslint versions, which is something quite a lot of users have been asking for.",
     "labels": [
-      "enhancement"
+      "enhancement",
+      "core"
     ],
-    "url": "https://github.com/OmniDB/OmniDB/issues/705"
+    "url": "https://github.com/eslint/eslint/issues/18087"
+  },
+  {
+    "id": 18008,
+    "title": "Change Request: Rule Tester: Enforce that a rule marked `fixable` or `hasSuggestions` has a test case that produces a relevant fixer ",
+    "body": "### ESLint version\n\nN/A\n\n### What problem do you want to solve?\n\nCurrently it's possible to declare a rule as both `fixable` and `hasSuggestions` without ever reporting either a fixer or a suggestion.\r\n\r\nThis is not great because often these flags are used for documentation purposes - which leads to bad documentation for users.\r\n\r\nAdditionally it's quite doable to create a suite of tests that never produces a fixer or a suggestion - this means that you can accidentally leave untested pathways in your rule. In the case of autofixers this is especially bad because you may not have validated that your code produces syntactically valid code!\n\n### What do you think is the correct solution?\n\nIt would be great if ESLint could do some post-run validation for a rule - for example:\r\n- \"if the rule is marked as `fixable` and no tests produced a fixer - error\"\r\n- \"if the rule is marked as `hasSuggestions` and no tests produced suggestions - error\"\r\n\r\nOne might suggest that this could be done via lint rules (eg `eslint-plugin-eslint-plugin`) - however it can be quite hard to statically analyse this given rules need not be contained within one file (so it's not possible to enforce the existence of a fixer on at least one `context.report()` call). Similarly tests may be assembled via generation in some way - meaning tests are dynamic and not possible to analyse. You might be able to catch some simpler cases with a lint rule.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
+    "labels": [
+      "enhancement",
+      "needs design",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/18008"
+  },
+  {
+    "id": 17881,
+    "title": "Change Request: Provide a way for rules to apply suggestions to other files",
+    "body": "### ESLint version\r\n\r\nv8.56.0\r\n\r\n### What problem do you want to solve?\r\n\r\nPorting https://github.com/JoshuaKGoldberg/eslint-plugin-expect-type/issues/115 over to ESLint core: at least one community plugin -`eslint-plugin-expect-type` has a rule whose fixer operates on a separate \"snapshot\" file in the file system, _not_ the file being linted. That rule has no native way of knowing whether ESLint is being run in `--fix` mode. Because fixers run even if ESLint isn't in fix mode, the fixer can't reliably know whether it should update the file snapshot.\r\n\r\n### What do you think is the correct solution?\r\n\r\n~Two thoughts:~\r\n\r\n* ~Can we avoid running `fix()` functions when not in fix mode?~\r\n* ~Alternately, can a rule's `context` object contain info on whether the fixer is being run? Or the `fixer` passed to the `fix()` function?~\r\n\r\nEdit (Jan 9): https://github.com/eslint/eslint/issues/17881#issuecomment-1883593657 shows the current proposal of enabling suggestions to specify changes to other files in limited cases:\r\n\r\n> * Limiting this option to `suggestions`, not fixes?\r\n> * Add a new `meta` property like `meta.allowSuggestingFileChanges` _(but with a better name)_?\r\n> * Having these out-of-file changes go through `fixer` methods that limit the allowed actions in some way?\r\n\r\n### Participation\r\n\r\n- [X] I am willing to submit a pull request for this change.\r\n\r\n### Additional comments\r\n\r\nA rules equivalent of what I proposed a year ago in https://github.com/eslint/rfcs/pull/102, perhaps? 🙂 \r\n\r\nEdit (Jan 9): Later comments have filled in use cases:\r\n\r\n* [eslint-plugin-expect-type](https://github.com/JoshuaKGoldberg/eslint-plugin-expect-type)'s [expect-type/expect rule](https://github.com/JoshuaKGoldberg/eslint-plugin-expect-type/blob/ea67df6f3c90b94ac550b7c47f2579b4c18cc46f/docs/rules/expect.md)'s [$ExpectTypeSnapshot feature](https://github.com/JoshuaKGoldberg/eslint-plugin-expect-type/blob/ea67df6f3c90b94ac550b7c47f2579b4c18cc46f/docs/rules/expect.md#expecttypesnapshot) (https://github.com/eslint/eslint/issues/17881#issuecomment-1873507895)\r\n* CSS-in-JS styling systems such as [Panda CSS](https://panda-css.com) and [Vanilla Extract](https://vanilla-extract.style) being able to suggest moving `css(...)` calls to a new file (https://github.com/eslint/eslint/issues/17881#issuecomment-1874772298)\r\n* Spell-checkers such as the [cspell spellchecker](https://github.com/streetsidesoftware/cspell) project's [@cspell/eslint ESLint plugin](https://www.npmjs.com/package/@cspell/eslint-plugin) being able to suggest adding to a user dictionary (https://github.com/eslint/eslint/issues/17881#issuecomment-1883593657)",
+    "labels": [
+      "enhancement",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/17881"
+  },
+  {
+    "id": 17856,
+    "title": "Implementing a centralized repository for our GitHub Actions configurations",
+    "body": "### ESLint version\r\n\r\nHEAD\r\n\r\n### What problem do you want to solve?\r\n\r\nCurrently, our main ESLint repository benefits from the automation provided by Renovate for dependency management. However, this practice has not been uniformly adopted across all our repositories. To address this, I propose the creation of a centralized repository within our ESLint organization. This repository will not only contain configurations for Renovate but also other common GitHub Actions workflows.\r\n\r\nAdvantages of this Approach:\r\n\r\n* Unified Workflow Management: By centralizing our GitHub Actions configurations, including Renovate, we can ensure all ESLint projects follow a consistent workflow for automated tasks, thus improving our overall efficiency.\r\n\r\n* Reduction in Redundant Efforts: A central repository eliminates the need to duplicate GitHub Actions configurations in each repository. This reduces repetitive work and ensures uniformity across our projects.\r\n\r\n* Simplified Updates and Maintenance: Any changes or updates to our automation configurations would need to be made only once, in the central repository. This simplifies the process of maintaining and updating our workflows.\r\n\r\n* Extensibility for ESLint Community Projects: This centralized repository can also be made available to projects under the `eslint-community`org, allowing them to benefit from standardized GitHub Actions workflows.\r\n\r\nrefs:\r\n* https://github.com/eslint-community/eslint-plugin-n/pull/44\r\n* https://github.com/eslint/eslint/discussions/17424\r\n\r\n### What do you think is the correct solution?\r\n\r\nCreation of a Central Repository: Establish a new repository, possibly named `eslint-gha-configs`, to house our GitHub Actions configurations:\r\n\r\n* renovate\r\n* release-please\r\n* add-to-triage\r\n* stale\r\n* codeql\r\n\r\n### Participation\r\n\r\n- [x] I am willing to submit a pull request for this change.\r\n\r\n### Additional comments\r\n\r\nI'm sure Renovate config can be reused in this way, but I'm not sure if others (like `release-please`) are also feasible. help wanted!🙌",
+    "labels": [
+      "enhancement",
+      "infrastructure",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/17856"
+  },
+  {
+    "id": 17842,
+    "title": "Change Request: Standardize documentation properties (e.g. allow configs to export description)",
+    "body": "### ESLint version\r\n\r\nv8.55.0\r\n\r\n### What problem do you want to solve?\r\n\r\nWith the new flat config system, configs are only allowed to export [known](https://eslint.org/docs/latest/use/configure/configuration-files-new#configuration-objects) properties like `rules`, `files`, etc.\r\n\r\nHowever, in third-party tooling I maintain like [eslint-doc-generator](https://github.com/bmish/eslint-doc-generator#configs-list-table) and [lintbase.com](https://www.lintbase.com/), I've been letting plugins set an unofficial `description` / `meta.description` / `meta.docs.description` property to annotate their configs (or processors) with a description that can be included in the auto-generated documentation for the plugin. This won't work anymore as flat config will throw an error like `Error: Unexpected key \"meta\" found.`.\r\n\r\nFurthermore, there are a variety of documentation-related properties used, allowed, or not allowed by ESLint core objects/concepts today, and this can be inconsistent and inflexible:\r\n\r\n* Plugins: Can export `meta.name` and `meta.version`\r\n* Rules: Can export anything, official properties are in `meta` or `meta.docs`, `meta.docs.description` is commonly used\r\n* Rule options: Can export properties controlled by JSONSchema including [`description`](https://json-schema.org/learn/getting-started-step-by-step#create-a-schema-definition)\r\n* Configs: No meta/documentation properties currently allowed, but a `name` property can be included to help with debugging\r\n* Processors: Can export `meta.name` and `meta.version` for debugging\r\n\r\n### What do you think is the correct solution?\r\n\r\nIn general, it would be useful to be able to accommodate at least the following rule documentation properties on any of the ESLint-controlled core objects/concepts: `description`, `url`, `deprecated`, `replacedBy`, plus space for arbitrary third-party/user-defined properties.\r\n\r\nThe challenge is how to place these properties in a consistent fashion across object types and in consideration for the already existing properties.\r\n\r\nIn particular, some of these rule properties are spread across `meta` and `meta.docs`. The dividing line between `meta` and `meta.docs` can be a bit blurry. I was thinking that `meta` would be for properties that are functionally used by ESLint, whereas `meta.docs` would be for non-critical/informational/custom properties that aren't necessarily used or needed by ESLint. By that division, `description`, `url`, `deprecated`, `replacedBy` would likely all fall under `meta.docs`.\r\n\r\nSome ideas for improving the consistency and flexibility of properties on ESLint core objects/concepts:\r\n\r\n1. Always allow `meta.docs` as an arbitrary object for any documentation / third-party properties.\r\n2. Suggest using `meta.docs` for documentation properties like `description`, `url`, `deprecated`, `replacedBy`.\r\n   - One exception to this: rules place `deprecated` and `replacedBy` directly on `meta`.\r\n   - We can encourage using these common properties and suggest formats for them, [as we do today](https://eslint.org/docs/latest/extend/custom-rules#rule-structure) with rules, as they are good for the health of the plugin ecosystem and often used by IDEs and third-party tooling, but ESLint itself wouldn't necessarily enforce anything about them.\r\n   - The list of documentation properties I have mentioned so far is not necessarily comprehensive as it's just a starting point based on existing, commonly-used rule properties.\r\n4. Whenever a `name` or `version` is needed to be specified, include it in the `meta` object. So we could update configs to accept `meta.name` (falling back to the current `name` property for backwards compatibility if needed).\r\n\r\nTo summarize: I took an initial stab at holistically considering documentation properties, but my top priority is really just to decide where documentation properties should go on each ESLint core object (in `meta.docs` in my proposal) without necessarily specifying a complete list of all potential documentation properties and their exact formats.\r\n\r\nRelated issue about the deprecation properties:\r\n\r\n*  https://github.com/eslint/eslint/issues/18061\r\n\r\n### Participation\r\n\r\n- [X] I am willing to submit a pull request for this change.\r\n\r\n### Additional comments\r\n\r\n_No response_",
+    "labels": [
+      "enhancement",
+      "accepted",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/17842"
+  },
+  {
+    "id": 17504,
+    "title": "Change Request: autoformat docs",
+    "body": "### What problem do you want to solve?\r\n\r\nIn my last PR, I noticed that the documentation rules pages (i.e. Markdown) have inconsistent formatting. Rules randomly have either 1, 2, 3, or 5 newlines after the frontmatter.\r\n\r\nThis kind of thing is sloppy, and makes it more difficult for people to contribute, as it makes finding the proper style non-trivial.\r\n\r\nOne option I considered was to inquire about the correct number of newlines in this situation, and then do another PR to standardize it. But personally, it seems much more productive to simply propose that the docs be autoformatted, which would automatically solve this issue and related issues without having to waste time discussing trivial formatting.\r\n\r\nNote that I am only proposing that Markdown files are auto-formatted, not all of the JavaScript. (Which would obviously be a more controversial proposal.)\r\n\r\nThe two most popular solutions in this space seem to be using [Prettier](https://prettier.io/) or [dprint](https://dprint.dev/). (While both are primarily code formatters, they also auto-format Markdown documents.) For example, I believe that [`typescript-eslint` project uses Prettier for this purpose](https://github.com/typescript-eslint/typescript-eslint/blob/main/package.json#L30).\r\n\r\n### Participation\r\n\r\n- [X] I am willing to submit a pull request for this change.\r\n(But this is probably something that should be done by a core maintainer, since it involves e.g. editing CI.)",
+    "labels": [
+      "enhancement",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/17504"
+  },
+  {
+    "id": 16828,
+    "title": "Change Request: Option to allow config fallback",
+    "body": "### ESLint version\n\nv8.25.0\n\n### What problem do you want to solve?\n\nI usually work with files that are not part of a project. They are just files on the fly on my machine.\r\n\r\nSince I like to use the \"standard\" rule, I have installed it globally and added the option \"overrideConfigFile\" to vscode eslint extension. This way I don't have to install \"standard\" and any other plugins every single time.\r\n\r\nThe problem comes when I have to work on a project with its own eslint rules. If I use \"overrideConfigFile\", it will cause some problems, like a plugin is not found or the project itself is not using \"standard\".\r\n\r\nTo solve this problem, I just have to open vscode \"settings.json\" file and comment out \"overrideConfigFile\" option.\n\n### What do you think is the correct solution?\n\nSkip the manual process of commenting out  \"overrideConfigFile\" in vscode settings by following the next:\r\n\r\nIf any eslint config or config file is not found on root and up directories, use the file declared in \"overrideConfigFile\" option (or a new option name).\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nI'm opening the request over here instead of vscode eslint extension repository because while I was looking for a solution to this problem, I found out they rely entirely on the features you add: https://github.com/microsoft/vscode-eslint/issues/482#issuecomment-395336940\r\n\r\nSo I understand if this feature is added on a new version, it would be available on vscode eslint extension as well.",
+    "labels": [
+      "stale",
+      "needs design",
+      "core",
+      "enhancement",
+      "accepted"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/16828"
+  },
+  {
+    "id": 16806,
+    "title": "Change Request: Implement RFC29 Processor Options",
+    "body": "### ESLint version\n\nv8.32.0\n\n### What problem do you want to solve?\n\nWe accepted RFC29 to make options available to processors. https://github.com/eslint/eslint/pull/12068 began the implementation, but it was never finished.\r\n\r\nWe discussed this in the 2023-01-12 TSC meeting as a solution to https://github.com/eslint/eslint-plugin-markdown/issues/208 , and I'm opening this issue to track the implementation of the RFC.\n\n### What do you think is the correct solution?\n\nRFC29 was written before flat config so only addressed how we'd do processor options in `.eslintrc` files. A new PR should adapt that approach for use with flat config.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
+    "labels": [
+      "enhancement",
+      "accepted",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/16806"
+  },
+  {
+    "id": 16493,
+    "title": "Change Request: Eslintcache relative",
+    "body": "### ESLint version\n\nv8.26.0\n\n### What problem do you want to solve?\n\nI am currently trying to use the .eslintcache file in our jenkins ci.\r\n\r\nIs there anyway the cache can use relative file paths? In our instance each branch is in a seperate dir but I want to reuse the cache.\n\n### What do you think is the correct solution?\n\nIn order to move the .eslintcache around it would be great if the cache filePaths were relative\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
+    "labels": [
+      "enhancement",
+      "needs design",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/16493"
+  },
+  {
+    "id": 16474,
+    "title": "Standardize Rule Documentation",
+    "body": "### ESLint version\n\nv8.x\n\n### What problem do you want to solve?\n\nthere is currently a lot of variability in how rules are documented. rules pages structures and content varies significantly. this makes harder for an end user to navigate the docs, and harder for rule makers to know how to document rules.\n\n### What do you think is the correct solution?\n\n- Create a standardized way to document a rule.\r\n- Apply the standardized way to X most important rules (exact number to be determined).\r\n- Given the very large number of rules, add guidance to contributor documentation that documenting a rule using the template is a great place to start contributing to ESLint.\r\n- Investigate using an 11ty template for the rule documentation.\r\n\n\n### Participation\n\n- [X] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
+    "labels": [
+      "enhancement",
+      "documentation",
+      "accepted"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/16474"
+  },
+  {
+    "id": 16365,
+    "title": "Documentation Update Project",
+    "body": "This issue encapsulates the proposed work for updates to the ESLint documentation website, https://eslint.org/docs. \r\n\r\n## Phase 1: Get to know docs with smaller, well-defined tasks\r\n\r\nTasks:\r\n\r\n- [x] https://github.com/eslint/eslint/issues/16310 \r\n- [x] https://github.com/eslint/eslint/issues/13721\r\n  *  add as a section on https://eslint.org/docs/latest/developer-guide/working-with-rules \r\n- [x] https://github.com/eslint/eslint/issues/16148\r\n- [x] https://github.com/eslint/eslint/issues/16382. Page covering the core concepts of ESLint. rules, plugins, etc.\r\n\r\n## Phase 2: High-level information architecture update\r\n\r\nOutline and implement an update to the ESLint documentation’s [information architecture](https://technicalwriterhq.com/knowledge-management/information-architecture/) (IA). Refactor the documentation around tasks related to three core personas:\r\n\r\n- **The User**: Someone who wants to use ESLint as it currently exists, including plugins.\r\n- **The Extender**: Someone who wants to extend the functionality of ESLint by creating a plugin, custom formatter, custom parser, sharable configuration, etc.\r\n- **The Contributor**: Someone who wants to add to the ESLint core project, whether submit a request or develop a a new rule. \r\n- **The Maintainer**: Someone who wants to oversee management of the core ESLint project.\r\n\r\nTasks: \r\n\r\n- [x] [Outline information architecture changes](https://docs.google.com/document/d/1Dyq2Ct1iHeVkGRViO2m5UJRcWJKRWOicBQu6zIpvHeE/edit?usp=sharing)\r\n- [x] Formal RFP: https://github.com/eslint/rfcs/pull/97\r\n- [x] https://github.com/eslint/eslint.org/pull/388\r\n- [x] https://github.com/eslint/eslint/pull/16665\r\n- [x] https://github.com/eslint/eslint/issues/16720\r\n- [x] https://github.com/eslint/eslint/issues/16648\r\n- [x] https://github.com/eslint/eslint/issues/16761\r\n- [x] https://github.com/eslint/eslint/issues/16762\r\n- [x] https://github.com/eslint/eslint/issues/16763\r\n- [x] https://github.com/eslint/eslint/issues/16764\r\n- [x] https://github.com/eslint/eslint/issues/16775\r\n\r\nProcedure to use with each of the page moves:  [IA Update Procedure](https://gist.github.com/bpmutter/3dc4691ab5b13e29e2420f94b654a46f)\r\n\r\n## Phase 3: “Use ESLint in Your Project” documentation update\r\n\r\nAdd additional documentation on using ESLint for the user persona.\r\n\r\nTasks:\r\n\r\n- [x] [Outline section changes](https://docs.google.com/document/d/1V0nmZ8dT4oF-X8PqG-pmDeesmOmeIj_4oi5-HpgXtDk/edit#)\r\n- [x] https://github.com/eslint/eslint/issues/16473\r\n- [x] https://github.com/eslint/eslint/issues/16508\r\n- [x] https://github.com/eslint/eslint/issues/16475\r\n- [x] https://github.com/eslint/eslint/issues/16476\r\n- [x] https://github.com/eslint/eslint/issues/16477\r\n- [x] https://github.com/eslint/eslint/issues/16478\r\n- [ ] https://github.com/eslint/eslint/issues/16474\r\n\r\n## Phase 4:  “Extend ESLint” documentation update\r\n\r\nAdd additional documentation on using ESLint for the extender persona.\r\n\r\nTasks: \r\n- [x] https://github.com/eslint/eslint/discussions/16736\r\n- [x] [Investigate creating generated reference docs for Node.js API (perhaps with tool like JSDoc)](https://github.com/eslint/eslint/pull/16735)\r\n- [x] https://github.com/eslint/eslint/issues/16810\r\n- [x] https://github.com/eslint/eslint/issues/16811\r\n- [x] https://github.com/eslint/eslint/issues/16812\r\n- [x] https://github.com/eslint/eslint/issues/16813\r\n- [x] https://github.com/eslint/eslint/issues/16814\r\n- [x] https://github.com/eslint/eslint/issues/16815\r\n- [x] https://github.com/eslint/eslint/issues/16885\r\n- [x] https://github.com/eslint/eslint/issues/16940\r\n\r\n## Phase 5: “Maintain ESLint” documentation update\r\n\r\nAdd additional documentation on using ESLint for the maintainer persona.\r\n\r\nTasks:\r\n\r\n- [x] https://github.com/eslint/eslint/discussions/16905\r\n- [x] https://github.com/eslint/eslint/issues/16938\r\n- [x] https://github.com/eslint/eslint/issues/16941\r\n\r\n## Phase 6: \"Integrate ESLint\" documentation update \r\n\r\nAdd additional documentation on using ESLint for the integrator persona.\r\n\r\nTasks:\r\n\r\n- [x] https://github.com/eslint/eslint/issues/17133\r\n- [x] https://github.com/eslint/eslint/issues/17134\r\n\r\n## Phase 7: \"Contribute to ESLint\" documentation update \r\n\r\n- [x] ~~Outline section changes~~ not taking action b/c of ESLint complete re-write which'll affect some of the contributing docs (https://github.com/eslint/eslint/discussions/16557) \r\n\r\n## Phase 8: ESLint Flat Configs\r\n\r\n- [x] https://github.com/eslint/eslint/issues/17229\r\n\r\n## Miscellaneous \r\n\r\nNew issues that have come up throughout the documentation update project. Can be completed outside of the above phases.\r\n\r\n- [ ] https://github.com/eslint/eslint/issues/16578\r\n- [x] https://github.com/eslint/eslint/issues/16507\r\n- [x] Consistently use \"an `.eslint...`\" throughout the docs. spun off from this thread https://github.com/eslint/eslint/pull/16510#discussion_r1021793537\r\n- [x] https://github.com/eslint/eslint/issues/16609\r\n- [x] https://github.com/eslint/eslint/issues/16754\r\n",
+    "labels": [
+      "enhancement",
+      "documentation",
+      "accepted"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/16365"
+  },
+  {
+    "id": 15631,
+    "title": "Change Request: Config to Disallow Disable",
+    "body": "### ESLint version\r\n\r\n8.0.0\r\n\r\n### What problem do you want to solve?\r\n\r\nESLint currently allows users to disable rules. In large codebases with MANY Prs, some users disable lint rules without really knowing what they are doing. This slips by PRs because reviewers sometimes don't actually review ¯\\\\\\_(ツ)\\_/¯\r\n\r\nThere exists rules such as `no-abusive-eslint-disable` but that in and of itself can be disabled\r\n\r\n### What do you think is the correct solution?\r\n\r\nI'd like ESLint to allow users to configure certain rules to be exempt from all comment style disables\r\n\r\n~~eslintrc: `\"noExtraSemi\": [\"error\", \"dissalowDisable\"]`~~\r\neslintrc: `\"noExtraSemi\": [\"forbid\"]`\r\n\r\nso in code\r\n```\r\n// eslint-disable-next-line noExtraSemi\r\nconst foo = 5;;\r\n```\r\nWould still result in an error\r\n\r\n\r\n### Participation\r\n\r\n- [x] I am willing to submit a pull request for this change.\r\n\r\n### Additional comments\r\n\r\n_No response_",
+    "labels": [
+      "needs design",
+      "enhancement",
+      "feature",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/15631"
+  },
+  {
+    "id": 15561,
+    "title": "Change Request: Create an `<eslint-editor>` web component",
+    "body": "### ESLint version\n\nv8.8.0\n\n### What problem do you want to solve?\n\nCurrently the [ESLint demo](https://eslint.org/demo) is custom-built as part of the website.\n\n### What do you think is the correct solution?\n\nWe'd like to make a reusable editor web component. It would replace the existing demo, and we could also use it as a built-in playground on rule pages to allow people to play around with different options. It would provide red squigglies and possibly tooltips for errors, but the containing page would be responsible for everything else.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\nWe added this to the roadmap in the 2022-01-27 TSC meeting.\r\n\r\nThis mostly affects the website, but I put this issue in the main repository initially because I'm guessing a good chunk of the work will be either here or in a new repository.",
+    "labels": [
+      "enhancement",
+      "needs design",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/15561"
+  },
+  {
+    "id": 15475,
+    "title": "Change Request: allow asynchronous parser",
+    "body": "### ESLint version\n\nV8.0.0\n\n### What problem do you want to solve?\n\nEslint spent most of its time in parsing files.  A javascript parser written in go or rust can potentially improve the the performance of eslint. However this is not possible now, because a parser written in go or rust can only be accessed by an asynchrous function, and eslint only accepts a synchronous parse function.\r\n\r\nThese external parsers can be accessed asynchronously by 1. Webassembly 2. Communicating to a child process using stdin/stdout or networking.\r\n\r\nAn example of parser written in rust is swc: https://docs.rs/swc_ecma_parser/latest/swc_ecma_parser/ .\r\n\n\n### What do you think is the correct solution?\n\nAccept a parser with an asynchronous parse function.\n\n### Participation\n\n- [ ] I am willing to submit a pull request for this change.\n\n### Additional comments\n\n_No response_",
+    "labels": [
+      "enhancement",
+      "needs design",
+      "core",
+      "breaking"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/15475"
+  },
+  {
+    "id": 15394,
+    "title": "Change Request: Support async rules",
+    "body": "### ESLint version\r\n\r\n8.4.0\r\n\r\n### What problem do you want to solve?\r\n\r\nSince `ESLint` supports async formatters started from [v8.4.0](https://eslint.org/blog/2021/12/eslint-v8.4.0-released#new-features-for-custom-formatters), would be great to have support of async plugins:\r\n\r\n```js\r\nmodule.exports = {\r\n    meta: {\r\n        type: \"suggestion\",\r\n\r\n        docs: {\r\n            description: \"disallow unnecessary semicolons\",\r\n            category: \"Possible Errors\",\r\n            recommended: true,\r\n            url: \"https://eslint.org/docs/rules/no-extra-semi\"\r\n        },\r\n        fixable: \"code\",\r\n        schema: [] // no options\r\n    },\r\n    // would be great if create can return a Promise\r\n    create: function(context) {\r\n        return {\r\n            // callback functions\r\n        };\r\n    }\r\n};\r\n```\r\n\r\nI'm working on 🐊[`Putout`](https://github.com/coderaiser/putout) code transformer, and have a plugin for `ESLint`. The thing is 🐊`Putout` has plugins which are loaded straight after parsing (depending on options provided by user).\r\nAll 🐊`Putout` plugins are `CommonJS`, and if they will be converted to `ESM` would be impossible to use 🐊`Putout` as a plugin for `ESLint`, because it supports only synchronous plugins.\r\n\r\nThis is one of the use-cases, but `ESLint` plugins can even be written in `ESM` and be loaded to `CommonJS` this way:\r\n\r\n```js\r\n  create: async function(context) {\r\n       const plugin = await import('./plugin.js'); \r\n       return plugin;\r\n    }\r\n```\r\n\r\nSo this is a big step forward.\r\n\r\n### What do you think is the correct solution?\r\n\r\nAdd support of `create` function that returns `Promise` similar to the way formatters work.\r\n\r\n### Participation\r\n\r\n- [ ] I am willing to submit a pull request for this change.\r\n\r\n### Additional comments\r\n\r\n_No response_",
+    "labels": [
+      "enhancement",
+      "accepted",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/15394"
+  },
+  {
+    "id": 14936,
+    "title": "Feature request: Support snapshot testing",
+    "body": "<!--\r\n    ESLint adheres to the Open JS Foundation Code of Conduct:\r\n    https://eslint.org/conduct\r\n\r\n    This template is for requesting a change that is not a bug fix, rule change, or new rule. If you are here for another reason, please see below:\r\n\r\n    1. To report a bug: https://eslint.org/docs/developer-guide/contributing/reporting-bugs\r\n    2. To request a rule change: https://eslint.org/docs/developer-guide/contributing/rule-changes\r\n    3. To propose a new rule: https://eslint.org/docs/developer-guide/contributing/new-rules\r\n    4. If you have any questions, please stop by our chatroom: https://eslint.org/chat\r\n\r\n    Note that leaving sections blank will make it difficult for us to troubleshoot and we may have to close the issue.\r\n-->\r\n\r\nWe test rules with a custom rule tester doing a snapshot test.\r\n\r\nThe built-in RuleTester can't customize the output assertion, we don't have the output to send to `RuleTester`, so we have to use `SourceCodeFixer` to apply fix from `messages`. [Full implementation](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/test/utils/snapshot-rule-tester.mjs#L187)\r\n\r\nWe definitely want a better way to do snapshot test, maybe pass an `assert` option in future, but before that, can we expose `SourceCodeFixer`, so I can apply fix from the message?\r\n\r\n\r\n**The version of ESLint you are using.**\r\n\r\n8.0.0-beta.0\r\n\r\n\r\n**The problem you want to solve.**\r\n\r\nFix our rule tester.\r\n\r\n\r\n**Are you willing to submit a pull request to implement this change?**\r\n\r\nYes.\r\n",
+    "labels": [
+      "enhancement",
+      "needs design",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/14936"
+  },
+  {
+    "id": 14800,
+    "title": "Add `physicalFilename` option into rule tester",
+    "body": "@snitin315 @nzakas @mdjermanovic\r\n\r\nI find `physicalFilename` is not available in `ValidTestCase`, so it makes testing cases for virtual filename unavailable, should that be supported?\r\n\r\nBefore `context.getPhysicalFilename`, I have a custom util `getPhysicalFilename` and a test case like:\r\n\r\n```js\r\nruleTester.run('remark', remark, {\r\n  valid: [\r\n    {\r\n      code: '<header>Header2</header>',\r\n      parser,\r\n      parserOptions,\r\n      filename: path.resolve(__filename, '0-fake.mdx'), // virtual filename\r\n    },\r\n  ],\r\n})\r\n```\r\n\r\nBut when I migrate to `context.getPhysicalFilename`, it results `context.getPhysicalFilename() === filename`, it is not correct, so maybe a new `physicalFilename` option is required for this case:\r\n\r\n```js\r\nruleTester.run('remark', remark, {\r\n  valid: [\r\n    {\r\n      code: '<header>Header2</header>',\r\n      parser,\r\n      parserOptions,\r\n      physicalFilename: __filename,\r\n      filename: path.resolve(__filename, '0-fake.mdx'), // virtual filename\r\n    },\r\n  ],\r\n})\r\n```\r\n\r\n_Originally posted by @JounQin in https://github.com/eslint/eslint/issues/14616#issuecomment-878712207_",
+    "labels": [
+      "enhancement",
+      "accepted",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/14800"
+  },
+  {
+    "id": 14745,
+    "title": "Allow processor API to be configurable and to formally be able to lint  both a file and its blocks",
+    "body": "**Update**: see updated description [below](https://github.com/eslint/eslint/issues/14745#issuecomment-888205829)\r\n\r\n**The version of ESLint you are using.**\r\n\r\n7.29.0\r\n\r\n**The problem you want to solve.**\r\n\r\nA few facts:\r\n\r\n1. Per [the v7.29.0 blog release](https://eslint.org/blog/2021/06/eslint-v7.29.0-released), further changes are anticpated toward dropping `CLIEngine`.\r\n\r\n2. Its replacement, the ESLint class, relies on some async-only methods.\r\n\r\n3. However, ESLint rules do not, and per @nzakas in [this comment](https://github.com/eslint/eslint/issues/3565#issuecomment-868099012), there have been no discussions or apparent interest in making `Linter` async so that asynchronous rules could be supported.\r\n\r\nThis all means that if `CLIEngine` is dropped, rules cannot take advantage of ESLint linting within their own rules.\r\n\r\nWhy would one want to run linting within a linting rule?\r\n\r\nIn `eslint-plugin-jsdoc`, we allow it in three cases all within our [jsdoc/check-examples](https://github.com/gajus/eslint-plugin-jsdoc/#eslint-plugin-jsdoc-rules-check-examples) rule:\r\n\r\n1. To lint JavaScript code within `@example` tags\r\n\r\n2. To lint a JavaScript value within [@default/@defaultvalue](https://jsdoc.app/tags-default.html) tags\r\n\r\n3. To lint a JavaScript expression within the likes of `@param {type} [name=default]` or `@property {type} [name=default]`\r\n\r\n**Your take on the correct solution to problem.**\r\n\r\nBesides adding synchronous methods, I would think that allowing some config to be passed to the `ESLint` class which triggered use of the synchronous rather than asynchronous methods would be sufficient.\r\n\r\n**Are you willing to submit a pull request to implement this change?**\r\n\r\nYes (if my health-based limits on energy and concentration allow).",
+    "labels": [
+      "enhancement",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/14745"
+  },
+  {
+    "id": 14679,
+    "title": "Default Severity",
+    "body": "**The version of ESLint you are using.**\r\n7.28.0\r\n\r\n\r\n**The problem you want to solve.**\r\nNow both real code errors and ESLint errors appear at the same level in IDEs with red squiggles.\r\nI can see an option to change all error severity to warn.\r\nIt would be nice to have yellow squiggles on ESLint ones (Now we have to manually list every rule and change its severity to `warn`)\r\n\r\n**Your take on the correct solution to the problem.**\r\n```\r\n{\r\n  severity: 'warn',\r\n  ...\r\n}\r\n```\r\n",
+    "labels": [
+      "enhancement",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/14679"
+  },
+  {
+    "id": 14597,
+    "title": "Ability to print out the list of top disabled rules",
+    "body": "**The problem you want to solve.**\r\n\r\nIn a large codebase, there can easily be hundreds or even thousands of places where inline disable directive comments (like `// eslint-disable-line no-console`) have been used.\r\n\r\nThere is not currently a convenient method to find out what rules developers are disabling like this other than manually searching the codebase or writing a custom regexp parsing script. In fact, I put together a [custom script](https://github.com/ember-template-lint/ember-template-lint/blob/master/docs/count-lint-violations.sh) for exactly this purpose, but it's a bit buggy and not easily available across different projects.\r\n\r\nGaining an understanding / summary statistics of what rules are being most frequently disabled by contributors can be useful for a variety of reasons:\r\n* determining what kinds of tech debt exist in a codebase\r\n* determining what rules may be buggy and in need of improvements\r\n* determining what issues developers need more education about\r\n* etc\r\n\r\n**Your take on the correct solution to problem.**\r\n\r\nI'm proposing a new [CLI option](https://eslint.org/docs/user-guide/command-line-interface#options) `--list-disable-directives` (or similar name) that would show the complete list of inline-disabled rules by count (descending order).\r\n\r\n```\r\nyarn eslint --list-disable-directives .\r\n\r\n[normal eslint output goes here]\r\n\r\nRule                   | Count | Relative \r\n:----------------------|------:|--------:\r\nno-console             |   125 |    40.1%\r\nno-unused-vars         |   104 |    33.3%\r\nradix                  |    43 |    18.8%\r\nnode/no-missing-import |    22 |     7.1%\r\nimport/order           |    15 |     4.8%\r\nprettier/prettier      |     2 |     0.6%\r\nno-undef               |     1 |     0.3%\r\n```\r\n\r\nThis matches the output format of the [TIMING](https://eslint.org/docs/1.0.0/developer-guide/working-with-rules#per-rule-performance) environment variable which can be used to see summary statistics about rule performance.\r\n\r\n**Are you willing to submit a pull request to implement this change?**\r\n\r\nYes",
+    "labels": [
+      "enhancement",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/14597"
+  },
+  {
+    "id": 14198,
+    "title": "[feature] Add custom `data` into `LintMessage`",
+    "body": "<!--\r\n    ESLint adheres to the Open JS Foundation Code of Conduct:\r\n    https://eslint.org/conduct\r\n\r\n    This template is for requesting a change that is not a bug fix, rule change, or new rule. If you are here for another reason, please see below:\r\n\r\n    1. To report a bug: https://eslint.org/docs/developer-guide/contributing/reporting-bugs\r\n    2. To request a rule change: https://eslint.org/docs/developer-guide/contributing/rule-changes\r\n    3. To propose a new rule: https://eslint.org/docs/developer-guide/contributing/new-rules\r\n    4. If you have any questions, please stop by our chatroom: https://eslint.org/chat\r\n\r\n    Note that leaving sections blank will make it difficult for us to troubleshoot and we may have to close the issue.\r\n-->\r\n\r\n\r\n\r\n**The version of ESLint you are using.**\r\n\r\nv7.21.0\r\n\r\n**The problem you want to solve.**\r\n\r\nI want to get custom data which reported with `context.report({ data })` info in `LintMessage` in `postprocess`.\r\n\r\n**Your take on the correct solution to problem.**\r\n\r\nFor now, we got no way to get the custom data, I have to hack to use the `message` property with `JSON.stringify/parse` instead.\r\n\r\n**Are you willing to submit a pull request to implement this change?**\r\n\r\nYes\r\n",
+    "labels": [
+      "enhancement",
+      "needs design",
+      "stale",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/14198"
+  },
+  {
+    "id": 14139,
+    "title": "Plugin initialization API",
+    "body": "<!--\r\n    ESLint adheres to the Open JS Foundation Code of Conduct:\r\n    https://eslint.org/conduct\r\n\r\n    This template is for requesting a change that is not a bug fix, rule change, or new rule. If you are here for another reason, please see below:\r\n\r\n    1. To report a bug: https://eslint.org/docs/developer-guide/contributing/reporting-bugs\r\n    2. To request a rule change: https://eslint.org/docs/developer-guide/contributing/rule-changes\r\n    3. To propose a new rule: https://eslint.org/docs/developer-guide/contributing/new-rules\r\n    4. If you have any questions, please stop by our chatroom: https://eslint.org/chat\r\n\r\n    Note that leaving sections blank will make it difficult for us to troubleshoot and we may have to close the issue.\r\n-->\r\n\r\n**The problem you want to solve.**\r\n\r\nESLint assumes that each rule and source file can be processed independently. `typescript-eslint` (ref https://github.com/eslint/rfcs/pull/42#issuecomment-561296926) and `eslint-plugin-import` (ref https://github.com/eslint/rfcs/pull/42#issuecomment-536586884) need to do upfront initialization work beyond the scope of a single rule and source file, specifically loading type information and tracing a module graph. Lacking a first-class API, they have inserted these initialization steps into the regular rule linting flow.\r\n\r\nIf we were to ship parallel linting without supporting this use case, the duplicated initialization could make parallel linting _slower_ than single-threaded linting with these plugins. The large number of ESLint users who also use one of these plugins would not benefit from parallel linting.\r\n\r\n\r\n**Your take on the correct solution to problem.**\r\n\r\nI'm not familiar with `typescript-eslint` and `eslint-plugin-import` internals, so I'm opening this issue to gather requirements.\r\n\r\nWhat I (think I) know:\r\n\r\n- Plugins have asked for a hook to perform pre-lint initialization.\r\n- When we ship parallel linting, currently under discussion in RFC42, plugins will need a mechanism to share the initialization result with workers.\r\n\r\nWhat I want to know:\r\n\r\n- When before linting should ESLint call plugin initialization hooks?\r\n- What data do plugins need from ESLint? This may constrain the answer to the previous question.\r\n- Does ESLint need to pass any of the initialization result back to plugin rules during linting (via e.g. the rule `context` object)?\r\n- What data do plugins need to share with workers? For example, is it JSON serializable?\r\n- Are there other plugins beside `typescript-eslint` and `eslint-plugin-import` whose authors should be part of this discussion?\r\n- What am I missing?\r\n\r\n\r\n**Are you willing to submit a pull request to implement this change?**\r\n\r\nThe next step will be to write an RFC, which I will write once we've settled on requirements and hopefully brainstormed some solutions.\r\n\r\n**Related discussions:**\r\n\r\n- https://github.com/eslint/eslint/issues/13525\r\n- https://github.com/eslint/rfcs/pull/42\r\n- https://github.com/eslint/rfcs/pull/11\r\n- https://github.com/benmosher/eslint-plugin-import/issues/1931",
+    "labels": [
+      "needs design",
+      "enhancement",
+      "evaluating",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/14139"
+  },
+  {
+    "id": 13776,
+    "title": "Follow identifiers to their declaration in `no-constant-condition`",
+    "body": "* **What rule do you want to change?** `no-constant-condition`\r\n* **Does this change cause the rule to produce more or fewer warnings?**: More\r\n**How will the change be implemented? (New option, new default behavior, etc.)?**: New default behavior\r\n\r\n## **Please provide some example code that this change will affect:**\r\n\r\n<!-- Put your code examples here -->\r\n```js\r\nvar foo = true;\r\nif(foo) {}\r\n```\r\n\r\n* **What does the rule currently do for this code?**: Nothing\r\n* **What will the rule do after it's changed?**: Warn/error\r\n* **Are you willing to submit a pull request to implement this change?**: Possibly\r\n\r\n_This proposal has been split out of #13752_\r\n\r\nCurrently `no-constant-condition` triggers on `if(true){}` but not on `const foo = true; if(foo){}`. In this case we could use the [`ScopeManager`](https://eslint.org/docs/developer-guide/scope-manager-interface) to attempt to follow `foo` to its declaration/assignment. If the variable is in scope and only assigned once, then we could check if the assigned value is constant.\r\n\r\nIn addition to assignments, we could also check other types of declarations. For example a function declaration could trigger an error:\r\n\r\n```javascript\r\nfunction foo() {}\r\n\r\nif(foo){} // <= foo is always truthy here\r\n```\r\n\r\nAdditionally, @mdjermanovic pointed out that there may be other rules which could be employing a similar technique.\r\n\r\nI've done a [simple version of this for a rule](https://gist.github.com/captbaritone/75fcbd34b046be1154dc460798be9929#file-no-useless-null-checks-js-L217-L257) I wrote (as mentioned in #13752) which could be used as a starting place.\r\n\r\nShout out to @bradzacher who first suggested this approach while we were iterating on my `no-useless-null-checks` rule.",
+    "labels": [
+      "rule",
+      "enhancement",
+      "accepted"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/13776"
+  },
+  {
+    "id": 13481,
+    "title": "Implement Flat Config",
+    "body": "This issue describes the implementation plan for eslint/rfcs#9, which will take place in several phases:\r\n\r\n## Phase 1: Extract current config system\r\n\r\n- [x] Create new GitHub repository (`eslint/eslintrc`)\r\n- [x] Copy`eslintrc` source files and tests into new GitHub repository\r\n- [x] Create Jenkins release job for `@eslint/eslintrc`\r\n- [x] Publish `@eslint/eslintrc` to npm\r\n- [x] Update ESLint to use `@eslint/eslintrc`\r\n- [x] Remove in-memory filesystem from tests\r\n- [x] Update `CLIEngine` to use `CascadingConfigArrayFactory` from `@eslint/eslintrc`\r\n\r\n## Phase 2: Implement flat config with `eslintrc` compatibility\r\n\r\n- [x] Create the `FlatCompat` class in `eslint/eslintrc` repository\r\n- [x] Create `FlatConfigArray` to represent simple configs\r\n- [x] Update `Linter` class to understand `FlatConfigArray` objects\r\n- [x] Ensure `Linter#defineRule` and `Linter#definePlugin` throw errors when using `FlatConfigArray`\r\n- [x] Add `context.languageOptions` in backwards-compatible way to `context` in `Linter`\r\n- [x] Ensure `context.parserPath` still works in `Linter` for `FlatConfigArray` (for now)\r\n- [x] Create `FlatRuleTester` to allow rule testing with `FlatConfigArray` format\r\n- [x] Create `FlatESLint` class to mirror `ESLint` class but use `eslint.config.js` instead\r\n- [x] #15661\r\n- [x] #15683\r\n- [x] #15687\r\n- [x] Implement caching\r\n- [x] Update `cli.js` to search for `eslint.config.js` file and use `FlatESLint` if found (`ESLint` if not)\r\n- [x] Ensure invalid CLI flags cause errors when using flat config (for example, `--resolve-plugins-relative-to`)\r\n- [x] Switch `eslint/eslint` repo to use flat config\r\n- [x] Document flat config\r\n- [x] Release ESLint with `eslintrc` compatibility\r\n- [x] #16416\r\n- [x] #16415\r\n- [x] #16414 \r\n- [x] #16413 \r\n- [x] #16410 \r\n- [x] #16402 \r\n- [x] #16341 \r\n- [x] #16340 \r\n- [x] #16299 \r\n- [x] #16275 \r\n- [x] #16265 \r\n- [x] #16264\r\n- [x] #16537\r\n- [x] #16875\r\n\r\n## Phase 3: Compatibility testing\r\n\r\n- [ ] Work with `typescript-eslint` to switch to new format and ensure it works correctly ([pull request](https://github.com/typescript-eslint/typescript-eslint/pull/6836))\r\n- [ ] Work with `eslint-plugin-import` to switch to new format and ensure it works correctly (@mdjermanovic) https://github.com/import-js/eslint-plugin-import/pull/2829 https://github.com/import-js/eslint-plugin-import/pull/2873\r\n- [ ] Work with `eslint-config-airbnb` to switch to new format and ensure it works correctly (@mdjermanovic)\r\n- [x] Work with `eslint-config-standard` to switch to new format and ensure it works correctly ([pull request](https://github.com/standard/eslint-config-standard/pull/277)]\r\n- [x] Work with `eslint-plugin-n` to switch configs to new format and ensure it works correctly (@mdjermanovic) ([pull request](https://github.com/eslint-community/eslint-plugin-n/pull/95))\r\n- [ ] Work with `eslint-plugin-vue` to switch configs to new format and ensure it works correctly ([pull request](https://github.com/vuejs/eslint-plugin-vue/pull/2226))\r\n- [ ] Work with `eslint-plugin-react` to switch configs to new format and ensure it works correctly (@mdjermanovic) ([pull request](https://github.com/jsx-eslint/eslint-plugin-react/pull/3600))\r\n- [x] Switch ESLint config to load external configs/plugins without `FlatCompat`\r\n- [x] Release ESLint with extended compatibility\r\n\r\n## Phase 4: General availability (v9.0.0)\r\n\r\n- [x] Write blog post about flat config format\r\n- [x] Output warning when people use `eslintrc` files\r\n- [x] Switch documentation so `eslint.config.js` is the default and recommended format (link to legacy `eslintrc` docs from the same page)\r\n- [x] Switch `Linter` to use flat config by default\r\n- [x] Switch documentation for shareable configs to flat config format (links to legacy docs included)\r\n- [x] Switch documentation for plugins to flat config format (links to legacy docs included)\r\n- [x] #14308\r\n- [x] Rename `ESLint` class to `LegacyESLint` and rename `FlatESLint` to `ESLint`\r\n- [x] Delete `RuleTester` class and rename `FlatRuleTester` to `RuleTester`\r\n- [x] Update `api.js` to export new values for `ESLint` and `RuleTester`\r\n- [x] Switch `shouldUseFlatConfig()` to return `true` except if `ESLINT_USE_FLAT_CONFIG` is `false`.\r\n- [x] Release ESLint with GA flat config\r\n\r\n## Phase 5: Remove `eslintrc` (v10.0.0)\r\n\r\n- [ ] Remove old CLI flags\r\n- [ ] Remove `context.parserPath`, `context.parserOptions`, `context.globals` in `Linter`\r\n- [ ] Remove `configType` constructor option for `Linter`; throw error if found.\r\n- [ ] Report an error when `eslint-env` config comment is used\r\n- [ ] Remove `eslintrc` support\r\n- [ ] Remove `eslintrc` documentation\r\n- [ ] Delete `FlatESLint` class\r\n- [ ] Delete `LegacyESLint` class\r\n- [ ] Switch `shouldUseFlatConfig()` to always return `true` \r\n- [ ] Release ESLint without `eslintrc` :tada:\r\n",
+    "labels": [
+      "accepted",
+      "feature",
+      "core",
+      "breaking"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/13481"
+  },
+  {
+    "id": 13434,
+    "title": "Add ability to test rule schemas",
+    "body": "<!--\r\n    ESLint adheres to the Open JS Foundation Code of Conduct:\r\n    https://eslint.org/conduct\r\n\r\n    This template is for requesting a change that is not a bug fix, rule change, or new rule. If you are here for another reason, please see below:\r\n\r\n    1. To report a bug: https://eslint.org/docs/developer-guide/contributing/reporting-bugs\r\n    2. To request a rule change: https://eslint.org/docs/developer-guide/contributing/rule-changes\r\n    3. To propose a new rule: https://eslint.org/docs/developer-guide/contributing/new-rules\r\n    4. If you have any questions, please stop by our chatroom: https://eslint.org/chat\r\n\r\n    Note that leaving sections blank will make it difficult for us to troubleshoot and we may have to close the issue.\r\n-->\r\n\r\n\r\n\r\n**The version of ESLint you are using.**\r\n\r\nLatest, 7.3.0.\r\n\r\n**The problem you want to solve.**\r\n\r\nESLint rules can have complex schemas. Some schemas can reach 100 lines long, and often allow various formats, such as in [no-restricted-imports](https://eslint.org/docs/rules/no-restricted-imports) which allows either an array of strings or an array of objects.\r\n\r\nToday, unit tests for a rule will ideally ensure that the rule behavior is correct for all possible combinations of valid rule options, but it is not currently possible to test that a rule correctly disallows invalid rules schemas.\r\n\r\nFor example, with the rule [no-restricted-imports](https://eslint.org/docs/rules/no-restricted-imports), I would like to test that the rule schema fails validation when passed:\r\n* Something that isn't an array\r\n* An empty array\r\n* An array containing an item that isn't a string nor object\r\n* An array containing an object that is missing required properties like `name`\r\n* Any other invalid combinations of input\r\n\r\nNote that I am obviously not trying to test that JSON Schema works properly, but I am trying to test that I as a rule developer have written out my schema correctly. It can be tricky to get schemas to perfectly represent what the allowed input should be, especially when we don't even try to test the invalid cases.\r\n\r\nThe goal of improved testing here is to improve the quality of our rule schemas, thus reducing the chance of rule consumers configuring rules improperly (which can result in rules silently misbehaving or crashing).\r\n\r\n**Your take on the correct solution to problem.**\r\n\r\nIn addition to the `valid` / `invalid` test case arrays in a rule unit test file, there could be an `error` array of invalid schemas.\r\n\r\n**Are you willing to submit a pull request to implement this change?**\r\n\r\nLikely yes.\r\n",
+    "labels": [
+      "enhancement",
+      "accepted",
+      "core"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/13434"
+  },
+  {
+    "id": 13430,
+    "title": "Rule Proposal: prefer-optional-chaining",
+    "body": "**Please describe what the rule should do:**\r\n\r\nThe new rule warns `obj && obj.prop`-like notations to suggest `obj?.prop`.\r\n\r\n**What new ECMAScript feature does this rule relate to?**\r\n\r\nOptional chaining\r\n\r\n**What category of rule is this? (place an \"X\" next to just one item)**\r\n\r\n[X] Suggests an alternate way of doing something (suggestion)\r\n\r\n**Provide 2-3 code examples that this rule will warn about:**\r\n\r\n<!-- Put your code examples here -->\r\n```js\r\n//✖ BAD\r\nobj && obj.prop\r\nobj != null ? obj.prop : undefined\r\nobj && obj[key]\r\nobj != null ? obj[key] : undefined\r\nfunc && func()\r\nfunc != null ? func() : undefined\r\nif (func) func()\r\nif (func) { func() }\r\n\r\n//✔ GOOD\r\nobj?.prop\r\nobj?.[key]\r\nfunc?.()\r\n```\r\n\r\n**Why should this rule be included in ESLint (instead of a plugin)?**\r\n\r\n`obj && obj.prop`-like notation is a popular practice. This rule will help people to learn the new syntax Optional Chaining. This is about a language feature rather than third-party platforms or libraries.\r\n\r\n**Are you willing to submit a pull request to implement this rule?**\r\n\r\nYes.\r\n",
+    "labels": [
+      "rule",
+      "feature",
+      "accepted"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/13430"
+  },
+  {
+    "id": 11512,
+    "title": "Investigating translating documentation",
+    "body": "One thing that we've been missing in our documentation is translations. Other open source projects have managed to figure this out, and now that we have a budget, it's possible to get paid translations. In my mind, the key questions to get answered are:\r\n\r\n- [ ] Which languages would we want translations for?\r\n- [ ] How would we manage translations (storing and updating)?\r\n- [ ] How would those translations be represented, searched, and used on the website?\r\n\r\nI'm opening this issue to track progress on this investigation and gather feedback.",
+    "labels": [
+      "enhancement",
+      "evaluating",
+      "documentation"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/11512"
+  },
+  {
+    "id": 3565,
+    "title": "Lint multiple files in parallel [$500]",
+    "body": "This is a discussion issue for adding ability to run eslint in parallel for multiple files.\n\nThe idea is that ESLint is mostly CPU bound, not IO bound, so creating multiple threads (for machine with multiple cores) might (and probably will) increase performance in a meaningful way. The downside is that currently ESLint's codebase is synchronous. So this would require rewriting everything up to and including eslint.js to be asynchronous, which would be a major effort.\n\nI played with this a little while ago and found a few libraries for Node that handle thread pool, including detection of number of cores available on the machine.\n- [Node-threads-a-gogo](https://github.com/xk/node-threads-a-gogo) - seems pretty good, but looks dead.\n- [nPool](https://github.com/inh3/nPool) - seems actively in development, but has native components (C++)\n- [Node WebWorkers](https://github.com/audreyt/node-webworker-threads) - seems pretty dead too.\n- [Parallel](https://github.com/adambom/parallel.js) - seems dead, and no pool implementation.\n- [Node Clusters](https://nodejs.org/api/cluster.html) - not stable yet, and probably isn't going to be available on Node v0.10\n- WebWorkers - seems that they are only implemented in io.js\n  And there are a ton of other libraries out there for this.\n\nIf anyone had any experience writing multithreaded applications for node.js and would like to suggest alternatives or comment on the above list, please feel free.\n\nP.S. https://www.airpair.com/javascript/posts/which-async-javascript-libraries-should-i-use\n## <bountysource-plugin>\n\nWant to back this issue? **[Post a bounty on it!](https://www.bountysource.com/issues/26284182-lint-multiple-files-in-parallel?utm_campaign=plugin&utm_content=tracker%2F282608&utm_medium=issues&utm_source=github)** We accept bounties via [Bountysource](https://www.bountysource.com/?utm_campaign=plugin&utm_content=tracker%2F282608&utm_medium=issues&utm_source=github).\n</bountysource-plugin>\n",
+    "labels": [
+      "needs bikeshedding",
+      "bounty",
+      "cli",
+      "needs design",
+      "feature",
+      "accepted"
+    ],
+    "url": "https://github.com/eslint/eslint/issues/3565"
   }
 ]

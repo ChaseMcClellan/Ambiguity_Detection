@@ -11,7 +11,7 @@ AMBIGUITY_OUTPUT = "output/ambiguity_report.json"
 REFINED_OUTPUT = "data/refined_requirements.json"
 
 def run_collection_pipeline(max_pages=2):
-    print("🔎 Scraping GitHub issues tagged as requirements...")
+    print("Scraping GitHub issues tagged as requirements...")
     scraped = get_requirements(max_pages=max_pages)
     save_scraped(scraped, RAW_OUTPUT)
 
