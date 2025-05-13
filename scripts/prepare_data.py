@@ -1,5 +1,3 @@
-# scripts/prepare_data.py
-
 import json
 import os
 

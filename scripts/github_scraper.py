@@ -4,17 +4,17 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# GitHub authentication
+#auth
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"}
 
 # Repo to scrape from
-REPO = "eslint/eslint"
+REPO = "storybookjs/storybook"
 
-# Labels that likely indicate a requirement
+#labels
 TARGET_LABELS = {"enhancement", "feature", "idea", "proposal", "suggestion"}
 
-# API endpoint
+#API
 API_URL = f"https://api.github.com/repos/{REPO}/issues"
 
 def get_requirements(max_pages=5):

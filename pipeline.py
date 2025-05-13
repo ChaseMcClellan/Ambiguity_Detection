@@ -1,5 +1,3 @@
-# pipeline.py — full data pipeline
-
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), "scripts"))
@@ -12,16 +10,14 @@ from scripts.prepare_data import prepare_training_text
 def run_full_pipeline():
     print("Starting full clarification pipeline...")
 
-    # Step 1: Collect new labeled data
+    #collect labeled data
     run_collection_pipeline(max_pages=3)
 
-    # Step 2: Prepare training data
+    #prep training data
     prepare_training_text("data/refined_requirements.json", "data/clarification_train.txt")
-
-    # Step 3: Fine-tune GPT-2 model
     #run_fine_tuning("data/clarification_train.txt")
 
-    print("Pipeline finished. Model updated.")
+    print("Pipeline finished. Model data updated.")
 
 
 if __name__ == "__main__":

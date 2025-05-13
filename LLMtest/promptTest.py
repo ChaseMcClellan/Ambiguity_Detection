@@ -29,5 +29,5 @@ if __name__ == "__main__":
         "Ambiguous terms:"
     )
     result = generate_response(test_prompt)
-    print("=== GPT-2 Output ===")
+    print("++++++++++GPT-2-medium Output++++++++++++++")
     print(result)

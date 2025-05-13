@@ -3,7 +3,7 @@ import torch
 
 MODEL_PATH = "../scripts/fine_tuned_model"
 
-# Load model and tokenizer
+#load model
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 model = AutoModelForCausalLM.from_pretrained(MODEL_PATH)
 tokenizer.pad_token = tokenizer.eos_token

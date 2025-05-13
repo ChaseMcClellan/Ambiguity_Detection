@@ -1,7 +1,7 @@
 import os
 import json
 from github_scraper import get_requirements, save_to_file as save_scraped
-from ambiguity_detector import generate_ambiguity_report, extract_terms_from_response
+from ambiguity_detector import extract_terms_from_response
 from clarifier import parse_llm_response
 from ollama_prompting import detect_ambiguity_with_llm, clarify_requirement
 from tqdm import tqdm
@@ -30,7 +30,6 @@ def run_collection_pipeline(max_pages=2):
     with open(AMBIGUITY_OUTPUT, "w", encoding="utf-8") as f:
         json.dump(ambiguity_results, f, indent=2)
 
-    print("Clarifying ambiguous requirements using fine-tuned GPT-2")
     refined = []
     for entry in tqdm(ambiguity_results, desc="Clarifying Requirements"):
         original = entry.get("original")
