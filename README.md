@@ -57,3 +57,5 @@ The fine‑tuned model is saved under `scripts/fine_tuned_model/`.
 Example scripts inside `LLMtest/` demonstrate how to load and query the base or fine‑tuned GPT‑2 model.
 
 ---
+
+This READ.ME was created by OpenAI's Codex, all other files are original. 
